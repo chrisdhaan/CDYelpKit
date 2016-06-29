@@ -1,9 +1,9 @@
 # CDYelpKit
 
-[![CI Status](http://img.shields.io/travis/chrisdhaan/CDUntappdKit.svg?style=flat)](https://travis-ci.org/chrisdhaan/CDYelpKit)
-[![Version](https://img.shields.io/cocoapods/v/CDUntappdKit.svg?style=flat)](http://cocoapods.org/pods/CDYelpKit)
-[![License](https://img.shields.io/cocoapods/l/CDUntappdKit.svg?style=flat)](http://cocoapods.org/pods/CDYelpKit)
-[![Platform](https://img.shields.io/cocoapods/p/CDUntappdKit.svg?style=flat)](http://cocoapods.org/pods/CDYelpKit)
+[![CI Status](http://img.shields.io/travis/chrisdhaan/CDYelpKit.svg?style=flat)](https://travis-ci.org/chrisdhaan/CDYelpKit)
+[![Version](https://img.shields.io/cocoapods/v/CDYelpKit.svg?style=flat)](http://cocoapods.org/pods/CDYelpKit)
+[![License](https://img.shields.io/cocoapods/l/CDYelpKit.svg?style=flat)](http://cocoapods.org/pods/CDYelpKit)
+[![Platform](https://img.shields.io/cocoapods/p/CDYelpKit.svg?style=flat)](http://cocoapods.org/pods/CDYelpKit)
 
 This pod is currently in development. It is not yet in a usable state and is subject to code breaking changes until version 1.0 release.
 

@@ -1,0 +1,6 @@
+framework module Pods_CDYelpKit_Tests {
+  umbrella header "Pods-CDYelpKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

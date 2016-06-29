@@ -1,0 +1,6 @@
+framework module CDYelpKit {
+  umbrella header "CDYelpKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

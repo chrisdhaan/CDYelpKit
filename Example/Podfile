@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CDYelpKit_Example' do
+  pod 'CDYelpKit', :path => '../'
+
+  target 'CDYelpKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

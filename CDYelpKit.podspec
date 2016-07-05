@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CDYelpKit'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'An extensive Objective C wrapper for the Yelp API.'
   s.description      = <<-DESC
 This Objective C wrapper covers all possible network endpoints and responses for the Yelp developers API.
@@ -22,8 +22,11 @@ This Objective C wrapper covers all possible network endpoints and responses for
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CDYelpKit/Classes/**/*'
+  s.source_files = 'CDYelpKit/Classes/{Core,Model,Responses}/*.{h,m}'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+# s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'CoreLocation'
   s.dependency 'Overcoat', '~> 4.0.0-beta.2'
+  s.dependency 'BDBOAuth1Manager', '~> 2.0.0'
+
 end

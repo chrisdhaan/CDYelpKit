@@ -12,7 +12,7 @@
 
 @interface CDYelpAPIClient : OVCHTTPSessionManager
 
-@property (nonatomic) BDBOAuth1RequestSerializer *requestSerializer;
+@property (nonatomic) BDBOAuth1RequestSerializer *oAuthRequestSerializer;
 
 @property (nonatomic, assign, readonly, getter = isAuthorized) BOOL authorized;
 

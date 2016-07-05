@@ -20,9 +20,9 @@
 
 - (void)getBusinessDetailsForBusinessId:(NSString *)businessId withCompletionBlock:(void (^)(BOOL, CDYelpDetailedBusiness *))block {
     
-    [self.yelpApiClient GET:[NSString stringWithFormat:@"business/%@", businessId] parameters:nil success:^(NSURLSessionDataTask *task, CDYelpBusinessResponse *responseObject) {
+    [self.yelpApiClient GET:[NSString stringWithFormat:@"business/%@", businessId] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, CDYelpBusinessResponse * _Nullable responseObject) {
         block(YES, responseObject.result);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Error: %@", error);
         block(NO, nil);
     }];
@@ -30,9 +30,9 @@
 
 - (void)searchYelpBusinessesWithCategories:(NSArray *)categories withCoordinates:(NSArray *)coordinates withCompletionBlock:(void (^)(BOOL, NSMutableArray *))block {
     
-    [self.yelpApiClient GET:@"search" parameters:[self generateYelpQueryDictWithCategories:categories withCoordinations:coordinates] success:^(NSURLSessionDataTask *task, CDYelpSearchResponse *responseObject) {
+    [self.yelpApiClient GET:@"search" parameters:[self generateYelpQueryDictWithCategories:categories withCoordinations:coordinates] progress:nil success:^(NSURLSessionDataTask * _Nonnull task, CDYelpSearchResponse * _Nullable responseObject) {
         block(YES, responseObject.result);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Error: %@", error);
         block(NO, nil);
     }];

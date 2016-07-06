@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CDYelpKit'
-  s.version          = '0.3.4'
+  s.version          = '0.3.5'
   s.summary          = 'An extensive Objective C wrapper for the Yelp API.'
   s.description      = <<-DESC
 This Objective C wrapper covers all possible network endpoints and responses for the Yelp developers API.

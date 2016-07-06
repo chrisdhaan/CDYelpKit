@@ -12,7 +12,7 @@
 
 @interface CDYelpKit : NSObject
 
-@property (strong, nonatomic) CDYelpAPIClient *yelpApiClient;
+@property (strong, nonatomic) CDYelpAPIClient * _Nonnull yelpApiClient;
 
 - (instancetype)initWithConsumerKey:(NSString * _Nonnull)consumerKey
                      consumerSecret:(NSString * _Nonnull)consumerSecret

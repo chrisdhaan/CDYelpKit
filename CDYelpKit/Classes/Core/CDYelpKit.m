@@ -25,7 +25,11 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
                               token:(NSString * _Nonnull)token
                         tokenSecret:(NSString * _Nonnull)tokenSecret {
     
-    self.yelpApiClient = [[CDYelpAPIClient alloc] initWithBaseURL:YelpEndpoint consumerKey:consumerKey consumerSecret:consumerSecret token:token tokenSecret:tokenSecret];
+    self = [super init];
+    if (self) {
+        self.yelpApiClient = [[CDYelpAPIClient alloc] initWithBaseURL:[NSURL URLWithString:YelpEndpoint] consumerKey:consumerKey consumerSecret:consumerSecret token:token tokenSecret:tokenSecret];
+    }
+    return self;
 }
 
 #pragma mark - Networking Methods
@@ -35,7 +39,7 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
                          byLanguageCode:(NSString * _Nullable)languageCode
                      withLangaugeFilter:(NSNumber * _Nullable)languageFilter
                      includeActionLinks:(NSNumber * _Nullable)actionLinks
-                        completionBlock:(void (^)(BOOL, CDYelpDetailedBusiness *))block {
+                        completionBlock:(void (^)(BOOL, CDYelpDetailedBusiness * _Nullable))block {
     
     NSDictionary *params = [self generateYelpBusinessParametersWithCountryCode:countryCode withLanguageCode:languageCode withLanguageFilter:languageFilter withActionLinks:actionLinks];
     
@@ -55,7 +59,7 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
                           withRadiusFilter:(NSNumber * _Nullable)radiusFilter
                            withDealsFilter:(NSNumber * _Nullable)dealsFilter
                            withCoordinates:(NSArray * _Nullable)coordinates
-                           completionBlock:(void (^)(BOOL, NSMutableArray *))block {
+                           completionBlock:(void (^)(BOOL, NSMutableArray * _Nullable))block {
     
     NSDictionary *params = [self generateYelpSearchParametersWithSearchTerm:searchTerm withLimit:limit withOffset:offset withSortType:sortType withCategories:categories withRadiusFilter:radiusFilter withDealsFilter:dealsFilter withCoordinates:coordinates];
     
@@ -83,10 +87,10 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
         dict[@"lang"] = languageCode;
     }
     if (languageFilter != nil) {
-        dict[@"lang_filter"] = [NSString stringWithFormat:@"%i", [languageFilter integerValue]];
+        dict[@"lang_filter"] = [NSString stringWithFormat:@"%ld", (long)[languageFilter integerValue]];
     }
     if (actionLinks != nil) {
-        dict[@"actionlinks"] = [NSString stringWithFormat:@"%i", [actionLinks integerValue]];
+        dict[@"actionlinks"] = [NSString stringWithFormat:@"%ld", (long)[actionLinks integerValue]];
     }
     
     NSDictionary *dictToReturn = [[NSDictionary alloc] initWithDictionary:dict];
@@ -140,22 +144,22 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
         dict[@"term"] = [NSString stringWithFormat:@"%@", searchTerm];
     }
     if (limit != nil) {
-        dict[@"limit"] = [NSString stringWithFormat:@"%i", [limit integerValue]];
+        dict[@"limit"] = [NSString stringWithFormat:@"%ld", (long)[limit integerValue]];
     }
     if (offset != nil) {
-        dict[@"offset"] = [NSString stringWithFormat:@"%i", [offset integerValue]];
+        dict[@"offset"] = [NSString stringWithFormat:@"%ld", (long)[offset integerValue]];
     }
     if (sortType != nil) {
-        dict[@"sort"] = [NSString stringWithFormat:@"%i", [sortType integerValue]];
+        dict[@"sort"] = [NSString stringWithFormat:@"%ld", (long)[sortType integerValue]];
     }
     if (![finalCategoriesString isEqualToString:@""]) {
         dict[@"category_filter"] = finalCategoriesString;
     }
     if (radiusFilter != nil) {
-        dict[@"radius_filter"] = [NSString stringWithFormat:@"%i", [radiusFilter integerValue]];
+        dict[@"radius_filter"] = [NSString stringWithFormat:@"%ld", (long)[radiusFilter integerValue]];
     }
     if (dealsFilter != nil) {
-        dict[@"deals_filter"] = [NSString stringWithFormat:@"%i", [dealsFilter integerValue]];
+        dict[@"deals_filter"] = [NSString stringWithFormat:@"%ld", (long)[dealsFilter integerValue]];
     }
     if (![locationKey isEqualToString:@""] && ![locationValue isEqualToString:@""]) {
         dict[locationKey] = locationValue;

@@ -20,10 +20,10 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
 
 #pragma mark - Initialization Methods
 
-- (instancetype)initWithConsumerKey:(NSString * _Nonnull)consumerKey
-                     consumerSecret:(NSString * _Nonnull)consumerSecret
-                              token:(NSString * _Nonnull)token
-                        tokenSecret:(NSString * _Nonnull)tokenSecret {
+- (instancetype _Nullable)initWithConsumerKey:(NSString * _Nonnull)consumerKey
+                               consumerSecret:(NSString * _Nonnull)consumerSecret
+                                        token:(NSString * _Nonnull)token
+                                  tokenSecret:(NSString * _Nonnull)tokenSecret {
     
     self = [super init];
     if (self) {

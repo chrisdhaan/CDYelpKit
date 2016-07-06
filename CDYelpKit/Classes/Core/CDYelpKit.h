@@ -24,7 +24,7 @@
                          byLanguageCode:(NSString * _Nullable)languageCode
                      withLangaugeFilter:(NSNumber * _Nullable)languageFilter
                      includeActionLinks:(NSNumber * _Nullable)actionLinks
-                        completionBlock:(void (^)(BOOL, CDYelpDetailedBusiness * _Nullable))block;
+                        completionBlock:(void (^ _Nullable)(BOOL, CDYelpDetailedBusiness * _Nullable))block;
 
 - (void)searchYelpBusinessesWithSearchTerm:(NSString * _Nullable)searchTerm
                                  withLimit:(NSNumber * _Nullable)limit
@@ -34,6 +34,6 @@
                           withRadiusFilter:(NSNumber * _Nullable)radiusFilter
                            withDealsFilter:(NSNumber * _Nullable)dealsFilter
                            withCoordinates:(NSArray * _Nullable)coordinates
-                           completionBlock:(void (^)(BOOL, NSMutableArray * _Nullable))block;
+                           completionBlock:(void (^ _Nullable)(BOOL, NSMutableArray * _Nullable))block;
 
 @end

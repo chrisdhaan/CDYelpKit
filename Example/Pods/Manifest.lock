@@ -8,7 +8,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
-  - CDYelpKit (0.3.7):
+  - CDYelpKit (0.3.8):
     - BDBOAuth1Manager (~> 2.0.0)
     - Overcoat (~> 4.0.0-beta.2)
   - Mantle (2.0.7):
@@ -29,7 +29,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
-  CDYelpKit: cb760054e4d59164a36bde0336db17972fd22674
+  CDYelpKit: 24859db4821ed9b982d0911b61b53bd491630f9d
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
 

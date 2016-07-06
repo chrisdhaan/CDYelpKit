@@ -1,6 +1,6 @@
 {
   "name": "CDYelpKit",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "summary": "An extensive Objective C wrapper for the Yelp API.",
   "description": "This Objective C wrapper covers all possible network endpoints and responses for the Yelp developers API.",
   "homepage": "https://github.com/chrisdhaan/CDYelpKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/chrisdhaan/CDYelpKit.git",
-    "tag": "0.3.7"
+    "tag": "0.3.8"
   },
   "social_media_url": "https://twitter.com/dehaan_solo",
   "platforms": {

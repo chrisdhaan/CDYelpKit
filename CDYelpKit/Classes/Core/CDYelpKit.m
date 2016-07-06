@@ -39,7 +39,7 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
                          byLanguageCode:(NSString * _Nullable)languageCode
                      withLangaugeFilter:(NSNumber * _Nullable)languageFilter
                      includeActionLinks:(NSNumber * _Nullable)actionLinks
-                        completionBlock:(void (^)(BOOL, CDYelpDetailedBusiness * _Nullable))block {
+                        completionBlock:(void (^ _Nullable)(BOOL, CDYelpDetailedBusiness * _Nullable))block {
     
     NSDictionary *params = [self generateYelpBusinessParametersWithCountryCode:countryCode withLanguageCode:languageCode withLanguageFilter:languageFilter withActionLinks:actionLinks];
     
@@ -59,7 +59,7 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
                           withRadiusFilter:(NSNumber * _Nullable)radiusFilter
                            withDealsFilter:(NSNumber * _Nullable)dealsFilter
                            withCoordinates:(NSArray * _Nullable)coordinates
-                           completionBlock:(void (^)(BOOL, NSMutableArray * _Nullable))block {
+                           completionBlock:(void (^ _Nullable)(BOOL, NSMutableArray * _Nullable))block {
     
     NSDictionary *params = [self generateYelpSearchParametersWithSearchTerm:searchTerm withLimit:limit withOffset:offset withSortType:sortType withCategories:categories withRadiusFilter:radiusFilter withDealsFilter:dealsFilter withCoordinates:coordinates];
     

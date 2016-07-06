@@ -6,9 +6,8 @@
 //
 //
 
+#import <BDBOAuth1Manager/BDBOAuth1RequestSerializer.h>
 #import <Overcoat/Overcoat.h>
-
-#import "BDBOAuth1RequestSerializer.h"
 
 @interface CDYelpAPIClient : OVCHTTPSessionManager
 

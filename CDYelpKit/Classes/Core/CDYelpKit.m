@@ -28,10 +28,10 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
     self = [super init];
     if (self) {
         
-        NSAssert(consumerKey != nil || ![consumerKey isEqualToString:@""], @"A consumer key must be provided to utilize CDYelpKit.");
-        NSAssert(consumerSecret != nil || ![consumerSecret isEqualToString:@""], @"A consumer secret must be provided to utilize CDYelpKit.");
-        NSAssert(token != nil || ![token isEqualToString:@""], @"A token must be provided to utilize CDYelpKit.");
-        NSAssert(tokenSecret != nil || ![tokenSecret isEqualToString:@""], @"A token secret must be provided to utilize CDYelpKit.");
+        NSAssert(consumerKey != nil && ![consumerKey isEqualToString:@""], @"A consumer key must be provided to utilize CDYelpKit.");
+        NSAssert(consumerSecret != nil && ![consumerSecret isEqualToString:@""], @"A consumer secret must be provided to utilize CDYelpKit.");
+        NSAssert(token != nil && ![token isEqualToString:@""], @"A token must be provided to utilize CDYelpKit.");
+        NSAssert(tokenSecret != nil && ![tokenSecret isEqualToString:@""], @"A token secret must be provided to utilize CDYelpKit.");
         
         self.yelpApiClient = [[CDYelpAPIClient alloc] initWithBaseURL:[NSURL URLWithString:YelpEndpoint] consumerKey:consumerKey consumerSecret:consumerSecret token:token tokenSecret:tokenSecret];
     }
@@ -47,7 +47,7 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
                      includeActionLinks:(BOOL)actionLinks
                         completionBlock:(void (^)(BOOL, NSError * _Nullable, CDYelpDetailedBusiness * _Nullable))block {
     
-    NSAssert(businessId != nil || ![businessId isEqualToString:@""], @"A business ID is required to query the Yelp business endpoint.");
+    NSAssert(businessId != nil && ![businessId isEqualToString:@""], @"A business ID is required to query the Yelp business endpoint.");
     
     NSDictionary *params = [self generateYelpBusinessParametersWithCountryCode:countryCode withLanguageCode:languageCode withLanguageFilter:languageFilter withActionLinks:actionLinks];
     
@@ -69,12 +69,8 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
                            withCoordinates:(NSArray *)coordinates
                            completionBlock:(void (^)(BOOL, NSError * _Nullable, NSMutableArray * _Nullable))block {
     
-    if (sortType != nil) {
-        NSAssert(!radiusFilter > 3 || !radiusFilter < 0, @"The provided sort type is not a CDYelpSortType. Please provide a valid CDYelpSortType.");
-    }
-    if (radiusFilter != nil) {
-        NSAssert(!radiusFilter > 40000, @"The provided radius is larger than allowed by the Yelp Search query. Please provide a radius between 0 and 40000.");
-    }
+    NSAssert(radiusFilter <= 3 && radiusFilter >= 0, @"The provided sort type is not a CDYelpSortType. Please provide a valid CDYelpSortType.");
+    NSAssert(radiusFilter <= 40000, @"The provided radius is larger than allowed by the Yelp Search query. Please provide a radius between 0 and 40000.");
     
     NSDictionary *params = [self generateYelpSearchParametersWithSearchTerm:searchTerm withLimit:limit withOffset:offset withSortType:sortType withCategories:categories withRadiusFilter:radiusFilter withDealsFilter:dealsFilter withCoordinates:coordinates];
     
@@ -98,13 +94,16 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
     if (countryCode != nil && ![countryCode isEqualToString:@""]) {
         dict[@"cc"] = countryCode;
     }
+    
     if (languageCode != nil && ![languageCode isEqualToString:@""]) {
         dict[@"lang"] = languageCode;
     }
-    if (languageFilter != nil && languageFilter == true) {
+    
+    if (languageFilter == true) {
         dict[@"lang_filter"] = @"1";
     }
-    if (actionLinks != nil && actionLinks == true) {
+    
+    if (actionLinks == true) {
         dict[@"actionlinks"] = @"1";
     }
     
@@ -158,24 +157,27 @@ static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
     if (searchTerm != nil && ![searchTerm isEqualToString:@""]) {
         dict[@"term"] = [NSString stringWithFormat:@"%@", searchTerm];
     }
-    if (limit != nil) {
-        dict[@"limit"] = [NSString stringWithFormat:@"%i", limit];
+    
+    dict[@"limit"] = [NSString stringWithFormat:@"%ld", (long)limit];
+    
+    if (offset > 0) {
+        dict[@"offset"] = [NSString stringWithFormat:@"%ld", (long)offset];
     }
-    if (offset != nil && offset > 0) {
-        dict[@"offset"] = [NSString stringWithFormat:@"%i", offset];
+    
+    if (sortType != kCDYelpSortTypeNone) {
+        dict[@"sort"] = [NSString stringWithFormat:@"%ld", (long)sortType];
     }
-    if (sortType != nil && sortType != kCDYelpSortTypeNone) {
-        dict[@"sort"] = [NSString stringWithFormat:@"%i", sortType];
-    }
+    
     if (![finalCategoriesString isEqualToString:@""]) {
         dict[@"category_filter"] = finalCategoriesString;
     }
-    if (radiusFilter != nil) {
-        dict[@"radius_filter"] = [NSString stringWithFormat:@"%i", radiusFilter];
-    }
-    if (dealsFilter != nil && dealsFilter == true) {
+    
+    dict[@"radius_filter"] = [NSString stringWithFormat:@"%ld", (long)radiusFilter];
+
+    if (dealsFilter == true) {
         dict[@"deals_filter"] = @"1";
     }
+    
     if (![locationKey isEqualToString:@""] && ![locationValue isEqualToString:@""]) {
         dict[locationKey] = locationValue;
     }

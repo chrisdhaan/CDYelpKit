@@ -192,6 +192,8 @@
                             <constraint firstItem="vHL-vv-YHc" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="znG-mW-mg3"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

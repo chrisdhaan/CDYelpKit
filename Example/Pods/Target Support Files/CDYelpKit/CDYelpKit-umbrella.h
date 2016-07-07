@@ -12,6 +12,7 @@
 #import "CDYelpLocation.h"
 #import "CDYelpModels.h"
 #import "CDYelpReview.h"
+#import "CDYelpSortType.h"
 #import "CDYelpUser.h"
 #import "CDYelpBusinessResponse.h"
 #import "CDYelpResponses.h"

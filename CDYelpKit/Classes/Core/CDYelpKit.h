@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CDYelpSortType.h"
+
 @class CDYelpAPIClient, CDYelpDetailedBusiness;
 
 @interface CDYelpKit : NSObject
@@ -22,18 +24,18 @@
 - (void)getBusinessDetailsForBusinessId:(NSString * _Nonnull)businessId
                            byCoutryCode:(NSString * _Nullable)countryCode
                          byLanguageCode:(NSString * _Nullable)languageCode
-                     withLangaugeFilter:(NSNumber * _Nullable)languageFilter
-                     includeActionLinks:(NSNumber * _Nullable)actionLinks
-                        completionBlock:(void (^ _Nullable)(BOOL, CDYelpDetailedBusiness * _Nullable))block;
+                     withLangaugeFilter:(BOOL)languageFilter
+                     includeActionLinks:(BOOL)actionLinks
+                        completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, CDYelpDetailedBusiness * _Nullable business))block;
 
 - (void)searchYelpBusinessesWithSearchTerm:(NSString * _Nullable)searchTerm
-                                 withLimit:(NSNumber * _Nullable)limit
-                                withOffset:(NSNumber * _Nullable)offset
-                              withSortType:(NSNumber * _Nullable)sortType
+                                 withLimit:(NSInteger)limit
+                                withOffset:(NSInteger)offset
+                              withSortType:(CDYelpSortType)sortType
                             withCategories:(NSArray * _Nullable)categories
-                          withRadiusFilter:(NSNumber * _Nullable)radiusFilter
-                           withDealsFilter:(NSNumber * _Nullable)dealsFilter
+                          withRadiusFilter:(NSInteger)radiusFilter
+                           withDealsFilter:(BOOL)dealsFilter
                            withCoordinates:(NSArray * _Nullable)coordinates
-                           completionBlock:(void (^ _Nullable)(BOOL, NSMutableArray * _Nullable))block;
+                           completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results))block;
 
 @end

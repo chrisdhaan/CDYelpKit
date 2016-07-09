@@ -74,10 +74,10 @@
     NSString *locationValue = @"";
     
     if (requestLocation != nil) {
-        if (requestLocation.requestLocationType = kCDYelpRequestLocationTypeCurrentLocation) {
+        if (requestLocation.requestLocationType == kCDYelpRequestLocationTypeCurrentLocation) {
             locationKey = @"ll";
             locationValue = [NSString stringWithFormat:@"%f,%f", requestLocation.currentLocationCoordinate.latitude, requestLocation.currentLocationCoordinate.longitude];
-        } else if (requestLocation.requestLocationType = kCDYelpRequestLocationTypeBoundingBox) {
+        } else if (requestLocation.requestLocationType == kCDYelpRequestLocationTypeBoundingBox) {
             locationKey = @"bounds";
             locationValue = [NSString stringWithFormat:@"%f,%f|%f,%f", requestLocation.boundingBox.southWestCoordinate.latitude, requestLocation.boundingBox.southWestCoordinate.longitude, requestLocation.boundingBox.northEastCoordinate.latitude, requestLocation.boundingBox.northEastCoordinate.longitude];
         } else {

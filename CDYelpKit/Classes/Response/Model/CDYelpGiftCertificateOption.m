@@ -10,6 +10,8 @@
 
 @implementation CDYelpGiftCertificateOption
 
+#pragma mark - Mantle Methods
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionaryValue error:(NSError *__autoreleasing *)error {
     NSDictionary *defaults = @{
                                @"price": [NSNumber numberWithInt:0],

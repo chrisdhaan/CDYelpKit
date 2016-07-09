@@ -6,6 +6,7 @@
 //
 //
 
+#import "CDYelpBoundingBox.h"
 #import "CDYelpBusiness.h"
 #import "CDYelpDeal.h"
 #import "CDYelpDealOption.h"
@@ -14,6 +15,8 @@
 #import "CDYelpGiftCertificate.h"
 #import "CDYelpGiftCertificateOption.h"
 #import "CDYelpLocation.h"
+#import "CDYelpQueryParams.h"
+#import "CDYelpRequestLocation.h"
 #import "CDYelpReview.h"
 #import "CDYelpUser.h"
 

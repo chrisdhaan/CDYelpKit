@@ -10,7 +10,7 @@
 
 #import "CDYelpSortType.h"
 
-@class CDYelpAPIClient, CDYelpDetailedBusiness;
+@class CDYelpAPIClient, CDYelpDetailedBusiness, CDYelpRequestLocation;
 
 @interface CDYelpKit : NSObject
 
@@ -35,7 +35,7 @@
                             withCategories:(NSArray * _Nullable)categories
                           withRadiusFilter:(NSInteger)radiusFilter
                            withDealsFilter:(BOOL)dealsFilter
-                           withCoordinates:(NSArray * _Nullable)coordinates
+                       withRequestLocation:(CDYelpRequestLocation * _Nullable)requestLocation
                            completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results))block;
 
 @end

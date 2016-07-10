@@ -17,7 +17,7 @@
 
 @implementation CDYelpKit
 
-static NSString *YelpEndpoint = @"http://api.yelp.com/v2/";
+static NSString *YelpEndpoint = @"https://api.yelp.com/v2/";
 
 #pragma mark - Initialization Methods
 

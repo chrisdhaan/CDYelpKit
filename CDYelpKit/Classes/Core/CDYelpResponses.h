@@ -7,4 +7,5 @@
 //
 
 #import "CDYelpBusinessResponse.h"
+#import "CDYelpErrorResponse.h"
 #import "CDYelpSearchResponse.h"

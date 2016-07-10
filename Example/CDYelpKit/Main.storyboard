@@ -113,6 +113,9 @@
                                     <constraint firstAttribute="height" constant="30" id="b65-Ln-da7"/>
                                 </constraints>
                                 <state key="normal" title="Categories"/>
+                                <connections>
+                                    <action selector="categoriesButtonPressed:" destination="whP-gf-Uak" eventType="touchUpInside" id="CjV-2e-gzd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius (meters):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reO-Vk-VfQ">
                                 <rect key="frame" x="20" y="407" width="126" height="21"/>
@@ -149,6 +152,17 @@
                                     <constraint firstAttribute="height" constant="31" id="72p-GR-6dr"/>
                                 </constraints>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kms-yo-SMc">
+                                <rect key="frame" x="259" y="490" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Myg-RK-Quf"/>
+                                    <constraint firstAttribute="width" constant="81" id="ahd-0F-v4N"/>
+                                </constraints>
+                                <state key="normal" title="Search Yelp"/>
+                                <connections>
+                                    <action selector="searchYelpButtonPressed:" destination="whP-gf-Uak" eventType="touchUpInside" id="fdK-fP-kKo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,6 +172,7 @@
                             <constraint firstItem="J4f-eO-sqc" firstAttribute="top" secondItem="Nfj-Cn-kFM" secondAttribute="bottom" constant="11" id="2hy-Sn-Loi"/>
                             <constraint firstItem="J4f-eO-sqc" firstAttribute="leading" secondItem="Csr-oJ-yon" secondAttribute="trailing" constant="8" id="4cK-Fc-XMq"/>
                             <constraint firstItem="zFE-k0-qAG" firstAttribute="top" secondItem="2TV-ic-sIC" secondAttribute="bottom" constant="18" id="69V-Bl-aFY"/>
+                            <constraint firstItem="Kms-yo-SMc" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="6oo-Ci-3bU"/>
                             <constraint firstAttribute="trailing" secondItem="OAG-ad-2Kd" secondAttribute="trailing" constant="20" id="7fs-1j-rLW"/>
                             <constraint firstItem="OAG-ad-2Kd" firstAttribute="top" secondItem="VDl-wG-7o2" secondAttribute="bottom" constant="8" id="AHw-Nk-01u"/>
                             <constraint firstAttribute="trailing" secondItem="URh-UF-kJ0" secondAttribute="trailing" constant="20" id="COU-Z7-Xoz"/>
@@ -180,6 +195,7 @@
                             <constraint firstItem="58x-MM-1eU" firstAttribute="leading" secondItem="reO-Vk-VfQ" secondAttribute="trailing" constant="8" id="cBG-en-D26"/>
                             <constraint firstItem="vHL-vv-YHc" firstAttribute="top" secondItem="Csr-oJ-yon" secondAttribute="bottom" constant="18" id="d3o-Fe-h5J"/>
                             <constraint firstItem="zFE-k0-qAG" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="hhg-JX-gg9"/>
+                            <constraint firstItem="Kms-yo-SMc" firstAttribute="top" secondItem="nZ3-LI-NSV" secondAttribute="bottom" constant="18" id="hwA-Bm-UBC"/>
                             <constraint firstItem="URh-UF-kJ0" firstAttribute="leading" secondItem="vHL-vv-YHc" secondAttribute="trailing" constant="8" id="iDR-kV-fmP"/>
                             <constraint firstItem="Csr-oJ-yon" firstAttribute="top" secondItem="O9w-aC-Wn9" secondAttribute="bottom" constant="18" id="kP5-3o-8gp"/>
                             <constraint firstItem="Csr-oJ-yon" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="kTA-5G-VvN"/>
@@ -194,6 +210,17 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="categoriesButton" destination="URh-UF-kJ0" id="ke4-OU-lQL"/>
+                        <outlet property="dealsSwitch" destination="nZ3-LI-NSV" id="1Oz-8g-L06"/>
+                        <outlet property="limitTextField" destination="OAG-ad-2Kd" id="UbE-Sl-9am"/>
+                        <outlet property="mapView" destination="IiZ-SA-PRu" id="ssv-cs-2eZ"/>
+                        <outlet property="offsetTextField" destination="Nfj-Cn-kFM" id="aXI-hP-Dwb"/>
+                        <outlet property="radiusTextField" destination="58x-MM-1eU" id="hcW-8g-DkE"/>
+                        <outlet property="searchTermTextField" destination="VDl-wG-7o2" id="Cdo-FE-vXg"/>
+                        <outlet property="searchYelpButton" destination="Kms-yo-SMc" id="pYq-rR-oQr"/>
+                        <outlet property="sortTypeSegmentedControl" destination="J4f-eO-sqc" id="1FK-d9-2YP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

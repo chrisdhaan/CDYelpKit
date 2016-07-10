@@ -90,7 +90,9 @@
         dict[@"term"] = [NSString stringWithFormat:@"%@", searchTerm];
     }
     
-    dict[@"limit"] = [NSString stringWithFormat:@"%ld", (long)limit];
+    if (limit > 0) {
+        dict[@"limit"] = [NSString stringWithFormat:@"%ld", (long)limit];
+    }
     
     if (offset > 0) {
         dict[@"offset"] = [NSString stringWithFormat:@"%ld", (long)offset];
@@ -104,7 +106,9 @@
         dict[@"category_filter"] = finalCategoriesString;
     }
     
-    dict[@"radius_filter"] = [NSString stringWithFormat:@"%ld", (long)radiusFilter];
+    if (radiusFilter > 0) {
+        dict[@"radius_filter"] = [NSString stringWithFormat:@"%ld", (long)radiusFilter];
+    }
     
     if (dealsFilter == true) {
         dict[@"deals_filter"] = @"1";

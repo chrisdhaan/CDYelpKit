@@ -10,6 +10,7 @@
 #import "CDYelpRequestLocationType.h"
 #import "CDYelpSortType.h"
 #import "CDYelpBusinessResponse.h"
+#import "CDYelpErrorResponse.h"
 #import "CDYelpSearchResponse.h"
 #import "CDYelpBusiness.h"
 #import "CDYelpDeal.h"

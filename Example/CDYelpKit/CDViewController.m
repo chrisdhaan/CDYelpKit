@@ -6,14 +6,19 @@
 //  Copyright (c) 2016 Christopher de Haan. All rights reserved.
 //
 
-#import <CDYelpKit/CDYelpKit.h>
+#import <CDYelpKit/CDYelpKit-umbrella.h>
+#import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
 #import "CDViewController.h"
+#import "CDMapKitAnnotation.h"
 
-@interface CDViewController () <UITextFieldDelegate>
+static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
+
+@interface CDViewController () <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *locationSegmentedControl;
 @property (nonatomic, weak) IBOutlet UITextField *searchTermTextField;
 @property (nonatomic, weak) IBOutlet UITextField *limitTextField;
 @property (nonatomic, weak) IBOutlet UITextField *offsetTextField;
@@ -27,6 +32,10 @@
 
 @implementation CDViewController {
     CDYelpKit *yelpKit;
+    
+    CLLocationManager *locationManager;
+    
+    NSMutableArray *mapAnnotations;
 }
 
 #pragma mark - Initialization Methods
@@ -36,10 +45,26 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // Configure MapView
+    [self.mapView setDelegate:self];
+    [self.mapView setMapType:MKMapTypeStandard];
+    [self.mapView setZoomEnabled:YES];
+    [self.mapView setScrollEnabled:YES];
+    
+    // Configure LocationManager
+    locationManager = [[CLLocationManager alloc] init];
+    [locationManager setDelegate:self];
+    [locationManager requestWhenInUseAuthorization];
+    [locationManager startUpdatingLocation];
+    
+    // Configure CDYelpKit
     yelpKit = [[CDYelpKit alloc] initWithConsumerKey:@"tPaCOcHvMIo_aIDL4jFqPw"
                                       consumerSecret:@"W_q1ACetRjYbxnawi7F2R3VPXyc"
                                                token:@"9L_Mjmot-lNHcF4UNfxn7M60OwKEAjVH"
                                          tokenSecret:@"J-lVxUaPiAq2qOiRWJ-o4Yck0oY"];
+    
+    mapAnnotations = [[NSMutableArray alloc] init];
+    [self resetMapView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,13 +73,91 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Button Methods
-
-- (IBAction)categoriesButtonPressed:(id)sender {
-    
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
-- (IBAction)searchYelpButtonPressed:(id)sender {
+#pragma mark - CLLocationManager Delegate Methods
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    NSLog(@"Error: %@", error);
+    
+    [locationManager stopUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    
+    CLLocation *location = [locations lastObject];
+    
+    [locationManager stopUpdatingLocation];
+    
+    [self.mapView setShowsUserLocation:YES];
+    
+    // Center mapView on users location
+    MKCoordinateRegion region = { {0.0, 0.0}, {0.0, 0.0} };
+    region.center.latitude = location.coordinate.latitude;
+    region.center.longitude = location.coordinate.longitude;
+    region.span.latitudeDelta = 0.005f;
+    region.span.longitudeDelta = 0.005f;
+    [self.mapView setRegion:region animated:YES];
+}
+
+#pragma mark - MKMapView Delegate Methods
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+    
+    // User location pin is not selectable
+    if ([view.annotation isKindOfClass:[MKUserLocation class]])
+        return;
+    
+    CDMapKitAnnotation *annotation = view.annotation;
+    
+    // Center map on pin
+    [mapView setCenterCoordinate:annotation.coordinate animated:YES];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+        return nil;
+    
+    MKPinAnnotationView *pinView = nil;
+    pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:defaultAnnotationID];
+    
+    if (pinView == nil) {
+        
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:defaultAnnotationID];
+        pinView.pinColor = MKPinAnnotationColorRed;
+        pinView.canShowCallout = YES;
+        pinView.animatesDrop = YES;
+    }
+    return pinView;
+}
+
+#pragma mark - Button Methods
+
+- (IBAction)locationSegmentedControlPressed:(UISegmentedControl *)sender {
+    MKCoordinateRegion region = { {0.0, 0.0}, {0.0, 0.0} };
+    region.center.latitude = self.mapView.userLocation.coordinate.latitude;
+    region.center.longitude = self.mapView.userLocation.coordinate.longitude;
+    
+    if (sender.selectedSegmentIndex == 0) {
+        // Center mapView on users location
+        region.span.latitudeDelta = 0.005f;
+        region.span.longitudeDelta = 0.005f;
+    } else {
+        // Zoom out to see mapView region
+        region.span.latitudeDelta = 0.015f;
+        region.span.longitudeDelta = 0.015f;
+    }
+    
+    [self.mapView setRegion:region animated:YES];
+}
+
+- (IBAction)categoriesButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)searchYelpButtonPressed:(UIButton *)sender {
     NSString *searchTerm = self.searchTermTextField.text;
     NSInteger limit = [self.limitTextField.text integerValue];
     NSInteger offset = [self.offsetTextField.text integerValue];
@@ -62,17 +165,81 @@
     NSArray *categories = @[];
     NSInteger radius = [self.radiusTextField.text integerValue];
     BOOL hasDeals = self.dealsSwitch.on;
-    
+    CDYelpRequestLocation *requestLocation;
+    if (self.locationSegmentedControl.selectedSegmentIndex == 0) {
+        requestLocation = [CDYelpRequestLocation requestLocationFromCurrentCurrentLocation:self.mapView.userLocation.location];
+    } else {
+        NSArray *mapViewBoundingBoxCoordinates = [self generateArrayForMapViewBoundingBox];
+        CDYelpBoundingBox *boundingBox = [CDYelpBoundingBox boundingBoxFromSouthWestLocation:mapViewBoundingBoxCoordinates[0] andNorthEastLocation:mapViewBoundingBoxCoordinates[1]];
+        requestLocation = [CDYelpRequestLocation requestLocationFromBoundingBox:boundingBox];
+    }
+        
+    // Query Yelp API for business results
     [yelpKit searchYelpBusinessesWithSearchTerm:searchTerm
                                       withLimit:limit
                                      withOffset:offset
                                    withSortType:sortType
-                                 withCategories:categories withRadiusFilter:radius
+                                 withCategories:categories
+                               withRadiusFilter:radius
                                 withDealsFilter:hasDeals
-                            withRequestLocation:nil completionBlock:^(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results) {
+                            withRequestLocation:requestLocation
+                                completionBlock:^(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results) {
                                 
-                                NSLog(@"%@", results);
+                                if (successful && results && results.count > 0) {
+                                    
+                                    [self populateMapWithYelpResults:results];
+                                }
                             }];
+}
+
+#pragma mark - Private Methods
+
+- (NSArray *)generateArrayForMapViewBoundingBox {
+    // Get bounding rect from mapView
+    MKMapRect mRect = self.mapView.visibleMapRect;
+    MKMapPoint swMapPoint = MKMapPointMake(mRect.origin.x, MKMapRectGetMaxY(mRect));
+    MKMapPoint neMapPoint = MKMapPointMake(MKMapRectGetMaxX(mRect), mRect.origin.y);
+    CLLocationCoordinate2D swCoord = MKCoordinateForMapPoint(swMapPoint);
+    CLLocation *locationOne = [[CLLocation alloc] initWithLatitude:swCoord.latitude longitude:swCoord.longitude];
+    CLLocationCoordinate2D neCoord = MKCoordinateForMapPoint(neMapPoint);
+    CLLocation *locationTwo = [[CLLocation alloc] initWithLatitude:neCoord.latitude longitude:neCoord.longitude];
+    
+    NSArray *locations = [[NSArray alloc] initWithObjects:locationOne, locationTwo, nil];
+    
+    return locations;
+}
+
+- (void)populateMapWithYelpResults:(NSArray *)results {
+    
+    // Clear mapView if previously populated
+    [self resetMapView];
+    
+    for (CDYelpBusiness *business in results) {
+        
+        // Drop new pin
+        CDMapKitAnnotation *annotation = [CDMapKitAnnotation annotationFromYelpBusiness:business];
+        [self.mapView addAnnotation:annotation];
+        
+        [mapAnnotations addObject:annotation];
+    }
+    
+    // Center mapView on first returned business
+    CDYelpBusiness *firstBusiness = results.firstObject;
+    [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake([firstBusiness.location.latitude doubleValue], [firstBusiness.location.longitude doubleValue]) animated:true];
+}
+
+- (void)resetMapView {
+    
+    id userLocation = [self.mapView userLocation];
+    NSMutableArray *pins = [[NSMutableArray alloc] initWithArray:[self.mapView annotations]];
+    if (userLocation != nil) {
+        // Avoid removing user location off the map
+        [pins removeObject:userLocation];
+    }
+    
+    [self.mapView removeAnnotations:pins];
+    
+    [mapAnnotations removeAllObjects];
 }
 
 @end

@@ -17,7 +17,7 @@
 
 @property (nonatomic, readwrite) CDYelpRequestLocationType requestLocationType;
 @property (nonatomic, readwrite) CLLocationCoordinate2D currentLocationCoordinate;
-@property (copy, nonatomic, readwrite) CDYelpBoundingBox *boundingBox;
+@property (nonatomic, readwrite) CDYelpBoundingBox *boundingBox;
 
 + (CDYelpRequestLocation *)requestLocationFromBoundingBox:(CDYelpBoundingBox *)boundingBox;
 + (CDYelpRequestLocation *)requestLocationFromCurrentCurrentLocation:(CLLocation *)currentLocation;

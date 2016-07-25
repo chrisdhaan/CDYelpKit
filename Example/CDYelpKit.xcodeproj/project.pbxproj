@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		22CE492C298B51D1A0ADBBD2 /* Pods_CDYelpKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D39FF651E69A9240F1BE65 /* Pods_CDYelpKit_Tests.framework */; };
+		5F6A72EC1D45D03F00033AC3 /* CDMapKitAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A72EB1D45D03F00033AC3 /* CDMapKitAnnotation.m */; };
+		5F6A72EE1D45D05E00033AC3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6A72ED1D45D05E00033AC3 /* CoreLocation.framework */; };
+		5F6A72F01D45D6C800033AC3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6A72EF1D45D6C800033AC3 /* Launch Screen.storyboard */; };
 		5F7BF71F1D2F0E4400C7BA65 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7BF71E1D2F0E4400C7BA65 /* MapKit.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -39,6 +42,10 @@
 /* Begin PBXFileReference section */
 		34E6B275E9363A416F7771A9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		40B1180DF178961EB89276A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5F6A72EA1D45D03F00033AC3 /* CDMapKitAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMapKitAnnotation.h; sourceTree = "<group>"; };
+		5F6A72EB1D45D03F00033AC3 /* CDMapKitAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMapKitAnnotation.m; sourceTree = "<group>"; };
+		5F6A72ED1D45D05E00033AC3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5F6A72EF1D45D6C800033AC3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5F7BF71E1D2F0E4400C7BA65 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6003F58A195388D20070C39A /* CDYelpKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDYelpKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				5F6A72EE1D45D05E00033AC3 /* CoreLocation.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				5F7BF71F1D2F0E4400C7BA65 /* MapKit.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
@@ -131,6 +139,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F6A72ED1D45D05E00033AC3 /* CoreLocation.framework */,
 				5F7BF71E1D2F0E4400C7BA65 /* MapKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
@@ -147,10 +156,13 @@
 			children = (
 				6003F59C195388D20070C39A /* CDAppDelegate.h */,
 				6003F59D195388D20070C39A /* CDAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CDViewController.h */,
 				6003F5A6195388D20070C39A /* CDViewController.m */,
+				5F6A72EA1D45D03F00033AC3 /* CDMapKitAnnotation.h */,
+				5F6A72EB1D45D03F00033AC3 /* CDMapKitAnnotation.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				5F6A72EF1D45D6C800033AC3 /* Launch Screen.storyboard */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for CDYelpKit";
@@ -282,6 +294,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				5F6A72F01D45D6C800033AC3 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +410,7 @@
 				6003F59E195388D20070C39A /* CDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				5F6A72EC1D45D03F00033AC3 /* CDMapKitAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,13 +530,14 @@
 			baseConfigurationReference = 87239846F9539804EE075B86 /* Pods-CDYelpKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDYelpKit/CDYelpKit-Prefix.pch";
 				INFOPLIST_FILE = "CDYelpKit/CDYelpKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,13 +547,14 @@
 			baseConfigurationReference = BEE8EB51C9A7DC1E7799760E /* Pods-CDYelpKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDYelpKit/CDYelpKit-Prefix.pch";
 				INFOPLIST_FILE = "CDYelpKit/CDYelpKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

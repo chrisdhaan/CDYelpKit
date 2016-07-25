@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9B234DC0EB38BD38904D0B1D54DF52888E3DBC38",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "66CC85C99077DC4E448F13BECA4655476518F704" : 0,
+    "9B234DC0EB38BD38904D0B1D54DF52888E3DBC38" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "10697D76-EEE0-4122-AC29-7CCA18377EE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "66CC85C99077DC4E448F13BECA4655476518F704" : "intoxication-calculation\/",
+    "9B234DC0EB38BD38904D0B1D54DF52888E3DBC38" : "CDYelpKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CDYelpKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/CDYelpKit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/meowingrooster\/intoxication-calculation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "66CC85C99077DC4E448F13BECA4655476518F704"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chrisdhaan\/CDYelpKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B234DC0EB38BD38904D0B1D54DF52888E3DBC38"
+    }
+  ]
+}

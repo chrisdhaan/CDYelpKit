@@ -27,8 +27,8 @@
     return @{
              @"business/**": [CDYelpBusinessResponse class],
              @"search": @{
-                     @"200": [CDYelpSearchResponse class],
-                     @"400": [CDYelpErrorResponse class]
+                     @"400": [CDYelpErrorResponse class],
+                     @"*": [CDYelpSearchResponse class]
                      }
              };
     
@@ -38,8 +38,8 @@
     return @{
              @"business/**": [CDYelpDetailedBusiness class],
              @"search": @{
-                     @"200": [CDYelpBusiness class],
-                     @"400": [CDYelpError class]
+                     @"400": [CDYelpError class],
+                     @"*": [CDYelpBusiness class]
                      }
              };
 }

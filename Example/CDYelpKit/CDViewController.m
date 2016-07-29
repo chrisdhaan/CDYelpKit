@@ -31,7 +31,7 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
 @end
 
 @implementation CDViewController {
-    CDYelpKit *yelpKit;
+    CDYelpKitManager *yelpKitManager;
     
     CLLocationManager *locationManager;
     
@@ -58,7 +58,7 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
     [locationManager startUpdatingLocation];
     
     // Configure CDYelpKit
-    yelpKit = [[CDYelpKit alloc] initWithConsumerKey:@"tPaCOcHvMIo_aIDL4jFqPw"
+    yelpKitManager = [[CDYelpKitManager alloc] initWithConsumerKey:@"tPaCOcHvMIo_aIDL4jFqPw"
                                       consumerSecret:@"W_q1ACetRjYbxnawi7F2R3VPXyc"
                                                token:@"9L_Mjmot-lNHcF4UNfxn7M60OwKEAjVH"
                                          tokenSecret:@"J-lVxUaPiAq2qOiRWJ-o4Yck0oY"];
@@ -175,15 +175,15 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
     }
         
     // Query Yelp API for business results
-    [yelpKit searchYelpBusinessesWithSearchTerm:searchTerm
-                                      withLimit:limit
-                                     withOffset:offset
-                                   withSortType:sortType
-                                 withCategories:categories
-                               withRadiusFilter:radius
+    [yelpKitManager searchYelpBusinessesWithSearchTerm:searchTerm
+                                             withLimit:limit
+                                            withOffset:offset
+                                          withSortType:sortType
+                                        withCategories:categories
+                                      withRadiusFilter:radius
                                 withDealsFilter:hasDeals
-                            withRequestLocation:requestLocation
-                                completionBlock:^(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results) {
+                                   withRequestLocation:requestLocation
+                                       completionBlock:^(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results) {
                                 
                                 if (successful && results && results.count > 0) {
                                     

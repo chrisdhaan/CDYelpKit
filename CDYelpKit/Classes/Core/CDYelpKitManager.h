@@ -12,7 +12,7 @@
 
 @class CDYelpAPIClient, CDYelpDetailedBusiness, CDYelpRequestLocation;
 
-@interface CDYelpKit : NSObject
+@interface CDYelpKitManager : NSObject
 
 @property (strong, nonatomic) CDYelpAPIClient * _Nonnull yelpApiClient;
 

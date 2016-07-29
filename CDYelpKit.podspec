@@ -8,12 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CDYelpKit'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'An extensive Objective C wrapper for the Yelp API.'
   s.description      = <<-DESC
 This Objective C wrapper covers all possible network endpoints and responses for the Yelp developers API.
                        DESC
-
   s.homepage         = 'https://github.com/chrisdhaan/CDYelpKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Christopher de Haan' => 'chrisdhaan@gmail.com' }
@@ -21,12 +20,17 @@ This Objective C wrapper covers all possible network endpoints and responses for
   s.social_media_url = 'https://twitter.com/dehaan_solo'
 
   s.ios.deployment_target = '8.0'
+  s.requires_arc = true
 
-  s.source_files = 'CDYelpKit/Classes/{Core,Request,Response}/{Model,**}/**/*.{h,m}'
+  s.subspec 'Core' do |core|
+    core.source_files = 'CDYelpKit/Classes/Core/{Request,Response,**}/{Model,**}/**/*.{h,m}'
+    core.frameworks = 'CoreLocation'
+    core.dependency 'Overcoat', '~> 4.0.0-beta.2'
+    core.dependency 'CDYelpKit/OAuth'
+  end
 
-# s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'CoreLocation'
-  s.dependency 'Overcoat', '~> 4.0.0-beta.2'
-  s.dependency 'BDBOAuth1Manager', '~> 2.0.0'
-
+  s.subspec 'OAuth' do |oauth|
+    oauth.source_files = 'CDYelpKit/Classes/OAuth/**/*.{h,m}'
+    oauth.dependency 'BDBOAuth1Manager', '~> 2.0.0'
+  end
 end

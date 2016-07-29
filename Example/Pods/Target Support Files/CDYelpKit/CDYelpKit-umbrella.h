@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 
 #import "CDYelpAPIClient.h"
-#import "CDYelpKit.h"
+#import "CDYelpKitManager.h"
 #import "CDYelpModels.h"
 #import "CDYelpResponses.h"
 #import "CDYelpQueryParams.h"
@@ -22,6 +22,7 @@
 #import "CDYelpLocation.h"
 #import "CDYelpReview.h"
 #import "CDYelpUser.h"
+#import "CDYelpOAuthManager.h"
 
 FOUNDATION_EXPORT double CDYelpKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char CDYelpKitVersionString[];

@@ -8,14 +8,13 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-#import "CDYelpKit.h"
+#import "CDYelpKitManager.h"
 
 #import "CDYelpAPIClient.h"
-#import "CDYelpDetailedBusiness.h"
 #import "CDYelpModels.h"
 #import "CDYelpResponses.h"
 
-@implementation CDYelpKit
+@implementation CDYelpKitManager
 
 static NSString *YelpEndpoint = @"https://api.yelp.com/v2/";
 

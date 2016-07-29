@@ -7,177 +7,179 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0140AAEECEE0064CC3EBD39706FF5522 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = D66694862AD09850AB8DC401052D3AB7 /* EXTScope.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		03F83D1F5D6D978399BE348B2FDB00F7 /* NSArray+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A094EDCC9C6574E6F478EFB509311E48 /* NSArray+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0698F1C1C614D0046E2C589C09C1DD5C /* CDYelpLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = B427EA4AF47B52FC93E6346B623733BE /* CDYelpLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		078D33E1A389ECBA04E79C86EF416C1D /* CDYelpGiftCertificate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC94001C72159B06B354D3DB58165543 /* CDYelpGiftCertificate.m */; };
-		0C8BE46385D35BC7048C1703BA631C58 /* CDYelpDealOption.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3582A2A2F2EEA3CC951D4237444D /* CDYelpDealOption.m */; };
-		0EA3B75B2F6F66869CE241C7A8A01300 /* CDYelpKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F53788FA8CACDC8D0ECFD823120A7A34 /* CDYelpKit.m */; };
+		00826980D28DD4042EC5C1290C290F7D /* CDYelpDetailedBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = D8786187CF41FA4B8BF241243FA978B7 /* CDYelpDetailedBusiness.m */; };
+		0119349E26EC939B7E7228F8052DAAEA /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B1CAAB51459340CA4737420AD22D51C /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		02283ACF42C6854ED23A8E3116EC9E1A /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F98B7A8CA977DE1D9B980BCD7A62EE9 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		02638BFD8B81E1DEA0BB45AFB888E0E0 /* CDYelpDetailedBusiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9A1739AC3FF0683788B0000B61D193 /* CDYelpDetailedBusiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03D93043919B04678B22B8C47AC69800 /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 708DA890485A1B8B0DA42A7EF99EF337 /* NSDictionary+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		04987A1159FD4A50E463D5FA5C7A99B4 /* CDYelpDeal.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AE46469ED8F0597CAC36069722D2DD /* CDYelpDeal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05541F833E0DACB5641BCAE99F921B8A /* CDYelpGiftCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = A62702BED32D8CEDE97A2B79A9A8D7C4 /* CDYelpGiftCertificate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0800FF4A106C7E538B44DA1C5FDFFDED /* CDYelpSearchResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC0AEB08481891F185D5F74C7B58DE /* CDYelpSearchResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08877032EB7BC082A6CCC8BBBD0C2D94 /* OVCHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6721E6B400210AB11428C804FBFFC893 /* OVCHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D97FC01B24A19B86183C7A312C2E9D /* CDYelpRequestLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D63B22446B7F87B4B441B3E6A4F8829 /* CDYelpRequestLocation.m */; };
+		0BC72E70D7B999B18C278302B693B008 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F891D570B2F92D747CC3275FF554DD /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0C67EDCF733145BD37EEF08C2BD045DC /* NSError+OVCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A80BE91D1D26B90A363B848497C6BE /* NSError+OVCResponse.m */; };
+		0DD6116467F969FA528ADFD90198B7AE /* Overcoat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE42688CAC93B26C634D79F83F940113 /* Overcoat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DF0EC0BECF2D15C2655A7328D378AB9 /* Mantle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF65FAFE570958856BD46F0AED8DBF /* Mantle-dummy.m */; };
 		0F2A81C94E5A44BD51BBCE2CBAB4C164 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B416C1B785C6F91E3125B376500845 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11D1AF3A3173B8B969C562CBBDBF7E80 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01484899E9289418A041857BCAD73967 /* Mantle.framework */; };
+		0F924D73417283F04114A6E6404036DA /* NSDictionary+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E21E52DF5FEDE248CE29022C8EF97F06 /* NSDictionary+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1290ED550D3C3DDE8BD031662E857607 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B709ED1BF5CAAA907F61DE6D222EB32 /* Security.framework */; };
-		136F16D6947455DEEC3FE9CDBB704E9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
-		1788D6E2990B64A4EF3FFC11914FE8FC /* CDYelpDetailedBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BBCAA403E766F6811E579414052964 /* CDYelpDetailedBusiness.m */; };
-		1B39182A841D9EEC5BEC90A8007BBDD3 /* CDYelpUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6424AA07FCBFD8153F27D2AF62D14BB /* CDYelpUser.m */; };
-		1E88A79D1169D6DDFD90F14E41A19E98 /* CDYelpAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A87695047C7BBD9AD97C633475257F1 /* CDYelpAPIClient.m */; };
-		216F85F1713FEDA10D423AD6D38D6985 /* Overcoat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9862936697831930912422F75E587F69 /* Overcoat-dummy.m */; };
-		224DC055A0000573C0C3FC11541C7DB8 /* CDYelpReview.m in Sources */ = {isa = PBXBuildFile; fileRef = D294FA7DBF6E18D4E769F58049423A6A /* CDYelpReview.m */; };
-		22A170E809EFEE70211539C19ED6E7FA /* OVCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 062BAB6F761560441460375BC9D50325 /* OVCResponse.m */; };
-		22BA84C504F0E7F7A37B4F107E093454 /* MTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDE92BDB3C8251BC51BAA77AF6DA951 /* MTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		279D63E62EEF5C1EF2A42383FB9AE5C2 /* CDYelpDetailedBusiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDE9692BF62968915914269540E0274 /* CDYelpDetailedBusiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B04C6147384A4DD4EC962294FDFF83F /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718D1D0B889074F398337760D76BD53 /* AFNetworking.framework */; };
+		13DCA558E098B7D18E55379AC9DB0DA7 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718D1D0B889074F398337760D76BD53 /* AFNetworking.framework */; };
+		1917962FEDAAC461563CD6F783D39083 /* BDBOAuth1Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D8BDA0C75D92D90CDD6912F573D544 /* BDBOAuth1Manager.framework */; };
+		19A129EC82C09C322D9D77942289B38C /* OVCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E64CF7401275661722EF91955B740827 /* OVCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B414C478F266690F65637460A9A3F9C /* CDYelpOAuthManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3062A4266F2418E14F24FFFB57F006 /* CDYelpOAuthManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D484AB50FE915DE22D681B4D57DAA80 /* CDYelpRequestLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D153B904942274E3901D868E4CA52D /* CDYelpRequestLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E39BCA80E0E6AA46BC4FFE3D52E7B79 /* CDYelpResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 9208A36399A2966624FDFC5177A8B44E /* CDYelpResponses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF20C958452DDED764534D5D6AA6615 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6038DE0BD9C37D9696E6DFA912A83EAF /* NSDictionary+MTLJSONKeyPath.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		24416378D77A5FC48456290E6DFC0028 /* MTLJSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9D7A0CC1F81E4A32203C5C19EAF7E3 /* MTLJSONAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2799F84E6EADE232018ADD456F9108CA /* MTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2262719D8AFE7AD47EA1A6726DD2000C /* MTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2816F8DBACB8F23A16419A9F533A7FCE /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5224E8DBCDE91342A7F617A47F4D56 /* MTLTransformerErrorHandling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2B7B0981B595B6CCC5F03B2FE2EB8CC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
+		2C8ACFC4E362B19C239737ED6D0F692B /* CDYelpQueryParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B1AE00C0EC02941848AF3E9F6AF3B /* CDYelpQueryParams.m */; };
 		2CAEBDE79BE071CC58FED130AAD82DDB /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE49CBE0481DB8C65C161B107CC3473 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EF503D59FAD0FF8D09FD202911F8BED /* Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C1F4F5EBCD6254402DEBA8BEEEA93A /* Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F566E07A5F5D632F6C956A873AECDFD /* CDYelpGiftCertificateOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D6324B065AAAF210882B068A10C3C6 /* CDYelpGiftCertificateOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3097B7367801D180A74F9162DACDCFEC /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C990F16AD419493BE5666FEA66C3FC6F /* EXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		306588964DCF068BA9836C0D11670597 /* CDYelpOAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB714A2128EF337E54971E346121161 /* CDYelpOAuthManager.m */; };
+		335E7BDF662CDA9FD751EB80E0FD4E69 /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C060F8AD44F6AEEC4D825F9BD8CB4B2 /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3450959BFB27DFED30C2C85D514D2C11 /* CDYelpReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 726D7E7DFD8B49197427B77A69C08DAA /* CDYelpReview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34A60FD4DBE2BE391604449D2C7FDE69 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB9C4D436C6CE2479BED0EF9F59D174 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34D8C19DE54A98940D062DD9C7A805AF /* CDYelpError.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F67A7AC37CDBDF976036F7EAD584AE /* CDYelpError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3593D3F921665A557BE494479F309E97 /* CDYelpDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 68210ACC89B00D3D2ADD2CEA295F8099 /* CDYelpDeal.m */; };
+		363625D8A4F4C3B4B04CA7659538C95E /* CDYelpBusinessResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BD44104F24F4BB0E12BFDD83B069FFB5 /* CDYelpBusinessResponse.m */; };
 		365AD6C6E0C928334C299CAAB70A62B2 /* NSString+BDBOAuth1Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4B800F13FD8BDC955161C991D630E03 /* NSString+BDBOAuth1Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36FC04C9ACB0D91C4F6C69623BAA719A /* CDYelpUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84211549293C9B7798EDEBB1FB86241F /* CDYelpUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37871100E1D1D21B13C6094B57ABEFA9 /* CDYelpError.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E30BD409E46AA04726B1E5F1565758 /* CDYelpError.m */; };
+		3AFBB80D9E4CF9A99DDD2670C60EADF2 /* CDYelpKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58603121C29691A26B79F6EB959C1560 /* CDYelpKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D7C4D74BD6535ECB1AA210BFFA46653 /* Pods-CDYelpKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E24DAE996F58CBDA18DE01116884D85 /* Pods-CDYelpKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E225CAA3184032093DD4652D876CA31 /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 708DA890485A1B8B0DA42A7EF99EF337 /* NSDictionary+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3F31E3476DA3433741C942EA257D5360 /* OVCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E64CF7401275661722EF91955B740827 /* OVCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40490EDFC14C43511B04991FCCE1FB66 /* BDBOAuth1Manager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 841499DEB34CE287309CD885D2755817 /* BDBOAuth1Manager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40BA37477F641617108B978715A2CB1C /* CDYelpResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 27726EC0892FEE906C263E82C2D87093 /* CDYelpResponses.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4319D5BDB716CDB638884F53F2B82A0C /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718D1D0B889074F398337760D76BD53 /* AFNetworking.framework */; };
-		45919FB151CCCE7705EB86F765A44499 /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F6851D38A21CD467A1190CB29AB4CAE6 /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		469AE6D979CE4C00E46104811456F8BF /* Overcoat.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B8644F0498BD2179599D412696D999 /* Overcoat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42C11BFDC19D4369406EE8292EBCE6E2 /* CDYelpRequestLocationType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA8C76A9043F4DF488A982F0FB56A2A /* CDYelpRequestLocationType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		453877B10A5C290898C149397227F072 /* Overcoat.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B8644F0498BD2179599D412696D999 /* Overcoat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4783EE23FE67A001E805C7AF2FF09932 /* OVCURLMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A890C583BA44CD109BF3C1BDBB6DF06A /* OVCURLMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47C8E80C154787603985515F42422A2E /* OVCModelResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B56E10EF68A0F407C72B0485B277314 /* OVCModelResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47DCC2EB85FC0DF38EA5832587D720AF /* CDYelpKitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE693BB9BC364BC120E3E4DB1405F5F /* CDYelpKitManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47DFB27DF6858F39456E1716B780AEA6 /* BDBOAuth1SessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF850DE90B2CCBE1AC38800391D0FFF /* BDBOAuth1SessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B2D1E3E1575EFFFC441E526ABBAECBE /* NSValueTransformer+MTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 793913FAECB55CB22C5717CAA3619926 /* NSValueTransformer+MTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CC3510BFB9F75647908ABB745B4D2AF /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = D91BBDF8C85EFAFD313D54887E138B24 /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		496CECA627E27409BC7866FBB3141309 /* CDYelpBusiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A13C5325B1835C2999F2E2E089674D /* CDYelpBusiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A96C64EBFFE7C63AE30BF5E6C2F6A4F /* CDYelpKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4B52E76743048F12468F5380348E0E /* CDYelpKitManager.m */; };
 		4D4442CE81D0DF31A2AE00106FF2B4F4 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C1E592599D3B20079E3F12C62E3B4 /* AFNetworkReachabilityManager.m */; };
-		4DD66284096740C1A0C0268A4F8F0F10 /* CDYelpError.m in Sources */ = {isa = PBXBuildFile; fileRef = 75948D6F4156C2A099DBE2A6316918D1 /* CDYelpError.m */; };
-		503CE204709F2DC533F4F823AA64EC15 /* CDYelpBoundingBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0441242293D5A41E29C83A03AB954D4E /* CDYelpBoundingBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5135403B2009EDFF62A83DFAA81CFAFD /* CDYelpQueryParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1051A1058C53CC8C2E1D5E0705C60120 /* CDYelpQueryParams.m */; };
-		530C4BA0FC973BD356AEE977BD53E3AB /* MTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2262719D8AFE7AD47EA1A6726DD2000C /* MTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		559FEAD49010647D1FBFCEEDB90754A9 /* Overcoat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836A8EAA8B59002FEF36E5A25256419C /* Overcoat.framework */; };
-		567E3A208E481C074112F235FD975D12 /* Mantle.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A45B26900B820485CED13B8BF93F90 /* Mantle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DDC4DA3C5CD3C5A4641EE62F8CA133B /* CDYelpQueryParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F53EBE946CF355B4DA7C5DD3BE36A318 /* CDYelpQueryParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		527C399FB7768935563FF6342B01E4F6 /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A2B49AA08DEE586751C11E0EA36207 /* MTLValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5297AD1259002F735C4165E4799E0119 /* CDYelpSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 742BA1FA8A291F135DDF80A0C604BF96 /* CDYelpSearchResponse.m */; };
+		54A0DCBFD15D02C3EB69592F286789AD /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB855B5DD1C8CE9CA62E89835B6C94D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		55498AEC28511E820461A77A50620FB0 /* NSError+MTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = B045AC340A525AF1F5ABD0E6864F5C01 /* NSError+MTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55F7D55356CE1379BC3123E0083270B7 /* CDYelpBoundingBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC61E2428C757D01E8FB24768E7981D /* CDYelpBoundingBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		572F88C50F1E28CAD59D9224F9A55704 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F9F8C0E030C66F4D9179A3B2763DC8 /* SystemConfiguration.framework */; };
-		5763C0B93E7582A73E010770BCD6F5C0 /* OVCUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4D8F01789B3D9E33CF66059C795391 /* OVCUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5770161524F335D9B5B58A38B81E687E /* NSDictionary+Overcoat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66CD8756E762AB54B51E89F6728E9F /* NSDictionary+Overcoat.m */; };
-		5ADFBF264B542E348AFE6C81AB279BCD /* NSObject+MTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 68C987B409F110BB70C03B1B50455D98 /* NSObject+MTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B7062E1D478798ADCC2EBDC3E8A3317 /* Overcoat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE42688CAC93B26C634D79F83F940113 /* Overcoat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DF2189E4A6AFEF508F3CF10213018A5 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01484899E9289418A041857BCAD73967 /* Mantle.framework */; };
-		5E61F4E2F307739F7FAE25720B66DDA7 /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5224E8DBCDE91342A7F617A47F4D56 /* MTLTransformerErrorHandling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		607FAD6EA5C65AA09BA4DD2C46B71A13 /* CDYelpRequestLocationType.h in Headers */ = {isa = PBXBuildFile; fileRef = B2411FBC8601C2E827FEF6427FAD8E12 /* CDYelpRequestLocationType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5778B7B9CB209844B984D7DC03E915F6 /* CDYelpBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F26FF1B0C3AD386F5D1D7316076C33C /* CDYelpBoundingBox.m */; };
+		591812319A84DBC9868AA6A5A885DFC8 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01484899E9289418A041857BCAD73967 /* Mantle.framework */; };
+		59A935912DA05D6B4B2D1E5A69335722 /* MTLModel+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9AFEA401CEC74BE5BC634B44517E10 /* MTLModel+NSCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A205A9CD20928B4E0C500B7C26F0A9E /* CDYelpUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C3C25679D3FE59A63E4C97C6691A3F /* CDYelpUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C598C8AB651E4D7EC4D7FF19E980DFE /* NSError+OVCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFBCA551D626A08AF2669F2CD06B785 /* NSError+OVCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D570CFB2187E866E729DFBC3A61182A /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01484899E9289418A041857BCAD73967 /* Mantle.framework */; };
+		5E0624DA9DCBC7106A94A369B55158B8 /* CDYelpGiftCertificateOption.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F11B30764CA303B9E3C0F48705AB5 /* CDYelpGiftCertificateOption.m */; };
+		5FE4A27451E33799A9BB885F699ABC63 /* Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C1F4F5EBCD6254402DEBA8BEEEA93A /* Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623C2E30CE13448630C472A753212B68 /* CDYelpModels.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCE421CF04F94DCD3B2956230433942 /* CDYelpModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		624BB905042ACE14AA07562671422DA1 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E003C2D3AE8E046C6F149D186DD216F7 /* AFURLResponseSerialization.m */; };
-		66112BBB720FB09C2BB2E17C43F9BE48 /* CDYelpRequestLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F19F047680ACB553EE1990F69EB3ED /* CDYelpRequestLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67EA8B68713319E19D30FD49EF120BE8 /* CDYelpKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DA63EEBFACB7EB8ACE44F7D8CD97B /* CDYelpKit-dummy.m */; };
-		67ED624CCDD9817B3B452BA0F2B40AC8 /* CDYelpSortType.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D7E15E4FA869EB82DD1AEE7179F70C /* CDYelpSortType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6281B20F3FAF07F23F0F47A00FF0C6B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
+		6326E53F6AAB94822C833B04D76EED72 /* OVCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 062BAB6F761560441460375BC9D50325 /* OVCResponse.m */; };
+		65033D7CD7546A57C11464B64EA06A4A /* CDYelpBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 5842C0B646FA38FCC99A4F88E61229BE /* CDYelpBusiness.m */; };
+		675FCD407B62704CE6B0D4AB3DD953BB /* Overcoat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836A8EAA8B59002FEF36E5A25256419C /* Overcoat.framework */; };
 		6B4BB3A91B1D00600D62B747799E5B6C /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DB8328299751C62DC5AB59CBAF9927 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B5412F81396B13FFCF5A3DD43E608A5 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F98B7A8CA977DE1D9B980BCD7A62EE9 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6B9DA6749CCED27DC888FE8925B9C0DE /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C060F8AD44F6AEEC4D825F9BD8CB4B2 /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6C2994A4D7952183F9259B2057183AE9 /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 108E1F172924A5678F2E5FE4A45F99B6 /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E1538C1B3360C36E3A31EBBC9837038 /* NSDictionary+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E21E52DF5FEDE248CE29022C8EF97F06 /* NSDictionary+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EBE5308D7981C3A8D5B83D064CE0F9D /* CDYelpSearchResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EAD2E1A4D9EA8A6E3DF620D7F190E9 /* CDYelpSearchResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FD9CA60E010404F9EC774B6B39079B9 /* CDYelpModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 66EE407A0213A64EF9F79FF4828DDCC4 /* CDYelpModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B7AFB7415FE0A473BB1B0D8C6238657 /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4119376B04359F0C98ABA84A7E7CF4 /* NSObject+MTLComparisonAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		709A4CB85F8A0247F85B0E77AE70DF1B /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABCC6E82F6BCF9166E9AB135AE63D1E /* NSValueTransformer+MTLInversionAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7206CA925932FA5A98CADF6E5673373A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA481A2295611EB8A27BA486220064F2 /* MobileCoreServices.framework */; };
-		73CABE7E8D5B7370753939DE5EA6ECEA /* NSError+OVCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFBCA551D626A08AF2669F2CD06B785 /* NSError+OVCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		751CBE6065B0DFE2C553F9886402C35A /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB855B5DD1C8CE9CA62E89835B6C94D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		75AAA7B94918A3E2F8B4999E0AAF657A /* BDBOAuth1Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D8BDA0C75D92D90CDD6912F573D544 /* BDBOAuth1Manager.framework */; };
-		762E015131D3C68C9F6CFDC1B8656423 /* CDYelpBusinessResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CD948D02B46B622951F38A43973D8157 /* CDYelpBusinessResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76FF9AB41150E14B72B2CB0D9795E995 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F891D570B2F92D747CC3275FF554DD /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		78F9FD3F0C8968F882D2DA0A49B51273 /* CDYelpQueryParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA08627E5EEDA88D47E67CDE108FF69 /* CDYelpQueryParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79158DA4287A98F056D09235381054EE /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A616FF918CE26AC6C17839B7032D59CF /* MTLModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		773582898B796FC871DA97FD3D507B52 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = D91BBDF8C85EFAFD313D54887E138B24 /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		78AA901D418ED4A3AB3991DF2177EB80 /* MTLTransformerErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D1DDE4250E28F127EAC41705D8F618 /* MTLTransformerErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79676B45BA41942876088CEED6D74303 /* OVCUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4D8F01789B3D9E33CF66059C795391 /* OVCUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A3F1160B70B1AB1A5E6B7DABC712ED1 /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C990F16AD419493BE5666FEA66C3FC6F /* EXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7AF9742A41224EE780F7B5AD3C386852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
-		7C68C793F9ED6918F72E786F4DF3ECDE /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = F54F0817E73CD60EB15FC201D1FD3CFF /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7D84DBFF9D0C446B9940B5163038BA5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
-		7DDC4FFA352BADAACC1EE0AB43705048 /* CDYelpDeal.h in Headers */ = {isa = PBXBuildFile; fileRef = 154DD879F852D1D5E5ACD79E51D910C7 /* CDYelpDeal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D44B94F2A7FF3193C50E37B363D4862 /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = F54F0817E73CD60EB15FC201D1FD3CFF /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		81A95371375472724F3288A2544A2F9F /* BDBOAuth1RequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BE45E256B53C263970F088F1E1C27 /* BDBOAuth1RequestSerializer.m */; };
-		840F1A3B098E91733FA9213D86B7123E /* CDYelpGiftCertificateOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B590DE8B62A3A9467ADB8CCBE91B8 /* CDYelpGiftCertificateOption.m */; };
+		8321CA52560FDAB7497ADF151DAAF7C4 /* CDYelpSortType.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A818A30B53B186705F8B3568013D5F /* CDYelpSortType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		868FD08F555DE94E860B89C896068AFA /* NSString+BDBOAuth1Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF02C35BBECD220EA66DB725B1143C /* NSString+BDBOAuth1Manager.m */; };
-		88460523FA618F74E7776B4F454361AF /* MTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FB54DA1FF26D94D1D28363A6ECB196 /* MTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		894DB1FA8768149F09CB21159D35D660 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43B71BACFA8F78D3BA7458E4E453D5 /* AFURLRequestSerialization.m */; };
 		89546ABB3A45A7274C98E8C53371D788 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B796A3750E7A3986632E5A28894700 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8ACF72C8C4861159E53B3786C483C8DC /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A2B49AA08DEE586751C11E0EA36207 /* MTLValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8EA2F9F3F88E856B11BF66115140F7F1 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6038DE0BD9C37D9696E6DFA912A83EAF /* NSDictionary+MTLJSONKeyPath.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8F2533592320F61C099984D31F597418 /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D2F7DC9A84167C56749AFA3A2479F5 /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BEAEBE2054F4F018DFDA0E1CC91A740 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
+		8C2C70D8D38D47BCE5D23F3633535DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
+		91CB178D69E3A480B7C23F007BAF1DD7 /* NSArray+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A094EDCC9C6574E6F478EFB509311E48 /* NSArray+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92B982501000406DE107A900B865FE24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
-		95FD574E242548BCEC80F0D94478B160 /* OVCHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6721E6B400210AB11428C804FBFFC893 /* OVCHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96F7EF4DB36E0EA1E860CBCAC7131298 /* NSError+MTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = B045AC340A525AF1F5ABD0E6864F5C01 /* NSError+MTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932800EF9AB6D3C3FF923E7F3D4E8223 /* OVCHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FFA0623BA56BD9EC8230A88D5706FF /* OVCHTTPSessionManager.m */; };
+		93DEFF0113E9590B28FF7DB0AD52418A /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = D66694862AD09850AB8DC401052D3AB7 /* EXTScope.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		967B4DA863D2EF1D07E99E431654B339 /* CDYelpAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8BF683A6E9B8FF17FE888DB7FDF0E /* CDYelpAPIClient.m */; };
+		96CA64D1FCA07D13DC2C87961456953B /* NSDictionary+Overcoat.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD431BD3384987ABA65CE19820EFC77 /* NSDictionary+Overcoat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97C66DA139490A24870AEF4799DF07FC /* BDBOAuth1Manager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBBFA136F7B50B2BBA91C491D7CFE31 /* BDBOAuth1Manager-dummy.m */; };
-		98EA6A998E077D26F5EF86BD88C8097A /* CDYelpLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DCB1FD4BB8DFAA6A6EB60107183EC0 /* CDYelpLocation.m */; };
 		99DE545A2FF23F9E86F5554242D8513A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B46573576B196F0E3EBCE1A0FCC9B715 /* AFURLSessionManager.m */; };
-		99E34239B9E17A23DC8AA0A23A92E98B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7311FD5AB236543259854D10D9B27310 /* CoreLocation.framework */; };
+		9ADAC6AD045D884EFADE22A6C55D474F /* CDYelpLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = EECEEA6FE224566CFDC68AD4974C8EEB /* CDYelpLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B2B0E3C8B32528D0209D0301672C240 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DE4BF88B2C00880D0C6CBBF51239D5 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C52F1B2AE044B21810B42F1E17DB4DD /* CDYelpBusinessResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0C99F74757A917700953EBA8C20C5A /* CDYelpBusinessResponse.m */; };
-		9D63B04E10E5E72959EDBB32D89F57BB /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4119376B04359F0C98ABA84A7E7CF4 /* NSObject+MTLComparisonAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A2356071F0DA0AB291F91526EDAF50E7 /* MTLModel+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9AFEA401CEC74BE5BC634B44517E10 /* MTLModel+NSCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D87FA77F35BF22EB87E2F467782440D /* MTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDE92BDB3C8251BC51BAA77AF6DA951 /* MTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A205A648C8CD470ECF2E51CF8ECB23C4 /* Mantle.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A45B26900B820485CED13B8BF93F90 /* Mantle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2F6D8BABD5F73168E187EC4F5585F68 /* NSDictionary+BDBOAuth1Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE9AAE2A883A78224EEE8D1B5701411 /* NSDictionary+BDBOAuth1Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A373C1FD5A1A29EB0D2FD253C3C23CFB /* CDYelpKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE8ADE3463379BDC012E11E96C27C4 /* CDYelpKit-dummy.m */; };
+		A5F06C6406526E430AE8D704AC9B9D66 /* NSValueTransformer+MTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 793913FAECB55CB22C5717CAA3619926 /* NSValueTransformer+MTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A63F9BD08B81BEE6326BB86A5FA5E05A /* Pods-CDYelpKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DDC90B3A4122B8CBCEE036DFC17660 /* Pods-CDYelpKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7445FAE84D07E5413FEDFCBB9035DC5 /* CDYelpBusiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 608545342A8CBE7382D1A8C9D890F3E0 /* CDYelpBusiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8D12EAF63BAC1A1B57225554C7714F2 /* CDYelpKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EF61CB5EEDB8871EA87D19C56F66FE /* CDYelpKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC8DEC369659FD52298592FF4C175119 /* CDYelpAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 552688B81B382B6E8C845DF8AC00F52A /* CDYelpAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A99E7DD354017DEA6C274FE40FF6463D /* OVCModelResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F4E3C77617943B270659585B3E5A91 /* OVCModelResponseSerializer.m */; };
+		AB0E113A255FE603497CF2AEC8F346F8 /* CDYelpErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 490D1E00F7DE6DEDCE07545888BF3AFE /* CDYelpErrorResponse.m */; };
+		AB25A94E8F309EE375C0656EBC9838CC /* CDYelpDealOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 894481338E56AE76C0F7786C02D0AEEA /* CDYelpDealOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABBA90C4FD54066AF4E416616B421988 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7311FD5AB236543259854D10D9B27310 /* CoreLocation.framework */; };
+		ABC8B7F247506ACEBEF871F66F250358 /* CDYelpBusinessResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AFECA6295FBE6759F7C432068D4C6347 /* CDYelpBusinessResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACEDF974CC3B8B70642690050FFAB27E /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE712F3CFD10B2FD1755ADD884482EC /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0C9E7CB074B5D27550BD13472BC88F9 /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F6851D38A21CD467A1190CB29AB4CAE6 /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B103EFE7A6EE2A8C83A8A27C13D90216 /* CDYelpGiftCertificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8825123EFD76C2FC1E4D01F3B3B72 /* CDYelpGiftCertificate.m */; };
 		B34AD17CF3493CEF2CD2F1F5A097B06D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
-		B4E9F0C6556DA33A83A495ECECA0F528 /* CDYelpDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6B4C3CE56372D65665BDA624D71EA /* CDYelpDeal.m */; };
+		B42ADCCE8B6C6D8C674AAF6C8B5E42A3 /* CDYelpUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AB5D361679EF6956469A0C756E282 /* CDYelpUser.m */; };
 		B8E6C12FFB6A580F84D4EAA87B4DE0CF /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DEB769748165E786D31301A7A73A300 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD6E8A4174FFAE498746C4694E080016 /* CDYelpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 46AD8E7997831FBD9D9043A439E2187F /* CDYelpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD884524FC905C55F67507F66D2628C6 /* CDYelpRequestLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 524671C688A42D5DA1E8A407D5352E8F /* CDYelpRequestLocation.m */; };
+		BA1B9A98D081E5961565969C8708107C /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9D0330E3080C508B1FB87C69A979E /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BEB4D78345E9BEEB9294DC29AEDFC4BF /* BDBOAuth1SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C65DBEB6EB1156B0816D9F4CF6FDFB3F /* BDBOAuth1SessionManager.m */; };
-		BFF830762DDA44A24544CDA1C470A9CB /* CDYelpSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F94B8AAE787A8A00FC46B28448F9B18F /* CDYelpSearchResponse.m */; };
-		C2E3E8A8FA770535A8424AAD61A73D33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */; };
-		C3A4F951D85EB84D05C6A87E9B9BEC02 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1C5A6CC8F76961939F6FC297C077A7 /* metamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BFD118A956D0F3B243DDB6895C4693F4 /* CDYelpDealOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5FB5F4F665CC9527B4F0FE1F8622E /* CDYelpDealOption.m */; };
+		C43F57320EC06FA3B796417930A1B515 /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D2F7DC9A84167C56749AFA3A2479F5 /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C66816A71DD6D17EB0BCD6ECD6EABA10 /* MTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FB54DA1FF26D94D1D28363A6ECB196 /* MTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C698769D947E070EC199B2B6B920F6C8 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AD2EBB3F20ABB870CADD2D70810F2 /* AFNetworking-dummy.m */; };
-		C8112CE291C0682FF2133DDC763ED9F9 /* CDYelpErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CB299A72E7E1F66AFB6945B0DD755D17 /* CDYelpErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9EC4C69F42DF6C33140E5B9DBCF0B99 /* CDYelpBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B31003FC5479FC1F7956C9D707938 /* CDYelpBoundingBox.m */; };
-		CD2F3E95DB13FE202F6E11D093BF4910 /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B1CAAB51459340CA4737420AD22D51C /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CC58BF059E6AEDA2D6148976F24B6FAF /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FFA73E4D8B650D08BA0E6863646239 /* MTLReflection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		CD41296F0C0ED0648AE87E3A910F9387 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718D1D0B889074F398337760D76BD53 /* AFNetworking.framework */; };
 		CD461CA2EFFEE6322536171261D3CA03 /* Pods-CDYelpKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 343AFAA3B8222E2EFB365464532BA27B /* Pods-CDYelpKit_Tests-dummy.m */; };
-		CEB45FF03845CDD6A2208E9ABA0D5275 /* NSDictionary+Overcoat.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD431BD3384987ABA65CE19820EFC77 /* NSDictionary+Overcoat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D004733D66FFB8BA426C1F55F077BF80 /* BDBOAuth1RequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A54E4B99676DC47F219E8BE28B6AAB /* BDBOAuth1RequestSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2CBC00FDCBD147D82D8D06853B3246E /* MTLJSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9D7A0CC1F81E4A32203C5C19EAF7E3 /* MTLJSONAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D35BC014E804CC717E10C11D328AE668 /* CDYelpErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F07C9FA2ACC8F901C0C9E8925690702 /* CDYelpErrorResponse.m */; };
+		D33ECBF3B5E80CC5315CF725DD001762 /* CDYelpAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E4258CC89231A7C6A1C6DAC20A96DD /* CDYelpAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D58734982A6A9E719137BD3EEA343433 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A49D28556E1CE4767D707114D52C5 /* CoreGraphics.framework */; };
-		DBE1B552411A5A0B1C5D1C47D9F71858 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9D0330E3080C508B1FB87C69A979E /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DCBE13EE8740CF0222B539E1267E7A30 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABCC6E82F6BCF9166E9AB135AE63D1E /* NSValueTransformer+MTLInversionAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DD3985A953402717529EDE4B788E4E42 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE712F3CFD10B2FD1755ADD884482EC /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C5D8D439BBD3A39AB8AB64D764B011 /* NSDictionary+Overcoat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66CD8756E762AB54B51E89F6728E9F /* NSDictionary+Overcoat.m */; };
+		DA68A17E54B0E5F507C60353887AD345 /* CDYelpLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF9BFD50DB2AF42A1BC89F4E9A24B /* CDYelpLocation.m */; };
+		DCB96F1B56169048D8F5997330B98C18 /* CDYelpGiftCertificateOption.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A79991844700A03241A11B27F8DAF6 /* CDYelpGiftCertificateOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB9894C774148D06E3DA97D303E724D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7989EE9CD8979DE7B30D80376E28D6B /* AFSecurityPolicy.m */; };
-		E2FCF9A1DB3264D619B54C0F54A5BA26 /* OVCHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FFA0623BA56BD9EC8230A88D5706FF /* OVCHTTPSessionManager.m */; };
-		E320149127BE54D5AF83000E4017E85B /* CDYelpGiftCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C4631C1D5F20FD566531F3D27B787D /* CDYelpGiftCertificate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFF27B9D7437741FA269BA84785D6C38 /* OVCURLMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E68B9DB5D979DA0177386A84A0644 /* OVCURLMatcher.m */; };
+		E07D11EC26B1C478798805043512C2A9 /* CDYelpReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E2B92A42E815AD63AF655628C6CE1 /* CDYelpReview.m */; };
 		E568A306B94BEEE72EBFF6E78FD88309 /* Pods-CDYelpKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9D0A80574426DC008154BE1C30609 /* Pods-CDYelpKit_Example-dummy.m */; };
-		E5940E49B342FC31B8C86F9CECF0B7D7 /* OVCURLMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E68B9DB5D979DA0177386A84A0644 /* OVCURLMatcher.m */; };
-		EB8BFAEF45639940A8047087AA0E3326 /* NSError+OVCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A80BE91D1D26B90A363B848497C6BE /* NSError+OVCResponse.m */; };
+		E71D0C5E822B3AB144606E1C4CAE6BCD /* NSObject+MTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 68C987B409F110BB70C03B1B50455D98 /* NSObject+MTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAC3B6B86924DD29C02BEAFD588AFBAC /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1C5A6CC8F76961939F6FC297C077A7 /* metamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F21A8A804E7FD7D02316EB211A1C458B /* CDYelpErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AE6E2834211C5EA7E842C0E32775BA94 /* CDYelpErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3339F1818F85222BBC3905FD048FF6B /* NSDictionary+BDBOAuth1Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AE291CD60DB94B931B1B530E1D397F /* NSDictionary+BDBOAuth1Manager.m */; };
-		F52A34EA547A9A23A724E067A5A120C2 /* Mantle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF65FAFE570958856BD46F0AED8DBF /* Mantle-dummy.m */; };
-		F57253B8A7BADA019D5199C147D446F4 /* CDYelpReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4EB5A24E089E3C95C5C1766B43C4A2 /* CDYelpReview.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F72EA594BD2B993554C310B0185EB12A /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FFA73E4D8B650D08BA0E6863646239 /* MTLReflection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F9D69121ABD3A992B3F21A03DD771F8F /* OVCModelResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B56E10EF68A0F407C72B0485B277314 /* OVCModelResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFB1E3E872C52C8DD201D9484967488 /* CDYelpBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 4133880F97BDF04C215E477DEF810EBA /* CDYelpBusiness.m */; };
-		FB0809FF5FE584CE749DD0D1BE1EA9D3 /* CDYelpDealOption.h in Headers */ = {isa = PBXBuildFile; fileRef = D56D328D25569225CB59E40C31D9EA68 /* CDYelpDealOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCD2AE420DC9F4FD95F443B606E8BE9B /* CDYelpError.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C172C66013C08D96F9DF61F1C92134 /* CDYelpError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEA2979880760CD92A9B27BBD1B34729 /* MTLTransformerErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D1DDE4250E28F127EAC41705D8F618 /* MTLTransformerErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEA3FD50668066B2A2BD40CBF6E2DF54 /* OVCURLMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A890C583BA44CD109BF3C1BDBB6DF06A /* OVCURLMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F384EB3063CFE1742173691CC746BA22 /* Overcoat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9862936697831930912422F75E587F69 /* Overcoat-dummy.m */; };
+		F8DDCAE564D27300EBB12AED523E8004 /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A616FF918CE26AC6C17839B7032D59CF /* MTLModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FB56136A310E01DD4B5D4DCDCA58B4AD /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 108E1F172924A5678F2E5FE4A45F99B6 /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF137A1DB907FD15A7258F86E8B5B913 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53E48F594B4509F7C7B8C22E0F11D /* AFHTTPSessionManager.m */; };
-		FF459BA1AED378BD599033B063F6898C /* OVCModelResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F4E3C77617943B270659585B3E5A91 /* OVCModelResponseSerializer.m */; };
+		FFFD38E7D0B439DC45EF8D39739B7320 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718D1D0B889074F398337760D76BD53 /* AFNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		164A871C149B9541A63B8FE51C4669AC /* PBXContainerItemProxy */ = {
+		0377CBCD0A680403E22A1FF297CDDC90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CFF8253672E324DFF05D1F224B775022;
-			remoteInfo = AFNetworking;
-		};
-		2F07CD330605D70266FE91F8CF3A1262 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFF8253672E324DFF05D1F224B775022;
-			remoteInfo = AFNetworking;
-		};
-		330BDB34850E974B007012D050ADB21A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EAA67F148BA5723321225928BDF31D4;
+			remoteGlobalIDString = 5809AD392F480C2C07D59701E68ADBA4;
 			remoteInfo = Mantle;
+		};
+		2B95A462A4613CC3D4C0921CE77A1327 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF8253672E324DFF05D1F224B775022;
+			remoteInfo = AFNetworking;
+		};
+		2EEE157EC2C628A2EA62069872064E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF8253672E324DFF05D1F224B775022;
+			remoteInfo = AFNetworking;
 		};
 		3C41C6C999A85AA21F2CD1E8676DDD0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EAA67F148BA5723321225928BDF31D4;
+			remoteGlobalIDString = 5809AD392F480C2C07D59701E68ADBA4;
 			remoteInfo = Mantle;
 		};
 		407EA1E46EE04BC94AF9FB069CEE35F3 /* PBXContainerItemProxy */ = {
@@ -187,39 +189,39 @@
 			remoteGlobalIDString = CFF8253672E324DFF05D1F224B775022;
 			remoteInfo = AFNetworking;
 		};
-		6DC369CA7DDB7A73B99241C10A801CDA /* PBXContainerItemProxy */ = {
+		8E52F47471D58BB7722959D2955C10CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E4C10C8BA9F4CB5F4BCB8480A0090A1;
+			remoteGlobalIDString = 96F78219053D3E518A63BE1F75431941;
 			remoteInfo = Overcoat;
 		};
-		863775D49D8D59C599E0802326BE2223 /* PBXContainerItemProxy */ = {
+		BBF3223F315BFA3CA777575E3CE4B32A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5809AD392F480C2C07D59701E68ADBA4;
+			remoteInfo = Mantle;
+		};
+		CFDBA33C72751AA63BF76BAB42495CA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96F78219053D3E518A63BE1F75431941;
+			remoteInfo = Overcoat;
+		};
+		D267BE9DE6AF1D97179B90C217172AB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 445B3D47256376A8FB06D383FDBEA0C4;
 			remoteInfo = BDBOAuth1Manager;
 		};
-		8E52F47471D58BB7722959D2955C10CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E4C10C8BA9F4CB5F4BCB8480A0090A1;
-			remoteInfo = Overcoat;
-		};
-		A6B2C11254976277693D0BA452B53E54 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EAA67F148BA5723321225928BDF31D4;
-			remoteInfo = Mantle;
-		};
 		F243CF63799879E2DC186DA580C25412 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F1B0F9B8050EBAD3ADE1122B188A3FDA;
+			remoteGlobalIDString = F0A663D04276C1230901AC327D88823E;
 			remoteInfo = CDYelpKit;
 		};
 		F66161472E7E5E0AB865BEBD3BBC2EC2 /* PBXContainerItemProxy */ = {
@@ -241,33 +243,30 @@
 /* Begin PBXFileReference section */
 		01484899E9289418A041857BCAD73967 /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F891D570B2F92D747CC3275FF554DD /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = Mantle/extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
-		0441242293D5A41E29C83A03AB954D4E /* CDYelpBoundingBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpBoundingBox.h; sourceTree = "<group>"; };
 		062BAB6F761560441460375BC9D50325 /* OVCResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OVCResponse.m; path = sources/Core/OVCResponse.m; sourceTree = "<group>"; };
 		0718D1D0B889074F398337760D76BD53 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09EF6C20EE3A01F47186BA5CFCD679A4 /* CDYelpKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDYelpKit-prefix.pch"; sourceTree = "<group>"; };
 		0B709ED1BF5CAAA907F61DE6D222EB32 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		0BB9C4D436C6CE2479BED0EF9F59D174 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		0E24DAE996F58CBDA18DE01116884D85 /* Pods-CDYelpKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CDYelpKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0EFBCA551D626A08AF2669F2CD06B785 /* NSError+OVCResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+OVCResponse.h"; path = "sources/Core/NSError+OVCResponse.h"; sourceTree = "<group>"; };
+		0F26FF1B0C3AD386F5D1D7316076C33C /* CDYelpBoundingBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpBoundingBox.m; sourceTree = "<group>"; };
 		0FF850DE90B2CCBE1AC38800391D0FFF /* BDBOAuth1SessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BDBOAuth1SessionManager.h; path = BDBOAuth1Manager/BDBOAuth1SessionManager.h; sourceTree = "<group>"; };
-		1051A1058C53CC8C2E1D5E0705C60120 /* CDYelpQueryParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpQueryParams.m; sourceTree = "<group>"; };
 		108E1F172924A5678F2E5FE4A45F99B6 /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLJSONKeyPath.h"; path = "Mantle/NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
-		126B7A5CAFFF621AE87D7E8561FB33BB /* CDYelpKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CDYelpKit.modulemap; sourceTree = "<group>"; };
 		14DE4BF88B2C00880D0C6CBBF51239D5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		154DD879F852D1D5E5ACD79E51D910C7 /* CDYelpDeal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpDeal.h; sourceTree = "<group>"; };
 		18F53E48F594B4509F7C7B8C22E0F11D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		1928A9559B94FFD26CF1AF34E7B602D8 /* Pods-CDYelpKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CDYelpKit_Example-resources.sh"; sourceTree = "<group>"; };
 		1CA9CE82DDF66A61A30098C189E27343 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D4EB5A24E089E3C95C5C1766B43C4A2 /* CDYelpReview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpReview.h; sourceTree = "<group>"; };
+		1DB2B47E331FF35830A8C35436AE2203 /* CDYelpKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CDYelpKit.modulemap; sourceTree = "<group>"; };
 		1DEB769748165E786D31301A7A73A300 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		1EA08627E5EEDA88D47E67CDE108FF69 /* CDYelpQueryParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpQueryParams.h; sourceTree = "<group>"; };
 		2262719D8AFE7AD47EA1A6726DD2000C /* MTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLModel.h; path = Mantle/MTLModel.h; sourceTree = "<group>"; };
-		27726EC0892FEE906C263E82C2D87093 /* CDYelpResponses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpResponses.h; sourceTree = "<group>"; };
+		24E4258CC89231A7C6A1C6DAC20A96DD /* CDYelpAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpAPIClient.h; sourceTree = "<group>"; };
 		283550DB624EC252B6AD693E67486378 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		29F9F8C0E030C66F4D9179A3B2763DC8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		2C060F8AD44F6AEEC4D825F9BD8CB4B2 /* NSDictionary+MTLMappingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLMappingAdditions.m"; path = "Mantle/NSDictionary+MTLMappingAdditions.m"; sourceTree = "<group>"; };
 		2C43B71BACFA8F78D3BA7458E4E453D5 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		2FD9D0330E3080C508B1FB87C69A979E /* MTLJSONAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLJSONAdapter.m; path = Mantle/MTLJSONAdapter.m; sourceTree = "<group>"; };
+		30C3C25679D3FE59A63E4C97C6691A3F /* CDYelpUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpUser.h; sourceTree = "<group>"; };
+		30D05FFEF9CE4974D83AEDAE50E3B037 /* CDYelpKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDYelpKit-prefix.pch"; sourceTree = "<group>"; };
 		30DB8328299751C62DC5AB59CBAF9927 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		31DDC90B3A4122B8CBCEE036DFC17660 /* Pods-CDYelpKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CDYelpKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		3372C87AC4F03E6BC9DBAE9CF40139D5 /* Pods_CDYelpKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDYelpKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,103 +276,108 @@
 		3ABCC6E82F6BCF9166E9AB135AE63D1E /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLInversionAdditions.m"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		3C9AFEA401CEC74BE5BC634B44517E10 /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTLModel+NSCoding.h"; path = "Mantle/MTLModel+NSCoding.h"; sourceTree = "<group>"; };
 		3FDE92BDB3C8251BC51BAA77AF6DA951 /* MTLReflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLReflection.h; path = Mantle/MTLReflection.h; sourceTree = "<group>"; };
-		4133880F97BDF04C215E477DEF810EBA /* CDYelpBusiness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpBusiness.m; sourceTree = "<group>"; };
+		41A13C5325B1835C2999F2E2E089674D /* CDYelpBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpBusiness.h; sourceTree = "<group>"; };
 		435F716556E20AB72093916CE344E71A /* BDBOAuth1Manager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BDBOAuth1Manager-prefix.pch"; sourceTree = "<group>"; };
 		44D4E2765C8A099CD96EDA7DB53F21FA /* Overcoat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Overcoat.xcconfig; sourceTree = "<group>"; };
-		46AD8E7997831FBD9D9043A439E2187F /* CDYelpKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpKit.h; sourceTree = "<group>"; };
 		481A49D28556E1CE4767D707114D52C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		484E2B92A42E815AD63AF655628C6CE1 /* CDYelpReview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpReview.m; sourceTree = "<group>"; };
 		48CF65FAFE570958856BD46F0AED8DBF /* Mantle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mantle-dummy.m"; sourceTree = "<group>"; };
-		4A87695047C7BBD9AD97C633475257F1 /* CDYelpAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpAPIClient.m; sourceTree = "<group>"; };
+		490D1E00F7DE6DEDCE07545888BF3AFE /* CDYelpErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpErrorResponse.m; sourceTree = "<group>"; };
+		4A7B1AE00C0EC02941848AF3E9F6AF3B /* CDYelpQueryParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpQueryParams.m; sourceTree = "<group>"; };
 		4AE9AAE2A883A78224EEE8D1B5701411 /* NSDictionary+BDBOAuth1Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+BDBOAuth1Manager.h"; path = "BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.h"; sourceTree = "<group>"; };
-		4B5B590DE8B62A3A9467ADB8CCBE91B8 /* CDYelpGiftCertificateOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpGiftCertificateOption.m; sourceTree = "<group>"; };
 		4BCF02C35BBECD220EA66DB725B1143C /* NSString+BDBOAuth1Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+BDBOAuth1Manager.m"; path = "BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m"; sourceTree = "<group>"; };
-		4C7DA63EEBFACB7EB8ACE44F7D8CD97B /* CDYelpKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDYelpKit-dummy.m"; sourceTree = "<group>"; };
 		4C81EE980CA353B7309FFA3516262BBC /* Pods-CDYelpKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CDYelpKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4D2CDF4A63E1A5321978C4AE9634C0D5 /* BDBOAuth1Manager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BDBOAuth1Manager.xcconfig; sourceTree = "<group>"; };
+		4DC61E2428C757D01E8FB24768E7981D /* CDYelpBoundingBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpBoundingBox.h; sourceTree = "<group>"; };
+		4EFDF9BFD50DB2AF42A1BC89F4E9A24B /* CDYelpLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpLocation.m; sourceTree = "<group>"; };
 		4F4119376B04359F0C98ABA84A7E7CF4 /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
 		5164268E77A5D1CD67153B5C6B0A43C1 /* Pods-CDYelpKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CDYelpKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		52055713412C1ABDFAD7895513634B4D /* Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-prefix.pch"; sourceTree = "<group>"; };
-		524671C688A42D5DA1E8A407D5352E8F /* CDYelpRequestLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpRequestLocation.m; sourceTree = "<group>"; };
-		552688B81B382B6E8C845DF8AC00F52A /* CDYelpAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpAPIClient.h; sourceTree = "<group>"; };
-		55F19F047680ACB553EE1990F69EB3ED /* CDYelpRequestLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpRequestLocation.h; sourceTree = "<group>"; };
+		54E8825123EFD76C2FC1E4D01F3B3B72 /* CDYelpGiftCertificate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpGiftCertificate.m; sourceTree = "<group>"; };
+		56DE8ADE3463379BDC012E11E96C27C4 /* CDYelpKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDYelpKit-dummy.m"; sourceTree = "<group>"; };
+		5842C0B646FA38FCC99A4F88E61229BE /* CDYelpBusiness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpBusiness.m; sourceTree = "<group>"; };
+		58603121C29691A26B79F6EB959C1560 /* CDYelpKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDYelpKit-umbrella.h"; sourceTree = "<group>"; };
+		5A9A1739AC3FF0683788B0000B61D193 /* CDYelpDetailedBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpDetailedBusiness.h; sourceTree = "<group>"; };
 		5AF9D0A80574426DC008154BE1C30609 /* Pods-CDYelpKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CDYelpKit_Example-dummy.m"; sourceTree = "<group>"; };
 		5B06872F31526C53A0DF769E1BDBB061 /* Pods-CDYelpKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CDYelpKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5CE712F3CFD10B2FD1755ADD884482EC /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		5F98B7A8CA977DE1D9B980BCD7A62EE9 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTLManipulationAdditions.m"; path = "Mantle/NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		6038DE0BD9C37D9696E6DFA912A83EAF /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLJSONKeyPath.m"; path = "Mantle/NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
 		606AFC525B3D6AED99A1FF3D9E42C625 /* Pods-CDYelpKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CDYelpKit_Example.modulemap"; sourceTree = "<group>"; };
-		608545342A8CBE7382D1A8C9D890F3E0 /* CDYelpBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpBusiness.h; sourceTree = "<group>"; };
-		60EAD2E1A4D9EA8A6E3DF620D7F190E9 /* CDYelpSearchResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpSearchResponse.h; sourceTree = "<group>"; };
+		60E30BD409E46AA04726B1E5F1565758 /* CDYelpError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpError.m; sourceTree = "<group>"; };
 		61D1DDE4250E28F127EAC41705D8F618 /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLTransformerErrorHandling.h; path = Mantle/MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
-		61D6324B065AAAF210882B068A10C3C6 /* CDYelpGiftCertificateOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpGiftCertificateOption.h; sourceTree = "<group>"; };
-		66EE407A0213A64EF9F79FF4828DDCC4 /* CDYelpModels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpModels.h; sourceTree = "<group>"; };
 		6721E6B400210AB11428C804FBFFC893 /* OVCHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OVCHTTPSessionManager.h; path = sources/Core/OVCHTTPSessionManager.h; sourceTree = "<group>"; };
+		68210ACC89B00D3D2ADD2CEA295F8099 /* CDYelpDeal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpDeal.m; sourceTree = "<group>"; };
 		68C987B409F110BB70C03B1B50455D98 /* NSObject+MTLComparisonAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MTLComparisonAdditions.h"; path = "Mantle/NSObject+MTLComparisonAdditions.h"; sourceTree = "<group>"; };
-		68EF61CB5EEDB8871EA87D19C56F66FE /* CDYelpKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDYelpKit-umbrella.h"; sourceTree = "<group>"; };
 		6A0D0007B754689040ECBE89BA45EEE7 /* Pods-CDYelpKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CDYelpKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		6AD91D8E86C221D5262EB98C81536FD9 /* Pods_CDYelpKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDYelpKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B56E10EF68A0F407C72B0485B277314 /* OVCModelResponseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OVCModelResponseSerializer.h; path = sources/Core/OVCModelResponseSerializer.h; sourceTree = "<group>"; };
-		6CDE9692BF62968915914269540E0274 /* CDYelpDetailedBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpDetailedBusiness.h; sourceTree = "<group>"; };
 		6D1C5A6CC8F76961939F6FC297C077A7 /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Mantle/extobjc/metamacros.h; sourceTree = "<group>"; };
+		6D63B22446B7F87B4B441B3E6A4F8829 /* CDYelpRequestLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpRequestLocation.m; sourceTree = "<group>"; };
 		6D6C1E592599D3B20079E3F12C62E3B4 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		6FBBFA136F7B50B2BBA91C491D7CFE31 /* BDBOAuth1Manager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BDBOAuth1Manager-dummy.m"; sourceTree = "<group>"; };
 		708DA890485A1B8B0DA42A7EF99EF337 /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLManipulationAdditions.m"; path = "Mantle/NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
-		70C4631C1D5F20FD566531F3D27B787D /* CDYelpGiftCertificate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpGiftCertificate.h; sourceTree = "<group>"; };
+		726D7E7DFD8B49197427B77A69C08DAA /* CDYelpReview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpReview.h; sourceTree = "<group>"; };
 		7311FD5AB236543259854D10D9B27310 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		742BA1FA8A291F135DDF80A0C604BF96 /* CDYelpSearchResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpSearchResponse.m; sourceTree = "<group>"; };
 		742F967226F159C05060286948D21D93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75948D6F4156C2A099DBE2A6316918D1 /* CDYelpError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpError.m; sourceTree = "<group>"; };
 		793913FAECB55CB22C5717CAA3619926 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
+		79AE46469ED8F0597CAC36069722D2DD /* CDYelpDeal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpDeal.h; sourceTree = "<group>"; };
 		7A2BA978FBB014E5058E6616DF9A5F7F /* Pods-CDYelpKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CDYelpKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7AE693BB9BC364BC120E3E4DB1405F5F /* CDYelpKitManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpKitManager.h; sourceTree = "<group>"; };
+		7BB714A2128EF337E54971E346121161 /* CDYelpOAuthManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpOAuthManager.m; sourceTree = "<group>"; };
 		7BFCA5F99FBE6DDA9D32B6E5EB09F727 /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE49CBE0481DB8C65C161B107CC3473 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
-		7F07C9FA2ACC8F901C0C9E8925690702 /* CDYelpErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpErrorResponse.m; sourceTree = "<group>"; };
+		7DE8BF683A6E9B8FF17FE888DB7FDF0E /* CDYelpAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpAPIClient.m; sourceTree = "<group>"; };
 		809BA4AB22E33F7E386714478C81AEDA /* Mantle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mantle.xcconfig; sourceTree = "<group>"; };
 		82A45B26900B820485CED13B8BF93F90 /* Mantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mantle.h; path = Mantle/Mantle.h; sourceTree = "<group>"; };
 		82FFA73E4D8B650D08BA0E6863646239 /* MTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLReflection.m; path = Mantle/MTLReflection.m; sourceTree = "<group>"; };
 		836A8EAA8B59002FEF36E5A25256419C /* Overcoat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Overcoat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		841499DEB34CE287309CD885D2755817 /* BDBOAuth1Manager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BDBOAuth1Manager-umbrella.h"; sourceTree = "<group>"; };
-		84211549293C9B7798EDEBB1FB86241F /* CDYelpUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpUser.h; sourceTree = "<group>"; };
-		85BBCAA403E766F6811E579414052964 /* CDYelpDetailedBusiness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpDetailedBusiness.m; sourceTree = "<group>"; };
 		862E68B9DB5D979DA0177386A84A0644 /* OVCURLMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OVCURLMatcher.m; path = sources/Core/OVCURLMatcher.m; sourceTree = "<group>"; };
 		87AE291CD60DB94B931B1B530E1D397F /* NSDictionary+BDBOAuth1Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+BDBOAuth1Manager.m"; path = "BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m"; sourceTree = "<group>"; };
 		891041C8557D10597097FACB5EAD9E59 /* BDBOAuth1Manager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BDBOAuth1Manager.modulemap; sourceTree = "<group>"; };
+		894481338E56AE76C0F7786C02D0AEEA /* CDYelpDealOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpDealOption.h; sourceTree = "<group>"; };
 		8A66CD8756E762AB54B51E89F6728E9F /* NSDictionary+Overcoat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Overcoat.m"; path = "sources/Core/NSDictionary+Overcoat.m"; sourceTree = "<group>"; };
+		8AA8C76A9043F4DF488A982F0FB56A2A /* CDYelpRequestLocationType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpRequestLocationType.h; sourceTree = "<group>"; };
 		8B0F8FD52CFCA45FFEC83A152E996762 /* Pods-CDYelpKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CDYelpKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8B1CAAB51459340CA4737420AD22D51C /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
-		8DE6B4C3CE56372D65665BDA624D71EA /* CDYelpDeal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpDeal.m; sourceTree = "<group>"; };
+		8DF5FB5F4F665CC9527B4F0FE1F8622E /* CDYelpDealOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpDealOption.m; sourceTree = "<group>"; };
 		8FCC4D94A21C1174A7EDCA4E8341EEB6 /* Mantle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Mantle.modulemap; sourceTree = "<group>"; };
 		91C1F4F5EBCD6254402DEBA8BEEEA93A /* Mantle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-umbrella.h"; sourceTree = "<group>"; };
+		9208A36399A2966624FDFC5177A8B44E /* CDYelpResponses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpResponses.h; sourceTree = "<group>"; };
 		937C328814798121764617C6EC5BBE36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		959545D15C69E4D7D0E3A9761A1DB332 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959A34C9585078FEEF3131F8FDCBA956 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95D8BDA0C75D92D90CDD6912F573D544 /* BDBOAuth1Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BDBOAuth1Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		964B31003FC5479FC1F7956C9D707938 /* CDYelpBoundingBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpBoundingBox.m; sourceTree = "<group>"; };
 		97A2B49AA08DEE586751C11E0EA36207 /* MTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLValueTransformer.m; path = Mantle/MTLValueTransformer.m; sourceTree = "<group>"; };
 		97B8644F0498BD2179599D412696D999 /* Overcoat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Overcoat.h; path = sources/Core/Overcoat.h; sourceTree = "<group>"; };
 		9862936697831930912422F75E587F69 /* Overcoat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Overcoat-dummy.m"; sourceTree = "<group>"; };
+		99F67A7AC37CDBDF976036F7EAD584AE /* CDYelpError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpError.h; sourceTree = "<group>"; };
 		9AD8A7595F91BF4282D2A3882F5BF772 /* Pods-CDYelpKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CDYelpKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D6BE45E256B53C263970F088F1E1C27 /* BDBOAuth1RequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BDBOAuth1RequestSerializer.m; path = BDBOAuth1Manager/BDBOAuth1RequestSerializer.m; sourceTree = "<group>"; };
 		A094EDCC9C6574E6F478EFB509311E48 /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MTLManipulationAdditions.h"; path = "Mantle/NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
-		A1D7E15E4FA869EB82DD1AEE7179F70C /* CDYelpSortType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpSortType.h; sourceTree = "<group>"; };
 		A616FF918CE26AC6C17839B7032D59CF /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
+		A62702BED32D8CEDE97A2B79A9A8D7C4 /* CDYelpGiftCertificate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpGiftCertificate.h; sourceTree = "<group>"; };
 		A6D780D7489D9BE440D94488EA243BCF /* Pods-CDYelpKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CDYelpKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7A54E4B99676DC47F219E8BE28B6AAB /* BDBOAuth1RequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BDBOAuth1RequestSerializer.h; path = BDBOAuth1Manager/BDBOAuth1RequestSerializer.h; sourceTree = "<group>"; };
 		A890C583BA44CD109BF3C1BDBB6DF06A /* OVCURLMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OVCURLMatcher.h; path = sources/Core/OVCURLMatcher.h; sourceTree = "<group>"; };
 		AB9D7A0CC1F81E4A32203C5C19EAF7E3 /* MTLJSONAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLJSONAdapter.h; path = Mantle/MTLJSONAdapter.h; sourceTree = "<group>"; };
+		AD4B52E76743048F12468F5380348E0E /* CDYelpKitManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpKitManager.m; sourceTree = "<group>"; };
 		AD5DF820FB251DEA0BDB3A5F122F093F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AE6E2834211C5EA7E842C0E32775BA94 /* CDYelpErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpErrorResponse.h; sourceTree = "<group>"; };
+		AFCE421CF04F94DCD3B2956230433942 /* CDYelpModels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpModels.h; sourceTree = "<group>"; };
 		AFD431BD3384987ABA65CE19820EFC77 /* NSDictionary+Overcoat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Overcoat.h"; path = "sources/Core/NSDictionary+Overcoat.h"; sourceTree = "<group>"; };
+		AFECA6295FBE6759F7C432068D4C6347 /* CDYelpBusinessResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpBusinessResponse.h; sourceTree = "<group>"; };
 		B045AC340A525AF1F5ABD0E6864F5C01 /* NSError+MTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+MTLModelException.h"; path = "Mantle/NSError+MTLModelException.h"; sourceTree = "<group>"; };
-		B2411FBC8601C2E827FEF6427FAD8E12 /* CDYelpRequestLocationType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpRequestLocationType.h; sourceTree = "<group>"; };
-		B2DCB1FD4BB8DFAA6A6EB60107183EC0 /* CDYelpLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpLocation.m; sourceTree = "<group>"; };
-		B427EA4AF47B52FC93E6346B623733BE /* CDYelpLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpLocation.h; sourceTree = "<group>"; };
 		B46573576B196F0E3EBCE1A0FCC9B715 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		B4D153B904942274E3901D868E4CA52D /* CDYelpRequestLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpRequestLocation.h; sourceTree = "<group>"; };
 		B58371E058E3BF137B44403E9074E20E /* Pods-CDYelpKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CDYelpKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B7C172C66013C08D96F9DF61F1C92134 /* CDYelpError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpError.h; sourceTree = "<group>"; };
 		BB6EC406D3A59ACBED69D25104240FAD /* Pods-CDYelpKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CDYelpKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		BE880FD248480C1DF230F70A7F1368E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD44104F24F4BB0E12BFDD83B069FFB5 /* CDYelpBusinessResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpBusinessResponse.m; sourceTree = "<group>"; };
 		BEF9CE54C07BAE0726555CB79B714BE3 /* Pods-CDYelpKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CDYelpKit_Tests.modulemap"; sourceTree = "<group>"; };
-		C17E5626CC74BC636A6E7E2C5F7F83FF /* CDYelpKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDYelpKit.xcconfig; sourceTree = "<group>"; };
+		C1A79991844700A03241A11B27F8DAF6 /* CDYelpGiftCertificateOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpGiftCertificateOption.h; sourceTree = "<group>"; };
 		C4D2F7DC9A84167C56749AFA3A2479F5 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
 		C5B796A3750E7A3986632E5A28894700 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		C65DBEB6EB1156B0816D9F4CF6FDFB3F /* BDBOAuth1SessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BDBOAuth1SessionManager.m; path = BDBOAuth1Manager/BDBOAuth1SessionManager.m; sourceTree = "<group>"; };
@@ -381,49 +385,49 @@
 		C7B416C1B785C6F91E3125B376500845 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		C990F16AD419493BE5666FEA66C3FC6F /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = Mantle/extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		CA481A2295611EB8A27BA486220064F2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		CB299A72E7E1F66AFB6945B0DD755D17 /* CDYelpErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpErrorResponse.h; sourceTree = "<group>"; };
-		CC0C99F74757A917700953EBA8C20C5A /* CDYelpBusinessResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpBusinessResponse.m; sourceTree = "<group>"; };
-		CD948D02B46B622951F38A43973D8157 /* CDYelpBusinessResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpBusinessResponse.h; sourceTree = "<group>"; };
 		D0FB54DA1FF26D94D1D28363A6ECB196 /* MTLValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLValueTransformer.h; path = Mantle/MTLValueTransformer.h; sourceTree = "<group>"; };
 		D0FFA0623BA56BD9EC8230A88D5706FF /* OVCHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OVCHTTPSessionManager.m; path = sources/Core/OVCHTTPSessionManager.m; sourceTree = "<group>"; };
 		D1A1C28AD60528F7F97737DA063000A3 /* Overcoat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Overcoat-prefix.pch"; sourceTree = "<group>"; };
-		D294FA7DBF6E18D4E769F58049423A6A /* CDYelpReview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpReview.m; sourceTree = "<group>"; };
-		D4CA3582A2A2F2EEA3CC951D4237444D /* CDYelpDealOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpDealOption.m; sourceTree = "<group>"; };
-		D56D328D25569225CB59E40C31D9EA68 /* CDYelpDealOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpDealOption.h; sourceTree = "<group>"; };
+		D33F11B30764CA303B9E3C0F48705AB5 /* CDYelpGiftCertificateOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpGiftCertificateOption.m; sourceTree = "<group>"; };
+		D5A818A30B53B186705F8B3568013D5F /* CDYelpSortType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpSortType.h; sourceTree = "<group>"; };
 		D66694862AD09850AB8DC401052D3AB7 /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = Mantle/extobjc/EXTScope.h; sourceTree = "<group>"; };
 		D7430EFCC45C4844D1BD60CBC280FE65 /* Pods-CDYelpKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CDYelpKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D7BC0AEB08481891F185D5F74C7B58DE /* CDYelpSearchResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpSearchResponse.h; sourceTree = "<group>"; };
+		D8786187CF41FA4B8BF241243FA978B7 /* CDYelpDetailedBusiness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpDetailedBusiness.m; sourceTree = "<group>"; };
 		D91BBDF8C85EFAFD313D54887E138B24 /* EXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = Mantle/extobjc/EXTScope.m; sourceTree = "<group>"; };
 		D92FE9354132FD15623D621558201036 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1317F2E899B07FF565CF67E4189A07 /* Overcoat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Overcoat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC94001C72159B06B354D3DB58165543 /* CDYelpGiftCertificate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpGiftCertificate.m; sourceTree = "<group>"; };
+		DA3062A4266F2418E14F24FFFB57F006 /* CDYelpOAuthManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpOAuthManager.h; sourceTree = "<group>"; };
 		E003C2D3AE8E046C6F149D186DD216F7 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		E21E52DF5FEDE248CE29022C8EF97F06 /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		E4AA6685467BFC19E8CE4C967F6F1778 /* BDBOAuth1Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BDBOAuth1Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B800F13FD8BDC955161C991D630E03 /* NSString+BDBOAuth1Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+BDBOAuth1Manager.h"; path = "BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.h"; sourceTree = "<group>"; };
-		E6424AA07FCBFD8153F27D2AF62D14BB /* CDYelpUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpUser.m; sourceTree = "<group>"; };
 		E64CF7401275661722EF91955B740827 /* OVCResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OVCResponse.h; path = sources/Core/OVCResponse.h; sourceTree = "<group>"; };
+		E78AB5D361679EF6956469A0C756E282 /* CDYelpUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpUser.m; sourceTree = "<group>"; };
 		E7A80BE91D1D26B90A363B848497C6BE /* NSError+OVCResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+OVCResponse.m"; path = "sources/Core/NSError+OVCResponse.m"; sourceTree = "<group>"; };
+		E9F29F8544C3DE9918BEFDC86B22400B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB855B5DD1C8CE9CA62E89835B6C94D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		EECEEA6FE224566CFDC68AD4974C8EEB /* CDYelpLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpLocation.h; sourceTree = "<group>"; };
 		F38BFE0CFE06D9DB84B2D9F2A32C03C5 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		F53788FA8CACDC8D0ECFD823120A7A34 /* CDYelpKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpKit.m; sourceTree = "<group>"; };
+		F53EBE946CF355B4DA7C5DD3BE36A318 /* CDYelpQueryParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDYelpQueryParams.h; sourceTree = "<group>"; };
 		F54F0817E73CD60EB15FC201D1FD3CFF /* NSError+MTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+MTLModelException.m"; path = "Mantle/NSError+MTLModelException.m"; sourceTree = "<group>"; };
 		F66AD2EBB3F20ABB870CADD2D70810F2 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		F6851D38A21CD467A1190CB29AB4CAE6 /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
 		F82809F82577FC83442338BD756B0705 /* Overcoat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Overcoat.modulemap; sourceTree = "<group>"; };
 		F90B6DFDBF1B8D7675D4663443601F68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F94B8AAE787A8A00FC46B28448F9B18F /* CDYelpSearchResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDYelpSearchResponse.m; sourceTree = "<group>"; };
 		FA5224E8DBCDE91342A7F617A47F4D56 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
 		FABA4C7BCC5706E176652AE66DEA2A89 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		FE42688CAC93B26C634D79F83F940113 /* Overcoat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Overcoat-umbrella.h"; sourceTree = "<group>"; };
+		FF3C4182B214653EDCAB89F9F0060A52 /* CDYelpKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDYelpKit.xcconfig; sourceTree = "<group>"; };
 		FF4D8F01789B3D9E33CF66059C795391 /* OVCUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OVCUtilities.h; path = sources/Core/OVCUtilities.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FD5F7F8F90D93FF5D73E567EBADBE23 /* Frameworks */ = {
+		4CD1E837C7962601E18E9BE074793881 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D84DBFF9D0C446B9940B5163038BA5B /* Foundation.framework in Frameworks */,
+				8C2C70D8D38D47BCE5D23F3633535DFF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,16 +451,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C56D49858E76C594F873604E433C2125 /* Frameworks */ = {
+		AE51252A1CC8581FC9B04F12BC04A69E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4319D5BDB716CDB638884F53F2B82A0C /* AFNetworking.framework in Frameworks */,
-				75AAA7B94918A3E2F8B4999E0AAF657A /* BDBOAuth1Manager.framework in Frameworks */,
-				99E34239B9E17A23DC8AA0A23A92E98B /* CoreLocation.framework in Frameworks */,
-				C2E3E8A8FA770535A8424AAD61A73D33 /* Foundation.framework in Frameworks */,
-				5DF2189E4A6AFEF508F3CF10213018A5 /* Mantle.framework in Frameworks */,
-				559FEAD49010647D1FBFCEEDB90754A9 /* Overcoat.framework in Frameworks */,
+				13DCA558E098B7D18E55379AC9DB0DA7 /* AFNetworking.framework in Frameworks */,
+				8BEAEBE2054F4F018DFDA0E1CC91A740 /* Foundation.framework in Frameworks */,
+				591812319A84DBC9868AA6A5A885DFC8 /* Mantle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,16 +466,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AF9742A41224EE780F7B5AD3C386852 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEA29642FDE7D4D9510AEC5607C176DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B04C6147384A4DD4EC962294FDFF83F /* AFNetworking.framework in Frameworks */,
-				136F16D6947455DEEC3FE9CDBB704E9F /* Foundation.framework in Frameworks */,
-				11D1AF3A3173B8B969C562CBBDBF7E80 /* Mantle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,15 +478,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F05CA17E9CE30DCFB65E6BEB22666AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFD38E7D0B439DC45EF8D39739B7320 /* AFNetworking.framework in Frameworks */,
+				1917962FEDAAC461563CD6F783D39083 /* BDBOAuth1Manager.framework in Frameworks */,
+				ABBA90C4FD54066AF4E416616B421988 /* CoreLocation.framework in Frameworks */,
+				6281B20F3FAF07F23F0F47A00FF0C6B2 /* Foundation.framework in Frameworks */,
+				5D570CFB2187E866E729DFBC3A61182A /* Mantle.framework in Frameworks */,
+				675FCD407B62704CE6B0D4AB3DD953BB /* Overcoat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F61F2B3E368F54DCBC4FF8183B8D184 /* CDYelpKit */ = {
+		020117F844AF36AEB93D0FDA0FB673FF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F11BE5CB376F5EE678CFC9F26A313FEB /* Classes */,
+				1DB2B47E331FF35830A8C35436AE2203 /* CDYelpKit.modulemap */,
+				FF3C4182B214653EDCAB89F9F0060A52 /* CDYelpKit.xcconfig */,
+				56DE8ADE3463379BDC012E11E96C27C4 /* CDYelpKit-dummy.m */,
+				30D05FFEF9CE4974D83AEDAE50E3B037 /* CDYelpKit-prefix.pch */,
+				58603121C29691A26B79F6EB959C1560 /* CDYelpKit-umbrella.h */,
+				E9F29F8544C3DE9918BEFDC86B22400B /* Info.plist */,
 			);
-			path = CDYelpKit;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CDYelpKit";
 			sourceTree = "<group>";
 		};
 		196BFA9A1AE12AFBA6D9CB465D1F94EF /* Mantle */ = {
@@ -572,19 +582,6 @@
 			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		335F6307A159F9D5F01B7D14E2C27A8E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				552688B81B382B6E8C845DF8AC00F52A /* CDYelpAPIClient.h */,
-				4A87695047C7BBD9AD97C633475257F1 /* CDYelpAPIClient.m */,
-				46AD8E7997831FBD9D9043A439E2187F /* CDYelpKit.h */,
-				F53788FA8CACDC8D0ECFD823120A7A34 /* CDYelpKit.m */,
-				66EE407A0213A64EF9F79FF4828DDCC4 /* CDYelpModels.h */,
-				27726EC0892FEE906C263E82C2D87093 /* CDYelpResponses.h */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		33F7A872AF7FBCD65FD92AFAABB29DB5 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,33 +594,33 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		350E039456B06BAEE19090D1A81D44DB /* Development Pods */ = {
+		40488C1BF536A34ABAD71F8E8B65A139 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
-				3B00A5BC54DAD9C25535CF7CA40BAE68 /* CDYelpKit */,
+				5C76517D3C6A1DA5938C7F2B01DE2CF5 /* CDYelpKit */,
 			);
-			name = "Development Pods";
+			name = OAuth;
 			sourceTree = "<group>";
 		};
-		3B00A5BC54DAD9C25535CF7CA40BAE68 /* CDYelpKit */ = {
+		41C50019FD894C823C09860AE31C032B /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				0F61F2B3E368F54DCBC4FF8183B8D184 /* CDYelpKit */,
-				E78BF677608137540892AE68F4BD35C2 /* Support Files */,
+				F53EBE946CF355B4DA7C5DD3BE36A318 /* CDYelpQueryParams.h */,
+				4A7B1AE00C0EC02941848AF3E9F6AF3B /* CDYelpQueryParams.m */,
+				468AEFDD99EA7DED67F6F643999CCBDE /* Model */,
 			);
-			name = CDYelpKit;
-			path = ../..;
+			path = Request;
 			sourceTree = "<group>";
 		};
-		45181E2D5C950C1A6D5380FF4FFCE923 /* Model */ = {
+		468AEFDD99EA7DED67F6F643999CCBDE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0441242293D5A41E29C83A03AB954D4E /* CDYelpBoundingBox.h */,
-				964B31003FC5479FC1F7956C9D707938 /* CDYelpBoundingBox.m */,
-				55F19F047680ACB553EE1990F69EB3ED /* CDYelpRequestLocation.h */,
-				524671C688A42D5DA1E8A407D5352E8F /* CDYelpRequestLocation.m */,
-				B2411FBC8601C2E827FEF6427FAD8E12 /* CDYelpRequestLocationType.h */,
-				A1D7E15E4FA869EB82DD1AEE7179F70C /* CDYelpSortType.h */,
+				4DC61E2428C757D01E8FB24768E7981D /* CDYelpBoundingBox.h */,
+				0F26FF1B0C3AD386F5D1D7316076C33C /* CDYelpBoundingBox.m */,
+				B4D153B904942274E3901D868E4CA52D /* CDYelpRequestLocation.h */,
+				6D63B22446B7F87B4B441B3E6A4F8829 /* CDYelpRequestLocation.m */,
+				8AA8C76A9043F4DF488A982F0FB56A2A /* CDYelpRequestLocationType.h */,
+				D5A818A30B53B186705F8B3568013D5F /* CDYelpSortType.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -640,6 +637,55 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BDBOAuth1Manager";
+			sourceTree = "<group>";
+		};
+		532775BC4F6AFE72CACFA38BA431BBCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41A13C5325B1835C2999F2E2E089674D /* CDYelpBusiness.h */,
+				5842C0B646FA38FCC99A4F88E61229BE /* CDYelpBusiness.m */,
+				79AE46469ED8F0597CAC36069722D2DD /* CDYelpDeal.h */,
+				68210ACC89B00D3D2ADD2CEA295F8099 /* CDYelpDeal.m */,
+				894481338E56AE76C0F7786C02D0AEEA /* CDYelpDealOption.h */,
+				8DF5FB5F4F665CC9527B4F0FE1F8622E /* CDYelpDealOption.m */,
+				5A9A1739AC3FF0683788B0000B61D193 /* CDYelpDetailedBusiness.h */,
+				D8786187CF41FA4B8BF241243FA978B7 /* CDYelpDetailedBusiness.m */,
+				99F67A7AC37CDBDF976036F7EAD584AE /* CDYelpError.h */,
+				60E30BD409E46AA04726B1E5F1565758 /* CDYelpError.m */,
+				A62702BED32D8CEDE97A2B79A9A8D7C4 /* CDYelpGiftCertificate.h */,
+				54E8825123EFD76C2FC1E4D01F3B3B72 /* CDYelpGiftCertificate.m */,
+				C1A79991844700A03241A11B27F8DAF6 /* CDYelpGiftCertificateOption.h */,
+				D33F11B30764CA303B9E3C0F48705AB5 /* CDYelpGiftCertificateOption.m */,
+				EECEEA6FE224566CFDC68AD4974C8EEB /* CDYelpLocation.h */,
+				4EFDF9BFD50DB2AF42A1BC89F4E9A24B /* CDYelpLocation.m */,
+				726D7E7DFD8B49197427B77A69C08DAA /* CDYelpReview.h */,
+				484E2B92A42E815AD63AF655628C6CE1 /* CDYelpReview.m */,
+				30C3C25679D3FE59A63E4C97C6691A3F /* CDYelpUser.h */,
+				E78AB5D361679EF6956469A0C756E282 /* CDYelpUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C76517D3C6A1DA5938C7F2B01DE2CF5 /* CDYelpKit */ = {
+			isa = PBXGroup;
+			children = (
+				E9596315A5CEA659A52F9038AB866D84 /* Classes */,
+			);
+			path = CDYelpKit;
+			sourceTree = "<group>";
+		};
+		5CE8F53D657A7929856000D44E1DF890 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				AFECA6295FBE6759F7C432068D4C6347 /* CDYelpBusinessResponse.h */,
+				BD44104F24F4BB0E12BFDD83B069FFB5 /* CDYelpBusinessResponse.m */,
+				AE6E2834211C5EA7E842C0E32775BA94 /* CDYelpErrorResponse.h */,
+				490D1E00F7DE6DEDCE07545888BF3AFE /* CDYelpErrorResponse.m */,
+				D7BC0AEB08481891F185D5F74C7B58DE /* CDYelpSearchResponse.h */,
+				742BA1FA8A291F135DDF80A0C604BF96 /* CDYelpSearchResponse.m */,
+				532775BC4F6AFE72CACFA38BA431BBCF /* Model */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		61B9285F7FAEFF8091513C625EFCA9BD /* Reachability */ = {
@@ -673,7 +719,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				350E039456B06BAEE19090D1A81D44DB /* Development Pods */,
+				D33D14D8E3E58ED52FC8155D8446964D /* Development Pods */,
 				F1F1B498A047844F11F30682EF317ECF /* Frameworks */,
 				F007AB0AFDD5B32702D3B028CA7CC2E5 /* Pods */,
 				E2DC79133003B87FB3EA172CBCA08C91 /* Products */,
@@ -690,6 +736,17 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		831004B1156886663D91B27A04675A45 /* CDYelpKit */ = {
+			isa = PBXGroup;
+			children = (
+				8C195ED4E3D8ACB504081A12D6DA68E1 /* Core */,
+				40488C1BF536A34ABAD71F8E8B65A139 /* OAuth */,
+				020117F844AF36AEB93D0FDA0FB673FF /* Support Files */,
+			);
+			name = CDYelpKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		84ACB5D91F23EC909AAEB3DF61088D06 /* BDBOAuth1Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,16 +761,6 @@
 				46FB23015A7612416BDC085624F342F1 /* Support Files */,
 			);
 			path = BDBOAuth1Manager;
-			sourceTree = "<group>";
-		};
-		88382747BD2C5CF48100BF2A7EC6F52C /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				1EA08627E5EEDA88D47E67CDE108FF69 /* CDYelpQueryParams.h */,
-				1051A1058C53CC8C2E1D5E0705C60120 /* CDYelpQueryParams.m */,
-				45181E2D5C950C1A6D5380FF4FFCE923 /* Model */,
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		88CAAF66616EE6CBC837D62A00D63F1D /* Overcoat */ = {
@@ -738,6 +785,14 @@
 			path = Overcoat;
 			sourceTree = "<group>";
 		};
+		8C195ED4E3D8ACB504081A12D6DA68E1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EB4B04A51668C8C67982A54DB084CCC8 /* CDYelpKit */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		8CAE34E9B1731BFE0BB97FA3371F4DE3 /* extobjc */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +804,14 @@
 				6D1C5A6CC8F76961939F6FC297C077A7 /* metamacros.h */,
 			);
 			name = extobjc;
+			sourceTree = "<group>";
+		};
+		9131B744AFF2A84D2D5A962FC5F6A7C0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DB26CA4C6210CDCB66C21AE8A7A8C358 /* Core */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		99477C36BF24E0B80E6B882649106ED1 /* Pods-CDYelpKit_Example */ = {
@@ -783,6 +846,15 @@
 			path = "../Target Support Files/Overcoat";
 			sourceTree = "<group>";
 		};
+		A7956CEE354146DFE381EA484F437B96 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				DA3062A4266F2418E14F24FFFB57F006 /* CDYelpOAuthManager.h */,
+				7BB714A2128EF337E54971E346121161 /* CDYelpOAuthManager.m */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		BF241261A6673B2BBFDCF8BCC19275A3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,18 +869,27 @@
 			path = "../Target Support Files/Mantle";
 			sourceTree = "<group>";
 		};
-		DC764F5496BD03F7673E4155DB6ED49F /* Response */ = {
+		D33D14D8E3E58ED52FC8155D8446964D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CD948D02B46B622951F38A43973D8157 /* CDYelpBusinessResponse.h */,
-				CC0C99F74757A917700953EBA8C20C5A /* CDYelpBusinessResponse.m */,
-				CB299A72E7E1F66AFB6945B0DD755D17 /* CDYelpErrorResponse.h */,
-				7F07C9FA2ACC8F901C0C9E8925690702 /* CDYelpErrorResponse.m */,
-				60EAD2E1A4D9EA8A6E3DF620D7F190E9 /* CDYelpSearchResponse.h */,
-				F94B8AAE787A8A00FC46B28448F9B18F /* CDYelpSearchResponse.m */,
-				F5651011481BCC9A8A8CFAA03069E716 /* Model */,
+				831004B1156886663D91B27A04675A45 /* CDYelpKit */,
 			);
-			path = Response;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DB26CA4C6210CDCB66C21AE8A7A8C358 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				24E4258CC89231A7C6A1C6DAC20A96DD /* CDYelpAPIClient.h */,
+				7DE8BF683A6E9B8FF17FE888DB7FDF0E /* CDYelpAPIClient.m */,
+				7AE693BB9BC364BC120E3E4DB1405F5F /* CDYelpKitManager.h */,
+				AD4B52E76743048F12468F5380348E0E /* CDYelpKitManager.m */,
+				AFCE421CF04F94DCD3B2956230433942 /* CDYelpModels.h */,
+				9208A36399A2966624FDFC5177A8B44E /* CDYelpResponses.h */,
+				41C50019FD894C823C09860AE31C032B /* Request */,
+				5CE8F53D657A7929856000D44E1DF890 /* Response */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		E2DC79133003B87FB3EA172CBCA08C91 /* Products */ = {
@@ -825,18 +906,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E78BF677608137540892AE68F4BD35C2 /* Support Files */ = {
+		E9596315A5CEA659A52F9038AB866D84 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				126B7A5CAFFF621AE87D7E8561FB33BB /* CDYelpKit.modulemap */,
-				C17E5626CC74BC636A6E7E2C5F7F83FF /* CDYelpKit.xcconfig */,
-				4C7DA63EEBFACB7EB8ACE44F7D8CD97B /* CDYelpKit-dummy.m */,
-				09EF6C20EE3A01F47186BA5CFCD679A4 /* CDYelpKit-prefix.pch */,
-				68EF61CB5EEDB8871EA87D19C56F66FE /* CDYelpKit-umbrella.h */,
-				BE880FD248480C1DF230F70A7F1368E3 /* Info.plist */,
+				A7956CEE354146DFE381EA484F437B96 /* OAuth */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CDYelpKit";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		EB02F6F0620B1879A4F0D653C94454C8 /* iOS */ = {
@@ -850,6 +925,14 @@
 				29F9F8C0E030C66F4D9179A3B2763DC8 /* SystemConfiguration.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB4B04A51668C8C67982A54DB084CCC8 /* CDYelpKit */ = {
+			isa = PBXGroup;
+			children = (
+				9131B744AFF2A84D2D5A962FC5F6A7C0 /* Classes */,
+			);
+			path = CDYelpKit;
 			sourceTree = "<group>";
 		};
 		EEBE8BD74F9C95CA48A239A11ED21F0D /* Security */ = {
@@ -872,16 +955,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F11BE5CB376F5EE678CFC9F26A313FEB /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				335F6307A159F9D5F01B7D14E2C27A8E /* Core */,
-				88382747BD2C5CF48100BF2A7EC6F52C /* Request */,
-				DC764F5496BD03F7673E4155DB6ED49F /* Response */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		F1F1B498A047844F11F30682EF317ECF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -894,36 +967,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F5651011481BCC9A8A8CFAA03069E716 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				608545342A8CBE7382D1A8C9D890F3E0 /* CDYelpBusiness.h */,
-				4133880F97BDF04C215E477DEF810EBA /* CDYelpBusiness.m */,
-				154DD879F852D1D5E5ACD79E51D910C7 /* CDYelpDeal.h */,
-				8DE6B4C3CE56372D65665BDA624D71EA /* CDYelpDeal.m */,
-				D56D328D25569225CB59E40C31D9EA68 /* CDYelpDealOption.h */,
-				D4CA3582A2A2F2EEA3CC951D4237444D /* CDYelpDealOption.m */,
-				6CDE9692BF62968915914269540E0274 /* CDYelpDetailedBusiness.h */,
-				85BBCAA403E766F6811E579414052964 /* CDYelpDetailedBusiness.m */,
-				B7C172C66013C08D96F9DF61F1C92134 /* CDYelpError.h */,
-				75948D6F4156C2A099DBE2A6316918D1 /* CDYelpError.m */,
-				70C4631C1D5F20FD566531F3D27B787D /* CDYelpGiftCertificate.h */,
-				DC94001C72159B06B354D3DB58165543 /* CDYelpGiftCertificate.m */,
-				61D6324B065AAAF210882B068A10C3C6 /* CDYelpGiftCertificateOption.h */,
-				4B5B590DE8B62A3A9467ADB8CCBE91B8 /* CDYelpGiftCertificateOption.m */,
-				B427EA4AF47B52FC93E6346B623733BE /* CDYelpLocation.h */,
-				B2DCB1FD4BB8DFAA6A6EB60107183EC0 /* CDYelpLocation.m */,
-				1D4EB5A24E089E3C95C5C1766B43C4A2 /* CDYelpReview.h */,
-				D294FA7DBF6E18D4E769F58049423A6A /* CDYelpReview.m */,
-				84211549293C9B7798EDEBB1FB86241F /* CDYelpUser.h */,
-				E6424AA07FCBFD8153F27D2AF62D14BB /* CDYelpUser.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		08FA0811662A7AA787BFD181A8D57DC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0119349E26EC939B7E7228F8052DAAEA /* EXTKeyPathCoding.h in Headers */,
+				7A3F1160B70B1AB1A5E6B7DABC712ED1 /* EXTRuntimeExtensions.h in Headers */,
+				93DEFF0113E9590B28FF7DB0AD52418A /* EXTScope.h in Headers */,
+				5FE4A27451E33799A9BB885F699ABC63 /* Mantle-umbrella.h in Headers */,
+				A205A648C8CD470ECF2E51CF8ECB23C4 /* Mantle.h in Headers */,
+				EAC3B6B86924DD29C02BEAFD588AFBAC /* metamacros.h in Headers */,
+				24416378D77A5FC48456290E6DFC0028 /* MTLJSONAdapter.h in Headers */,
+				59A935912DA05D6B4B2D1E5A69335722 /* MTLModel+NSCoding.h in Headers */,
+				2799F84E6EADE232018ADD456F9108CA /* MTLModel.h in Headers */,
+				9D87FA77F35BF22EB87E2F467782440D /* MTLReflection.h in Headers */,
+				78AA901D418ED4A3AB3991DF2177EB80 /* MTLTransformerErrorHandling.h in Headers */,
+				C66816A71DD6D17EB0BCD6ECD6EABA10 /* MTLValueTransformer.h in Headers */,
+				91CB178D69E3A480B7C23F007BAF1DD7 /* NSArray+MTLManipulationAdditions.h in Headers */,
+				FB56136A310E01DD4B5D4DCDCA58B4AD /* NSDictionary+MTLJSONKeyPath.h in Headers */,
+				0F924D73417283F04114A6E6404036DA /* NSDictionary+MTLManipulationAdditions.h in Headers */,
+				C43F57320EC06FA3B796417930A1B515 /* NSDictionary+MTLMappingAdditions.h in Headers */,
+				55498AEC28511E820461A77A50620FB0 /* NSError+MTLModelException.h in Headers */,
+				E71D0C5E822B3AB144606E1C4CAE6BCD /* NSObject+MTLComparisonAdditions.h in Headers */,
+				A5F06C6406526E430AE8D704AC9B9D66 /* NSValueTransformer+MTLInversionAdditions.h in Headers */,
+				ACEDF974CC3B8B70642690050FFAB27E /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B31A0E1284A60346E8660F781AA2343 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -933,6 +1006,37 @@
 				47DFB27DF6858F39456E1716B780AEA6 /* BDBOAuth1SessionManager.h in Headers */,
 				A2F6D8BABD5F73168E187EC4F5585F68 /* NSDictionary+BDBOAuth1Manager.h in Headers */,
 				365AD6C6E0C928334C299CAAB70A62B2 /* NSString+BDBOAuth1Manager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D94C4CD5B1AD09E6B77975DEEC631E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33ECBF3B5E80CC5315CF725DD001762 /* CDYelpAPIClient.h in Headers */,
+				55F7D55356CE1379BC3123E0083270B7 /* CDYelpBoundingBox.h in Headers */,
+				496CECA627E27409BC7866FBB3141309 /* CDYelpBusiness.h in Headers */,
+				ABC8B7F247506ACEBEF871F66F250358 /* CDYelpBusinessResponse.h in Headers */,
+				04987A1159FD4A50E463D5FA5C7A99B4 /* CDYelpDeal.h in Headers */,
+				AB25A94E8F309EE375C0656EBC9838CC /* CDYelpDealOption.h in Headers */,
+				02638BFD8B81E1DEA0BB45AFB888E0E0 /* CDYelpDetailedBusiness.h in Headers */,
+				34D8C19DE54A98940D062DD9C7A805AF /* CDYelpError.h in Headers */,
+				F21A8A804E7FD7D02316EB211A1C458B /* CDYelpErrorResponse.h in Headers */,
+				05541F833E0DACB5641BCAE99F921B8A /* CDYelpGiftCertificate.h in Headers */,
+				DCB96F1B56169048D8F5997330B98C18 /* CDYelpGiftCertificateOption.h in Headers */,
+				3AFBB80D9E4CF9A99DDD2670C60EADF2 /* CDYelpKit-umbrella.h in Headers */,
+				47DCC2EB85FC0DF38EA5832587D720AF /* CDYelpKitManager.h in Headers */,
+				9ADAC6AD045D884EFADE22A6C55D474F /* CDYelpLocation.h in Headers */,
+				623C2E30CE13448630C472A753212B68 /* CDYelpModels.h in Headers */,
+				1B414C478F266690F65637460A9A3F9C /* CDYelpOAuthManager.h in Headers */,
+				4DDC4DA3C5CD3C5A4641EE62F8CA133B /* CDYelpQueryParams.h in Headers */,
+				1D484AB50FE915DE22D681B4D57DAA80 /* CDYelpRequestLocation.h in Headers */,
+				42C11BFDC19D4369406EE8292EBCE6E2 /* CDYelpRequestLocationType.h in Headers */,
+				1E39BCA80E0E6AA46BC4FFE3D52E7B79 /* CDYelpResponses.h in Headers */,
+				3450959BFB27DFED30C2C85D514D2C11 /* CDYelpReview.h in Headers */,
+				0800FF4A106C7E538B44DA1C5FDFFDED /* CDYelpSearchResponse.h in Headers */,
+				8321CA52560FDAB7497ADF151DAAF7C4 /* CDYelpSortType.h in Headers */,
+				5A205A9CD20928B4E0C500B7C26F0A9E /* CDYelpUser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,76 +1054,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E9FF6096DDE62BFF9F027F63DDB123E /* Headers */ = {
+		99CF2897CED7A7C7B0668F367F087472 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB45FF03845CDD6A2208E9ABA0D5275 /* NSDictionary+Overcoat.h in Headers */,
-				73CABE7E8D5B7370753939DE5EA6ECEA /* NSError+OVCResponse.h in Headers */,
-				95FD574E242548BCEC80F0D94478B160 /* OVCHTTPSessionManager.h in Headers */,
-				F9D69121ABD3A992B3F21A03DD771F8F /* OVCModelResponseSerializer.h in Headers */,
-				3F31E3476DA3433741C942EA257D5360 /* OVCResponse.h in Headers */,
-				FEA3FD50668066B2A2BD40CBF6E2DF54 /* OVCURLMatcher.h in Headers */,
-				5763C0B93E7582A73E010770BCD6F5C0 /* OVCUtilities.h in Headers */,
-				5B7062E1D478798ADCC2EBDC3E8A3317 /* Overcoat-umbrella.h in Headers */,
-				469AE6D979CE4C00E46104811456F8BF /* Overcoat.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		975DF9DA8564768FAB9BF8E4EB15FE31 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD2F3E95DB13FE202F6E11D093BF4910 /* EXTKeyPathCoding.h in Headers */,
-				3097B7367801D180A74F9162DACDCFEC /* EXTRuntimeExtensions.h in Headers */,
-				0140AAEECEE0064CC3EBD39706FF5522 /* EXTScope.h in Headers */,
-				2EF503D59FAD0FF8D09FD202911F8BED /* Mantle-umbrella.h in Headers */,
-				567E3A208E481C074112F235FD975D12 /* Mantle.h in Headers */,
-				C3A4F951D85EB84D05C6A87E9B9BEC02 /* metamacros.h in Headers */,
-				D2CBC00FDCBD147D82D8D06853B3246E /* MTLJSONAdapter.h in Headers */,
-				A2356071F0DA0AB291F91526EDAF50E7 /* MTLModel+NSCoding.h in Headers */,
-				530C4BA0FC973BD356AEE977BD53E3AB /* MTLModel.h in Headers */,
-				22BA84C504F0E7F7A37B4F107E093454 /* MTLReflection.h in Headers */,
-				FEA2979880760CD92A9B27BBD1B34729 /* MTLTransformerErrorHandling.h in Headers */,
-				88460523FA618F74E7776B4F454361AF /* MTLValueTransformer.h in Headers */,
-				03F83D1F5D6D978399BE348B2FDB00F7 /* NSArray+MTLManipulationAdditions.h in Headers */,
-				6C2994A4D7952183F9259B2057183AE9 /* NSDictionary+MTLJSONKeyPath.h in Headers */,
-				6E1538C1B3360C36E3A31EBBC9837038 /* NSDictionary+MTLManipulationAdditions.h in Headers */,
-				8F2533592320F61C099984D31F597418 /* NSDictionary+MTLMappingAdditions.h in Headers */,
-				96F7EF4DB36E0EA1E860CBCAC7131298 /* NSError+MTLModelException.h in Headers */,
-				5ADFBF264B542E348AFE6C81AB279BCD /* NSObject+MTLComparisonAdditions.h in Headers */,
-				4B2D1E3E1575EFFFC441E526ABBAECBE /* NSValueTransformer+MTLInversionAdditions.h in Headers */,
-				DD3985A953402717529EDE4B788E4E42 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A589FF8F727576FE0A1EE0F61421253B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC8DEC369659FD52298592FF4C175119 /* CDYelpAPIClient.h in Headers */,
-				503CE204709F2DC533F4F823AA64EC15 /* CDYelpBoundingBox.h in Headers */,
-				A7445FAE84D07E5413FEDFCBB9035DC5 /* CDYelpBusiness.h in Headers */,
-				762E015131D3C68C9F6CFDC1B8656423 /* CDYelpBusinessResponse.h in Headers */,
-				7DDC4FFA352BADAACC1EE0AB43705048 /* CDYelpDeal.h in Headers */,
-				FB0809FF5FE584CE749DD0D1BE1EA9D3 /* CDYelpDealOption.h in Headers */,
-				279D63E62EEF5C1EF2A42383FB9AE5C2 /* CDYelpDetailedBusiness.h in Headers */,
-				FCD2AE420DC9F4FD95F443B606E8BE9B /* CDYelpError.h in Headers */,
-				C8112CE291C0682FF2133DDC763ED9F9 /* CDYelpErrorResponse.h in Headers */,
-				E320149127BE54D5AF83000E4017E85B /* CDYelpGiftCertificate.h in Headers */,
-				2F566E07A5F5D632F6C956A873AECDFD /* CDYelpGiftCertificateOption.h in Headers */,
-				A8D12EAF63BAC1A1B57225554C7714F2 /* CDYelpKit-umbrella.h in Headers */,
-				BD6E8A4174FFAE498746C4694E080016 /* CDYelpKit.h in Headers */,
-				0698F1C1C614D0046E2C589C09C1DD5C /* CDYelpLocation.h in Headers */,
-				6FD9CA60E010404F9EC774B6B39079B9 /* CDYelpModels.h in Headers */,
-				78F9FD3F0C8968F882D2DA0A49B51273 /* CDYelpQueryParams.h in Headers */,
-				66112BBB720FB09C2BB2E17C43F9BE48 /* CDYelpRequestLocation.h in Headers */,
-				607FAD6EA5C65AA09BA4DD2C46B71A13 /* CDYelpRequestLocationType.h in Headers */,
-				40BA37477F641617108B978715A2CB1C /* CDYelpResponses.h in Headers */,
-				F57253B8A7BADA019D5199C147D446F4 /* CDYelpReview.h in Headers */,
-				6EBE5308D7981C3A8D5B83D064CE0F9D /* CDYelpSearchResponse.h in Headers */,
-				67ED624CCDD9817B3B452BA0F2B40AC8 /* CDYelpSortType.h in Headers */,
-				36FC04C9ACB0D91C4F6C69623BAA719A /* CDYelpUser.h in Headers */,
+				96CA64D1FCA07D13DC2C87961456953B /* NSDictionary+Overcoat.h in Headers */,
+				5C598C8AB651E4D7EC4D7FF19E980DFE /* NSError+OVCResponse.h in Headers */,
+				08877032EB7BC082A6CCC8BBBD0C2D94 /* OVCHTTPSessionManager.h in Headers */,
+				47C8E80C154787603985515F42422A2E /* OVCModelResponseSerializer.h in Headers */,
+				19A129EC82C09C322D9D77942289B38C /* OVCResponse.h in Headers */,
+				4783EE23FE67A001E805C7AF2FF09932 /* OVCURLMatcher.h in Headers */,
+				79676B45BA41942876088CEED6D74303 /* OVCUtilities.h in Headers */,
+				0DD6116467F969FA528ADFD90198B7AE /* Overcoat-umbrella.h in Headers */,
+				453877B10A5C290898C149397227F072 /* Overcoat.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1042,42 +1089,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1EAA67F148BA5723321225928BDF31D4 /* Mantle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C062BECB15F8C1DECD29A35E07231024 /* Build configuration list for PBXNativeTarget "Mantle" */;
-			buildPhases = (
-				FAA3DE9D214EE5B4D50974BEC2531721 /* Sources */,
-				1FD5F7F8F90D93FF5D73E567EBADBE23 /* Frameworks */,
-				975DF9DA8564768FAB9BF8E4EB15FE31 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Mantle;
-			productName = Mantle;
-			productReference = 7BFCA5F99FBE6DDA9D32B6E5EB09F727 /* Mantle.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3E4C10C8BA9F4CB5F4BCB8480A0090A1 /* Overcoat */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7231948E944FC9D99D6370CA286D3AFF /* Build configuration list for PBXNativeTarget "Overcoat" */;
-			buildPhases = (
-				A4147B0CDCEBCFEEB1E658BF86B0BB8E /* Sources */,
-				CEA29642FDE7D4D9510AEC5607C176DB /* Frameworks */,
-				8E9FF6096DDE62BFF9F027F63DDB123E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67C82B2AE1751E6FA11E9A515EDE452F /* PBXTargetDependency */,
-				D62FACCBD0F862D8BF396064D4E99980 /* PBXTargetDependency */,
-			);
-			name = Overcoat;
-			productName = Overcoat;
-			productReference = DA1317F2E899B07FF565CF67E4189A07 /* Overcoat.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		445B3D47256376A8FB06D383FDBEA0C4 /* BDBOAuth1Manager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E9F524E65C730C1891394F18A683F7F /* Build configuration list for PBXNativeTarget "BDBOAuth1Manager" */;
@@ -1096,6 +1107,23 @@
 			productReference = E4AA6685467BFC19E8CE4C967F6F1778 /* BDBOAuth1Manager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5809AD392F480C2C07D59701E68ADBA4 /* Mantle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAD7C603517C20FDDFA5F45AF2CC734 /* Build configuration list for PBXNativeTarget "Mantle" */;
+			buildPhases = (
+				12C337C9A41F5C7C5A8CE8F2D58B54E3 /* Sources */,
+				4CD1E837C7962601E18E9BE074793881 /* Frameworks */,
+				08FA0811662A7AA787BFD181A8D57DC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mantle;
+			productName = Mantle;
+			productReference = 7BFCA5F99FBE6DDA9D32B6E5EB09F727 /* Mantle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		94DD2FB04E614E654CE5C3AA7C23DCDB /* Pods-CDYelpKit_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3A3D2BD60837FCF64202C7231325451 /* Build configuration list for PBXNativeTarget "Pods-CDYelpKit_Tests" */;
@@ -1111,6 +1139,25 @@
 			name = "Pods-CDYelpKit_Tests";
 			productName = "Pods-CDYelpKit_Tests";
 			productReference = 6AD91D8E86C221D5262EB98C81536FD9 /* Pods_CDYelpKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96F78219053D3E518A63BE1F75431941 /* Overcoat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D6044C747AB7696031091EB823D98E /* Build configuration list for PBXNativeTarget "Overcoat" */;
+			buildPhases = (
+				574713322DAAFB2C5108C99905CFC3B1 /* Sources */,
+				AE51252A1CC8581FC9B04F12BC04A69E /* Frameworks */,
+				99CF2897CED7A7C7B0668F367F087472 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8B7FC1AF47FDA047E926C8EBF75B889 /* PBXTargetDependency */,
+				3E685D654977C1617D4C3F993AE56E0F /* PBXTargetDependency */,
+			);
+			name = Overcoat;
+			productName = Overcoat;
+			productReference = DA1317F2E899B07FF565CF67E4189A07 /* Overcoat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CFF8253672E324DFF05D1F224B775022 /* AFNetworking */ = {
@@ -1152,21 +1199,21 @@
 			productReference = 3372C87AC4F03E6BC9DBAE9CF40139D5 /* Pods_CDYelpKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F1B0F9B8050EBAD3ADE1122B188A3FDA /* CDYelpKit */ = {
+		F0A663D04276C1230901AC327D88823E /* CDYelpKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA7FF40FF82ABF2D9615B1189AE815BD /* Build configuration list for PBXNativeTarget "CDYelpKit" */;
+			buildConfigurationList = 7D899D53B79FE71442F2C206F980D82E /* Build configuration list for PBXNativeTarget "CDYelpKit" */;
 			buildPhases = (
-				B557F471A3780FAFF7120604F4EEC468 /* Sources */,
-				C56D49858E76C594F873604E433C2125 /* Frameworks */,
-				A589FF8F727576FE0A1EE0F61421253B /* Headers */,
+				1E170F593BE1A839DA55CF9EC93CDB1D /* Sources */,
+				F05CA17E9CE30DCFB65E6BEB22666AB7 /* Frameworks */,
+				2D94C4CD5B1AD09E6B77975DEEC631E8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				664BE598D92EEDA249FE4CE03D8D5B8A /* PBXTargetDependency */,
-				5A41222179DDA7955254D34B3085181E /* PBXTargetDependency */,
-				6CB7FA193A6C7D3FC2B0D5A40892D8AB /* PBXTargetDependency */,
-				8DB59F180351B01DFBEA4D12A45C4BE6 /* PBXTargetDependency */,
+				584087B0046FB08A51CDCDE5022CAB05 /* PBXTargetDependency */,
+				48D66CB40F4BA4ED60E56EF4D6F3F76E /* PBXTargetDependency */,
+				08F47DCB7A972AACFBA29860EAF80AAF /* PBXTargetDependency */,
+				4BD889F585EA66CA6C3216290D62D1A9 /* PBXTargetDependency */,
 			);
 			name = CDYelpKit;
 			productName = CDYelpKit;
@@ -1196,9 +1243,9 @@
 			targets = (
 				CFF8253672E324DFF05D1F224B775022 /* AFNetworking */,
 				445B3D47256376A8FB06D383FDBEA0C4 /* BDBOAuth1Manager */,
-				F1B0F9B8050EBAD3ADE1122B188A3FDA /* CDYelpKit */,
-				1EAA67F148BA5723321225928BDF31D4 /* Mantle */,
-				3E4C10C8BA9F4CB5F4BCB8480A0090A1 /* Overcoat */,
+				F0A663D04276C1230901AC327D88823E /* CDYelpKit */,
+				5809AD392F480C2C07D59701E68ADBA4 /* Mantle */,
+				96F78219053D3E518A63BE1F75431941 /* Overcoat */,
 				DA28F4A441369FED74EDACB9D612E694 /* Pods-CDYelpKit_Example */,
 				94DD2FB04E614E654CE5C3AA7C23DCDB /* Pods-CDYelpKit_Tests */,
 			);
@@ -1220,6 +1267,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12C337C9A41F5C7C5A8CE8F2D58B54E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC72E70D7B999B18C278302B693B008 /* EXTRuntimeExtensions.m in Sources */,
+				773582898B796FC871DA97FD3D507B52 /* EXTScope.m in Sources */,
+				0DF0EC0BECF2D15C2655A7328D378AB9 /* Mantle-dummy.m in Sources */,
+				BA1B9A98D081E5961565969C8708107C /* MTLJSONAdapter.m in Sources */,
+				B0C9E7CB074B5D27550BD13472BC88F9 /* MTLModel+NSCoding.m in Sources */,
+				F8DDCAE564D27300EBB12AED523E8004 /* MTLModel.m in Sources */,
+				CC58BF059E6AEDA2D6148976F24B6FAF /* MTLReflection.m in Sources */,
+				2816F8DBACB8F23A16419A9F533A7FCE /* MTLTransformerErrorHandling.m in Sources */,
+				527C399FB7768935563FF6342B01E4F6 /* MTLValueTransformer.m in Sources */,
+				02283ACF42C6854ED23A8E3116EC9E1A /* NSArray+MTLManipulationAdditions.m in Sources */,
+				1FF20C958452DDED764534D5D6AA6615 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
+				03D93043919B04678B22B8C47AC69800 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
+				335E7BDF662CDA9FD751EB80E0FD4E69 /* NSDictionary+MTLMappingAdditions.m in Sources */,
+				7D44B94F2A7FF3193C50E37B363D4862 /* NSError+MTLModelException.m in Sources */,
+				6B7AFB7415FE0A473BB1B0D8C6238657 /* NSObject+MTLComparisonAdditions.m in Sources */,
+				709A4CB85F8A0247F85B0E77AE70DF1B /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
+				54A0DCBFD15D02C3EB69592F286789AD /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E170F593BE1A839DA55CF9EC93CDB1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967B4DA863D2EF1D07E99E431654B339 /* CDYelpAPIClient.m in Sources */,
+				5778B7B9CB209844B984D7DC03E915F6 /* CDYelpBoundingBox.m in Sources */,
+				65033D7CD7546A57C11464B64EA06A4A /* CDYelpBusiness.m in Sources */,
+				363625D8A4F4C3B4B04CA7659538C95E /* CDYelpBusinessResponse.m in Sources */,
+				3593D3F921665A557BE494479F309E97 /* CDYelpDeal.m in Sources */,
+				BFD118A956D0F3B243DDB6895C4693F4 /* CDYelpDealOption.m in Sources */,
+				00826980D28DD4042EC5C1290C290F7D /* CDYelpDetailedBusiness.m in Sources */,
+				37871100E1D1D21B13C6094B57ABEFA9 /* CDYelpError.m in Sources */,
+				AB0E113A255FE603497CF2AEC8F346F8 /* CDYelpErrorResponse.m in Sources */,
+				B103EFE7A6EE2A8C83A8A27C13D90216 /* CDYelpGiftCertificate.m in Sources */,
+				5E0624DA9DCBC7106A94A369B55158B8 /* CDYelpGiftCertificateOption.m in Sources */,
+				A373C1FD5A1A29EB0D2FD253C3C23CFB /* CDYelpKit-dummy.m in Sources */,
+				4A96C64EBFFE7C63AE30BF5E6C2F6A4F /* CDYelpKitManager.m in Sources */,
+				DA68A17E54B0E5F507C60353887AD345 /* CDYelpLocation.m in Sources */,
+				306588964DCF068BA9836C0D11670597 /* CDYelpOAuthManager.m in Sources */,
+				2C8ACFC4E362B19C239737ED6D0F692B /* CDYelpQueryParams.m in Sources */,
+				08D97FC01B24A19B86183C7A312C2E9D /* CDYelpRequestLocation.m in Sources */,
+				E07D11EC26B1C478798805043512C2A9 /* CDYelpReview.m in Sources */,
+				5297AD1259002F735C4165E4799E0119 /* CDYelpSearchResponse.m in Sources */,
+				B42ADCCE8B6C6D8C674AAF6C8B5E42A3 /* CDYelpUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E6FD44CA02C65A80A43B61B685D4E7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1228,17 +1326,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4147B0CDCEBCFEEB1E658BF86B0BB8E /* Sources */ = {
+		574713322DAAFB2C5108C99905CFC3B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5770161524F335D9B5B58A38B81E687E /* NSDictionary+Overcoat.m in Sources */,
-				EB8BFAEF45639940A8047087AA0E3326 /* NSError+OVCResponse.m in Sources */,
-				E2FCF9A1DB3264D619B54C0F54A5BA26 /* OVCHTTPSessionManager.m in Sources */,
-				FF459BA1AED378BD599033B063F6898C /* OVCModelResponseSerializer.m in Sources */,
-				22A170E809EFEE70211539C19ED6E7FA /* OVCResponse.m in Sources */,
-				E5940E49B342FC31B8C86F9CECF0B7D7 /* OVCURLMatcher.m in Sources */,
-				216F85F1713FEDA10D423AD6D38D6985 /* Overcoat-dummy.m in Sources */,
+				D8C5D8D439BBD3A39AB8AB64D764B011 /* NSDictionary+Overcoat.m in Sources */,
+				0C67EDCF733145BD37EEF08C2BD045DC /* NSError+OVCResponse.m in Sources */,
+				932800EF9AB6D3C3FF923E7F3D4E8223 /* OVCHTTPSessionManager.m in Sources */,
+				A99E7DD354017DEA6C274FE40FF6463D /* OVCModelResponseSerializer.m in Sources */,
+				6326E53F6AAB94822C833B04D76EED72 /* OVCResponse.m in Sources */,
+				DFF27B9D7437741FA269BA84785D6C38 /* OVCURLMatcher.m in Sources */,
+				F384EB3063CFE1742173691CC746BA22 /* Overcoat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1254,32 +1352,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B557F471A3780FAFF7120604F4EEC468 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E88A79D1169D6DDFD90F14E41A19E98 /* CDYelpAPIClient.m in Sources */,
-				C9EC4C69F42DF6C33140E5B9DBCF0B99 /* CDYelpBoundingBox.m in Sources */,
-				FAFB1E3E872C52C8DD201D9484967488 /* CDYelpBusiness.m in Sources */,
-				9C52F1B2AE044B21810B42F1E17DB4DD /* CDYelpBusinessResponse.m in Sources */,
-				B4E9F0C6556DA33A83A495ECECA0F528 /* CDYelpDeal.m in Sources */,
-				0C8BE46385D35BC7048C1703BA631C58 /* CDYelpDealOption.m in Sources */,
-				1788D6E2990B64A4EF3FFC11914FE8FC /* CDYelpDetailedBusiness.m in Sources */,
-				4DD66284096740C1A0C0268A4F8F0F10 /* CDYelpError.m in Sources */,
-				D35BC014E804CC717E10C11D328AE668 /* CDYelpErrorResponse.m in Sources */,
-				078D33E1A389ECBA04E79C86EF416C1D /* CDYelpGiftCertificate.m in Sources */,
-				840F1A3B098E91733FA9213D86B7123E /* CDYelpGiftCertificateOption.m in Sources */,
-				67EA8B68713319E19D30FD49EF120BE8 /* CDYelpKit-dummy.m in Sources */,
-				0EA3B75B2F6F66869CE241C7A8A01300 /* CDYelpKit.m in Sources */,
-				98EA6A998E077D26F5EF86BD88C8097A /* CDYelpLocation.m in Sources */,
-				5135403B2009EDFF62A83DFAA81CFAFD /* CDYelpQueryParams.m in Sources */,
-				BD884524FC905C55F67507F66D2628C6 /* CDYelpRequestLocation.m in Sources */,
-				224DC055A0000573C0C3FC11541C7DB8 /* CDYelpReview.m in Sources */,
-				BFF830762DDA44A24544CDA1C470A9CB /* CDYelpSearchResponse.m in Sources */,
-				1B39182A841D9EEC5BEC90A8007BBDD3 /* CDYelpUser.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C2DF595994A9B7D1D33C5A4E56FCA49E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1288,33 +1360,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA3DE9D214EE5B4D50974BEC2531721 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76FF9AB41150E14B72B2CB0D9795E995 /* EXTRuntimeExtensions.m in Sources */,
-				4CC3510BFB9F75647908ABB745B4D2AF /* EXTScope.m in Sources */,
-				F52A34EA547A9A23A724E067A5A120C2 /* Mantle-dummy.m in Sources */,
-				DBE1B552411A5A0B1C5D1C47D9F71858 /* MTLJSONAdapter.m in Sources */,
-				45919FB151CCCE7705EB86F765A44499 /* MTLModel+NSCoding.m in Sources */,
-				79158DA4287A98F056D09235381054EE /* MTLModel.m in Sources */,
-				F72EA594BD2B993554C310B0185EB12A /* MTLReflection.m in Sources */,
-				5E61F4E2F307739F7FAE25720B66DDA7 /* MTLTransformerErrorHandling.m in Sources */,
-				8ACF72C8C4861159E53B3786C483C8DC /* MTLValueTransformer.m in Sources */,
-				6B5412F81396B13FFCF5A3DD43E608A5 /* NSArray+MTLManipulationAdditions.m in Sources */,
-				8EA2F9F3F88E856B11BF66115140F7F1 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
-				3E225CAA3184032093DD4652D876CA31 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
-				6B9DA6749CCED27DC888FE8925B9C0DE /* NSDictionary+MTLMappingAdditions.m in Sources */,
-				7C68C793F9ED6918F72E786F4DF3ECDE /* NSError+MTLModelException.m in Sources */,
-				9D63B04E10E5E72959EDBB32D89F57BB /* NSObject+MTLComparisonAdditions.m in Sources */,
-				DCBE13EE8740CF0222B539E1267E7A30 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
-				751CBE6065B0DFE2C553F9886402C35A /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		08F47DCB7A972AACFBA29860EAF80AAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mantle;
+			target = 5809AD392F480C2C07D59701E68ADBA4 /* Mantle */;
+			targetProxy = BBF3223F315BFA3CA777575E3CE4B32A /* PBXContainerItemProxy */;
+		};
 		29046E928077C9114EE5E1EF10186C3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AFNetworking;
@@ -1324,38 +1378,38 @@
 		3BA4650DDE0534447008D5E30B026B9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CDYelpKit;
-			target = F1B0F9B8050EBAD3ADE1122B188A3FDA /* CDYelpKit */;
+			target = F0A663D04276C1230901AC327D88823E /* CDYelpKit */;
 			targetProxy = F243CF63799879E2DC186DA580C25412 /* PBXContainerItemProxy */;
+		};
+		3E685D654977C1617D4C3F993AE56E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mantle;
+			target = 5809AD392F480C2C07D59701E68ADBA4 /* Mantle */;
+			targetProxy = 0377CBCD0A680403E22A1FF297CDDC90 /* PBXContainerItemProxy */;
+		};
+		48D66CB40F4BA4ED60E56EF4D6F3F76E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BDBOAuth1Manager;
+			target = 445B3D47256376A8FB06D383FDBEA0C4 /* BDBOAuth1Manager */;
+			targetProxy = D267BE9DE6AF1D97179B90C217172AB4 /* PBXContainerItemProxy */;
+		};
+		4BD889F585EA66CA6C3216290D62D1A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Overcoat;
+			target = 96F78219053D3E518A63BE1F75431941 /* Overcoat */;
+			targetProxy = CFDBA33C72751AA63BF76BAB42495CA2 /* PBXContainerItemProxy */;
 		};
 		5464877C1D3583705260ABA600B86D9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Mantle;
-			target = 1EAA67F148BA5723321225928BDF31D4 /* Mantle */;
+			target = 5809AD392F480C2C07D59701E68ADBA4 /* Mantle */;
 			targetProxy = 3C41C6C999A85AA21F2CD1E8676DDD0A /* PBXContainerItemProxy */;
 		};
-		5A41222179DDA7955254D34B3085181E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BDBOAuth1Manager;
-			target = 445B3D47256376A8FB06D383FDBEA0C4 /* BDBOAuth1Manager */;
-			targetProxy = 863775D49D8D59C599E0802326BE2223 /* PBXContainerItemProxy */;
-		};
-		664BE598D92EEDA249FE4CE03D8D5B8A /* PBXTargetDependency */ = {
+		584087B0046FB08A51CDCDE5022CAB05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AFNetworking;
 			target = CFF8253672E324DFF05D1F224B775022 /* AFNetworking */;
-			targetProxy = 164A871C149B9541A63B8FE51C4669AC /* PBXContainerItemProxy */;
-		};
-		67C82B2AE1751E6FA11E9A515EDE452F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = CFF8253672E324DFF05D1F224B775022 /* AFNetworking */;
-			targetProxy = 2F07CD330605D70266FE91F8CF3A1262 /* PBXContainerItemProxy */;
-		};
-		6CB7FA193A6C7D3FC2B0D5A40892D8AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mantle;
-			target = 1EAA67F148BA5723321225928BDF31D4 /* Mantle */;
-			targetProxy = A6B2C11254976277693D0BA452B53E54 /* PBXContainerItemProxy */;
+			targetProxy = 2EEE157EC2C628A2EA62069872064E51 /* PBXContainerItemProxy */;
 		};
 		857214BF233AAD25C1C7FD2F6A727BA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1369,27 +1423,50 @@
 			target = CFF8253672E324DFF05D1F224B775022 /* AFNetworking */;
 			targetProxy = 407EA1E46EE04BC94AF9FB069CEE35F3 /* PBXContainerItemProxy */;
 		};
-		8DB59F180351B01DFBEA4D12A45C4BE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Overcoat;
-			target = 3E4C10C8BA9F4CB5F4BCB8480A0090A1 /* Overcoat */;
-			targetProxy = 6DC369CA7DDB7A73B99241C10A801CDA /* PBXContainerItemProxy */;
-		};
-		D62FACCBD0F862D8BF396064D4E99980 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mantle;
-			target = 1EAA67F148BA5723321225928BDF31D4 /* Mantle */;
-			targetProxy = 330BDB34850E974B007012D050ADB21A /* PBXContainerItemProxy */;
-		};
 		D8939FB26300FB86C24FCDC856EB4354 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Overcoat;
-			target = 3E4C10C8BA9F4CB5F4BCB8480A0090A1 /* Overcoat */;
+			target = 96F78219053D3E518A63BE1F75431941 /* Overcoat */;
 			targetProxy = 8E52F47471D58BB7722959D2955C10CE /* PBXContainerItemProxy */;
+		};
+		F8B7FC1AF47FDA047E926C8EBF75B889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = CFF8253672E324DFF05D1F224B775022 /* AFNetworking */;
+			targetProxy = 2B95A462A4613CC3D4C0921CE77A1327 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00C2C1303EE34A8F7CA5DAEE5E9E7762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D4E2765C8A099CD96EDA7DB53F21FA /* Overcoat.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Overcoat/Overcoat-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Overcoat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Overcoat/Overcoat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Overcoat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1DB4BC9D7E2BBC2D6FA12F9579A4D72C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 283550DB624EC252B6AD693E67486378 /* AFNetworking.xcconfig */;
@@ -1411,64 +1488,6 @@
 				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = AFNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		26C9E7C1AD60CF122C99D6E45601CD18 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C17E5626CC74BC636A6E7E2C5F7F83FF /* CDYelpKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CDYelpKit/CDYelpKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CDYelpKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CDYelpKit/CDYelpKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CDYelpKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		33E5DB482F49FA5B9070A9527B561560 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 809BA4AB22E33F7E386714478C81AEDA /* Mantle.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Mantle/Mantle-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Mantle/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Mantle/Mantle.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Mantle;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1585,6 +1604,35 @@
 			};
 			name = Debug;
 		};
+		63AA9ECFEEB45AF7E4EBE7E2D31E4F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809BA4AB22E33F7E386714478C81AEDA /* Mantle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Mantle/Mantle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mantle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Mantle/Mantle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Mantle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6462070AF53410A6BFE19B1E595203D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D2CDF4A63E1A5321978C4AE9634C0D5 /* BDBOAuth1Manager.xcconfig */;
@@ -1614,35 +1662,6 @@
 			};
 			name = Debug;
 		};
-		7451C006F222D5F7AC6250C12464AD4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C17E5626CC74BC636A6E7E2C5F7F83FF /* CDYelpKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CDYelpKit/CDYelpKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CDYelpKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CDYelpKit/CDYelpKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CDYelpKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		790B4F9EFEDB2D3CB00B71EEAAD46B33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 283550DB624EC252B6AD693E67486378 /* AFNetworking.xcconfig */;
@@ -1671,6 +1690,35 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		7A548FEEF3082C2C92867492F85C9BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF3C4182B214653EDCAB89F9F0060A52 /* CDYelpKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CDYelpKit/CDYelpKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDYelpKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CDYelpKit/CDYelpKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CDYelpKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		7E1E7018970159453DB175D37709C804 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1734,6 +1782,35 @@
 			};
 			name = Debug;
 		};
+		8F80C30F063873B4A3D9BE7F24895623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809BA4AB22E33F7E386714478C81AEDA /* Mantle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Mantle/Mantle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mantle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Mantle/Mantle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Mantle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1772,34 +1849,34 @@
 			};
 			name = Release;
 		};
-		C0D4679722AB506B4A2AC2E98C664C6B /* Release */ = {
+		C38723936AB9046E481B92A647097908 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 809BA4AB22E33F7E386714478C81AEDA /* Mantle.xcconfig */;
+			baseConfigurationReference = 44D4E2765C8A099CD96EDA7DB53F21FA /* Overcoat.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Mantle/Mantle-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Mantle/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Overcoat/Overcoat-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Overcoat/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Mantle/Mantle.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Mantle;
+				MODULEMAP_FILE = "Target Support Files/Overcoat/Overcoat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Overcoat;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D46B659784D576295CB41002BB1BF781 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1834,38 +1911,9 @@
 			};
 			name = Release;
 		};
-		E01FB38E7574CE046AE98AC5EEECEEF2 /* Debug */ = {
+		DF12AC6EDBE155C55C66A145C09EDF43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44D4E2765C8A099CD96EDA7DB53F21FA /* Overcoat.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Overcoat/Overcoat-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Overcoat/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Overcoat/Overcoat.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Overcoat;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E92D7F4D3CA81370BA5102E45C605D0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44D4E2765C8A099CD96EDA7DB53F21FA /* Overcoat.xcconfig */;
+			baseConfigurationReference = FF3C4182B214653EDCAB89F9F0060A52 /* CDYelpKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1876,14 +1924,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Overcoat/Overcoat-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Overcoat/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CDYelpKit/CDYelpKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDYelpKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Overcoat/Overcoat.modulemap";
+				MODULEMAP_FILE = "Target Support Files/CDYelpKit/CDYelpKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Overcoat;
+				PRODUCT_NAME = CDYelpKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1922,11 +1970,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7231948E944FC9D99D6370CA286D3AFF /* Build configuration list for PBXNativeTarget "Overcoat" */ = {
+		7D899D53B79FE71442F2C206F980D82E /* Build configuration list for PBXNativeTarget "CDYelpKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E01FB38E7574CE046AE98AC5EEECEEF2 /* Debug */,
-				E92D7F4D3CA81370BA5102E45C605D0A /* Release */,
+				7A548FEEF3082C2C92867492F85C9BC7 /* Debug */,
+				DF12AC6EDBE155C55C66A145C09EDF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1940,11 +1988,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C062BECB15F8C1DECD29A35E07231024 /* Build configuration list for PBXNativeTarget "Mantle" */ = {
+		A9D6044C747AB7696031091EB823D98E /* Build configuration list for PBXNativeTarget "Overcoat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33E5DB482F49FA5B9070A9527B561560 /* Debug */,
-				C0D4679722AB506B4A2AC2E98C664C6B /* Release */,
+				C38723936AB9046E481B92A647097908 /* Debug */,
+				00C2C1303EE34A8F7CA5DAEE5E9E7762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAD7C603517C20FDDFA5F45AF2CC734 /* Build configuration list for PBXNativeTarget "Mantle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63AA9ECFEEB45AF7E4EBE7E2D31E4F3F /* Debug */,
+				8F80C30F063873B4A3D9BE7F24895623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1954,15 +2011,6 @@
 			buildConfigurations = (
 				59CB75611106A4478B53FEAC461A6A0A /* Debug */,
 				53F43870BF261F97FFB93FCFB82EC31E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA7FF40FF82ABF2D9615B1189AE815BD /* Build configuration list for PBXNativeTarget "CDYelpKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				26C9E7C1AD60CF122C99D6E45601CD18 /* Debug */,
-				7451C006F222D5F7AC6250C12464AD4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

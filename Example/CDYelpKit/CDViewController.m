@@ -169,8 +169,11 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
     if (self.locationSegmentedControl.selectedSegmentIndex == 0) {
         requestLocation = [CDYelpRequestLocation requestLocationFromCurrentCurrentLocation:self.mapView.userLocation.location];
     } else {
-        NSArray *mapViewBoundingBoxCoordinates = [self generateArrayForMapViewBoundingBox];
-        CDYelpBoundingBox *boundingBox = [CDYelpBoundingBox boundingBoxFromSouthWestLocation:mapViewBoundingBoxCoordinates[0] andNorthEastLocation:mapViewBoundingBoxCoordinates[1]];
+        // Example generating bounding box with MKMapView
+        CDYelpBoundingBox *boundingBox = [CDYelpBoundingBox boundingBoxFromMapView:self.mapView];
+        // Example generating bounding box with array of locations
+//        NSArray *mapViewBoundingBoxLocations = [CDYelpBoundingBox locationsArrayFromMapView:self.mapView];
+//        CDYelpBoundingBox *boundingBox = [CDYelpBoundingBox boundingBoxFromSouthWestLocation:mapViewBoundingBoxLocations[0] andNorthEastLocation:mapViewBoundingBoxLocations[1]];
         requestLocation = [CDYelpRequestLocation requestLocationFromBoundingBox:boundingBox];
     }
         
@@ -193,21 +196,6 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
 }
 
 #pragma mark - Private Methods
-
-- (NSArray *)generateArrayForMapViewBoundingBox {
-    // Get bounding rect from mapView
-    MKMapRect mRect = self.mapView.visibleMapRect;
-    MKMapPoint swMapPoint = MKMapPointMake(mRect.origin.x, MKMapRectGetMaxY(mRect));
-    MKMapPoint neMapPoint = MKMapPointMake(MKMapRectGetMaxX(mRect), mRect.origin.y);
-    CLLocationCoordinate2D swCoord = MKCoordinateForMapPoint(swMapPoint);
-    CLLocation *locationOne = [[CLLocation alloc] initWithLatitude:swCoord.latitude longitude:swCoord.longitude];
-    CLLocationCoordinate2D neCoord = MKCoordinateForMapPoint(neMapPoint);
-    CLLocation *locationTwo = [[CLLocation alloc] initWithLatitude:neCoord.latitude longitude:neCoord.longitude];
-    
-    NSArray *locations = [[NSArray alloc] initWithObjects:locationOne, locationTwo, nil];
-    
-    return locations;
-}
 
 - (void)populateMapWithYelpResults:(NSArray *)results {
     

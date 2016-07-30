@@ -12,11 +12,12 @@
 
 #import "CDYelpAPIClient.h"
 #import "CDYelpModels.h"
+#import "CDYelpOAuthManager.h"
 #import "CDYelpResponses.h"
 
 @implementation CDYelpKitManager
 
-static NSString *YelpEndpoint = @"https://api.yelp.com/v2/";
+static NSString *YelpAPIV2Endpoint = @"https://api.yelp.com/v2/";
 
 #pragma mark - Initialization Methods
 
@@ -33,7 +34,12 @@ static NSString *YelpEndpoint = @"https://api.yelp.com/v2/";
         NSAssert(token != nil && ![token isEqualToString:@""], @"A token must be provided to utilize CDYelpKit.");
         NSAssert(tokenSecret != nil && ![tokenSecret isEqualToString:@""], @"A token secret must be provided to utilize CDYelpKit.");
         
-        self.yelpApiClient = [[CDYelpAPIClient alloc] initWithBaseURL:[NSURL URLWithString:YelpEndpoint] consumerKey:consumerKey consumerSecret:consumerSecret token:token tokenSecret:tokenSecret];
+        CDYelpOAuthManager *yelpOAuthMananger = [[CDYelpOAuthManager alloc] initWithBaseURL:[NSURL URLWithString:YelpAPIV2Endpoint]
+                                                                 consumerKey:consumerKey
+                                                              consumerSecret:consumerSecret
+                                                                       token:token
+                                                                 tokenSecret:tokenSecret];
+        self.yelpApiClient = [[CDYelpAPIClient alloc] initWithOAuthManager:yelpOAuthMananger];
     }
     return self;
 }
@@ -80,6 +86,12 @@ static NSString *YelpEndpoint = @"https://api.yelp.com/v2/";
         NSLog(@"Error: %@", error);
         block(NO, error, nil);
     }];
+}
+
+#pragma mark - Helper Methods
+
+- (void)cancelAllPendingAPIRequests {
+    [self.yelpApiClient.operationQueue cancelAllOperations];
 }
 
 @end

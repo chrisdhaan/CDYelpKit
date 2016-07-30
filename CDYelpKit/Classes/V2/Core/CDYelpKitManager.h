@@ -38,4 +38,6 @@
                        withRequestLocation:(CDYelpRequestLocation * _Nullable)requestLocation
                            completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results))block;
 
+- (void)cancelAllPendingAPIRequests;
+
 @end

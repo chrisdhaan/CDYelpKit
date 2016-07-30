@@ -111,6 +111,19 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
         return;
     
     CDMapKitAnnotation *annotation = view.annotation;
+    CDYelpBusiness *business = (CDYelpBusiness *)annotation.dataObject;
+    
+    // Cancel any API requests previously made
+    [yelpKitManager cancelAllPendingAPIRequests];
+    // Get detailed information when selecting a business pin
+    [yelpKitManager getBusinessDetailsForBusinessId:business.id
+                                       byCoutryCode:nil
+                                     byLanguageCode:nil
+                                 withLangaugeFilter:false
+                                 includeActionLinks:false
+                                    completionBlock:^(BOOL successful, NSError * _Nullable error, CDYelpDetailedBusiness * _Nullable business) {
+        NSLog(@"%@", business);
+    }];
     
     // Center map on pin
     [mapView setCenterCoordinate:annotation.coordinate animated:YES];
@@ -176,7 +189,9 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
 //        CDYelpBoundingBox *boundingBox = [CDYelpBoundingBox boundingBoxFromSouthWestLocation:mapViewBoundingBoxLocations[0] andNorthEastLocation:mapViewBoundingBoxLocations[1]];
         requestLocation = [CDYelpRequestLocation requestLocationFromBoundingBox:boundingBox];
     }
-        
+    
+    // Cancel any API requests previously made
+    [yelpKitManager cancelAllPendingAPIRequests];
     // Query Yelp API for business results
     [yelpKitManager searchYelpBusinessesWithSearchTerm:searchTerm
                                              withLimit:limit

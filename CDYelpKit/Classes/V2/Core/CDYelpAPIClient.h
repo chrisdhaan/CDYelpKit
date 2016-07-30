@@ -6,31 +6,14 @@
 //
 //
 
-#import <BDBOAuth1Manager/BDBOAuth1RequestSerializer.h>
 #import <Overcoat/Overcoat.h>
+
+@class CDYelpOAuthManager;
 
 @interface CDYelpAPIClient : OVCHTTPSessionManager
 
-@property (nonatomic) BDBOAuth1RequestSerializer *requestSerializer;
+@property (nonatomic, strong) CDYelpOAuthManager *oAuthManager;
 
-@property (nonatomic, assign, readonly, getter = isAuthorized) BOOL authorized;
-
-//- (BOOL)deauthorize;
-- (instancetype)initWithBaseURL:(NSURL *)baseURL
-                    consumerKey:(NSString *)consumerKey
-                 consumerSecret:(NSString *)consumerSecret
-                          token:(NSString *)token
-                    tokenSecret:(NSString *)tokenSecret;
-//- (void)fetchRequestTokenWithPath:(NSString *)requestPath
-//                           method:(NSString *)method
-//                      callbackURL:(NSURL *)callbackURL
-//                            scope:(NSString *)scope
-//                          success:(void (^)(BDBOAuth1Credential *requestToken))success
-//                          failure:(void (^)(NSError *error))failure;
-//- (void)fetchAccessTokenWithPath:(NSString *)accessPath
-//                          method:(NSString *)method
-//                    requestToken:(BDBOAuth1Credential *)requestToken
-//                         success:(void (^)(BDBOAuth1Credential *accessToken))success
-//                         failure:(void (^)(NSError *error))failure;
+- (instancetype)initWithOAuthManager:(CDYelpOAuthManager *)oAuthMananger;
 
 @end

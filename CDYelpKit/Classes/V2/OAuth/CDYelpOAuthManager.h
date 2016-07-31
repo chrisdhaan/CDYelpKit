@@ -27,6 +27,6 @@
                           token:(NSString *)token
                     tokenSecret:(NSString *)tokenSecret;
 
-- (void)deauthorize;
+- (BOOL)deauthorize;
 
 @end

@@ -66,7 +66,6 @@
             }
             
             finalCategoriesString = [categoriesString substringToIndex:[categoriesString length] - 1];
-        } else {
         }
     }
     
@@ -74,13 +73,17 @@
     NSString *locationValue = @"";
     
     if (requestLocation != nil) {
-        if (requestLocation.requestLocationType == kCDYelpRequestLocationTypeCurrentLocation) {
-            locationKey = @"ll";
-            locationValue = [NSString stringWithFormat:@"%f,%f", requestLocation.currentLocationCoordinate.latitude, requestLocation.currentLocationCoordinate.longitude];
-        } else if (requestLocation.requestLocationType == kCDYelpRequestLocationTypeBoundingBox) {
-            locationKey = @"bounds";
-            locationValue = [NSString stringWithFormat:@"%f,%f|%f,%f", requestLocation.boundingBox.southWestCoordinate.latitude, requestLocation.boundingBox.southWestCoordinate.longitude, requestLocation.boundingBox.northEastCoordinate.latitude, requestLocation.boundingBox.northEastCoordinate.longitude];
-        } else {
+        switch (requestLocation.requestLocationType) {
+            case kCDYelpRequestLocationTypeCurrentLocation:
+                locationKey = @"ll";
+                locationValue = [NSString stringWithFormat:@"%f,%f", requestLocation.currentLocationCoordinate.latitude, requestLocation.currentLocationCoordinate.longitude];
+                break;
+            case kCDYelpRequestLocationTypeBoundingBox:
+                locationKey = @"bounds";
+                locationValue = [NSString stringWithFormat:@"%f,%f|%f,%f", requestLocation.boundingBox.southWestCoordinate.latitude, requestLocation.boundingBox.southWestCoordinate.longitude, requestLocation.boundingBox.northEastCoordinate.latitude, requestLocation.boundingBox.northEastCoordinate.longitude];
+                break;
+            default:
+                break;
         }
     }
     
@@ -116,6 +119,45 @@
     
     if (![locationKey isEqualToString:@""] && ![locationValue isEqualToString:@""]) {
         dict[locationKey] = locationValue;
+    }
+    
+    NSDictionary *objectDict = [[NSDictionary alloc] initWithDictionary:dict];
+    queryParams.paramsDict = objectDict;
+    
+    return queryParams;
+}
+
++ (CDYelpQueryParams *)phoneSearchEndpointQueryParamsWithPhoneNumber:(NSString *)phoneNumber
+                                                     withCountryCode:(NSString *)countryCode
+                                                      withCategories:(NSArray *)categories {
+    
+    CDYelpQueryParams *queryParams = [[CDYelpQueryParams alloc] init];
+    
+    NSString *finalCategoriesString = @"";
+    
+    if (categories != nil) {
+        if (categories.count > 0) {
+            NSMutableString *categoriesString = [[NSMutableString alloc] initWithString:@""];
+            for (NSString *yelpCategoryID in categories) {
+                [categoriesString appendFormat:@"%@,", yelpCategoryID];
+            }
+            
+            finalCategoriesString = [categoriesString substringToIndex:[categoriesString length] - 1];
+        }
+    }
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    
+    if (phoneNumber != nil && ![phoneNumber isEqualToString:@""]) {
+        dict[@"phone"] = phoneNumber;
+    }
+    
+    if (countryCode != nil && ![countryCode isEqualToString:@""]) {
+        dict[@"cc"] = countryCode;
+    }
+    
+    if (![finalCategoriesString isEqualToString:@""]) {
+        dict[@"category"] = finalCategoriesString;
     }
     
     NSDictionary *objectDict = [[NSDictionary alloc] initWithDictionary:dict];

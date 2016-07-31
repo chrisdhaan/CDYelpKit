@@ -53,7 +53,7 @@ static NSString *YelpAPIV2Endpoint = @"https://api.yelp.com/v2/";
                      includeActionLinks:(BOOL)actionLinks
                         completionBlock:(void (^)(BOOL, NSError * _Nullable, CDYelpDetailedBusiness * _Nullable))block {
     
-    NSAssert(businessId != nil && ![businessId isEqualToString:@""], @"A business ID is required to query the Yelp business endpoint.");
+    NSAssert(businessId != nil && ![businessId isEqualToString:@""], @"A business ID is required to query the Yelp Business Search endpoint.");
     
     CDYelpQueryParams *yelpQueryParams = [CDYelpQueryParams businessEndpointQueryParamsWithCoutryCode:countryCode withLanguageCode:languageCode withLangaugeFilter:languageFilter withActionLinks:actionLinks];
     
@@ -81,6 +81,23 @@ static NSString *YelpAPIV2Endpoint = @"https://api.yelp.com/v2/";
     CDYelpQueryParams *yelpQueryParams = [CDYelpQueryParams searchEndpointQueryParamsWithSearchTerm:searchTerm withLimit:limit withOffset:offset withSortType:sortType withCategories:categories withRadiusFilter:radiusFilter withDealsFilter:dealsFilter withRequestLocation:requestLocation];
     
     [self.yelpApiClient GET:@"search" parameters:yelpQueryParams.paramsDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, CDYelpSearchResponse * _Nullable responseObject) {
+        block(YES, nil, responseObject.result);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+        block(NO, error, nil);
+    }];
+}
+
+- (void)searchYelpBusinessesWithPhoneNumber:(NSString *)phoneNumber
+                              byCountryCode:(NSString *)countryCode
+                             withCategories:(NSArray *)categories
+                            completionBlock:(void (^)(BOOL, NSError * _Nullable, NSMutableArray * _Nullable))block {
+    
+    NSAssert(phoneNumber != nil && ![phoneNumber isEqualToString:@""], @"A phone number is required to query the Yelp Phone Search endpoint.");
+    
+    CDYelpQueryParams *yelpQueryParams = [CDYelpQueryParams phoneSearchEndpointQueryParamsWithPhoneNumber:phoneNumber withCountryCode:countryCode withCategories:categories];
+    
+    [self.yelpApiClient GET:@"phone_search" parameters:yelpQueryParams.paramsDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, CDYelpSearchResponse * _Nullable responseObject) {
         block(YES, nil, responseObject.result);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Error: %@", error);

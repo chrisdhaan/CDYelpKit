@@ -65,6 +65,11 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
     
     mapAnnotations = [[NSMutableArray alloc] init];
     [self resetMapView];
+    
+    // Example of Phone Search endpoint query
+//    [yelpKitManager searchYelpBusinessesWithPhoneNumber:@"5555555555" byCountryCode:nil withCategories:nil completionBlock:^(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results) {
+//        NSLog(@"%@", results);
+//    }];
 }
 
 - (void)didReceiveMemoryWarning

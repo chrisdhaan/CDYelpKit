@@ -38,6 +38,11 @@
                        withRequestLocation:(CDYelpRequestLocation * _Nullable)requestLocation
                            completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results))block;
 
+- (void)searchYelpBusinessesWithPhoneNumber:(NSString * _Nonnull)phoneNumber
+                              byCountryCode:(NSString * _Nullable)countryCode
+                             withCategories:(NSArray * _Nullable)categories
+                            completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results))block;
+
 - (void)cancelAllPendingAPIRequests;
 
 @end

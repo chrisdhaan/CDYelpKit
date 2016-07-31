@@ -30,4 +30,8 @@
                                                withDealsFilter:(BOOL)dealsFilter
                                            withRequestLocation:(CDYelpRequestLocation *)requestLocation;
 
++ (CDYelpQueryParams *)phoneSearchEndpointQueryParamsWithPhoneNumber:(NSString *)phoneNumber
+                                                     withCountryCode:(NSString *)countryCode
+                                                      withCategories:(NSArray *)categories;
+
 @end

@@ -22,6 +22,7 @@
 #import "CDYelpLocation.h"
 #import "CDYelpReview.h"
 #import "CDYelpUser.h"
+#import "CDYelpDeepLinkManager.h"
 #import "CDYelpOAuthManager.h"
 
 FOUNDATION_EXPORT double CDYelpKitVersionNumber;

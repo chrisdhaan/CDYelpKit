@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CDYelpKit'
-  s.version          = '0.4.6'
+  s.version          = '0.4.7'
   s.summary          = 'An extensive Objective C wrapper for the Yelp Developers V2 API.'
   s.description      = <<-DESC
 This Objective C wrapper covers all possible network endpoints and responses for the Yelp Developers V2 API.
@@ -34,6 +34,10 @@ This Objective C wrapper covers all possible network endpoints and responses for
     cdyelpkitv2.subspec 'OAuth' do |oauth|
       oauth.source_files = 'CDYelpKit/Classes/V2/OAuth/**/*.{h,m}'
       oauth.dependency 'BDBOAuth1Manager', '~> 2.0.0'
+    end
+
+    cdyelpkitv2.subspec 'DeepLink' do |deeplink|
+      deeplink.source_files = 'CDYelpKit/Classes/V2/DeepLink/**/*.{h,m}'
     end
 
   end

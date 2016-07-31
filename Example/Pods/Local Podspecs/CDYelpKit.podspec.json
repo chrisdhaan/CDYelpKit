@@ -1,6 +1,6 @@
 {
   "name": "CDYelpKit",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "summary": "An extensive Objective C wrapper for the Yelp Developers V2 API.",
   "description": "This Objective C wrapper covers all possible network endpoints and responses for the Yelp Developers V2 API.",
   "homepage": "https://github.com/chrisdhaan/CDYelpKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/chrisdhaan/CDYelpKit.git",
-    "tag": "0.4.6"
+    "tag": "0.4.7"
   },
   "social_media_url": "https://twitter.com/dehaan_solo",
   "platforms": {
@@ -48,6 +48,10 @@
               "~> 2.0.0"
             ]
           }
+        },
+        {
+          "name": "DeepLink",
+          "source_files": "CDYelpKit/Classes/V2/DeepLink/**/*.{h,m}"
         }
       ]
     }

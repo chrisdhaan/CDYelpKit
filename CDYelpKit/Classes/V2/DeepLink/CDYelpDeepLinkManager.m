@@ -53,7 +53,7 @@
         } else {
         }
         
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"yelp4:///search%@"]]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"yelp4:///search%@", finalQueryString]]];
     }
 }
 

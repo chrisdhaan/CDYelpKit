@@ -28,6 +28,10 @@
              @"search": @{
                      @"400": [CDYelpErrorResponse class],
                      @"*": [CDYelpSearchResponse class]
+                     },
+             @"phone_search": @{
+                     @"400": [CDYelpErrorResponse class],
+                     @"*": [CDYelpSearchResponse class]
                      }
              };
     
@@ -38,7 +42,11 @@
              @"business/**": [CDYelpDetailedBusiness class],
              @"search": @{
                      @"400": [CDYelpError class],
-                     @"*": [CDYelpBusiness class]
+                     @"*": [CDYelpSearchResults class]
+                     },
+             @"phone_search": @{
+                     @"400": [CDYelpError class],
+                     @"*": [CDYelpSearchResults class]
                      }
              };
 }

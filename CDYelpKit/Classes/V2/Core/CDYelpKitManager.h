@@ -10,7 +10,7 @@
 
 #import "CDYelpSortType.h"
 
-@class CDYelpAPIClient, CDYelpDetailedBusiness, CDYelpRequestLocation;
+@class CDYelpAPIClient, CDYelpDetailedBusiness, CDYelpRequestLocation, CDYelpSearchResults;
 
 @interface CDYelpKitManager : NSObject
 
@@ -36,12 +36,12 @@
                           withRadiusFilter:(NSInteger)radiusFilter
                            withDealsFilter:(BOOL)dealsFilter
                        withRequestLocation:(CDYelpRequestLocation * _Nullable)requestLocation
-                           completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results))block;
+                           completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, CDYelpSearchResults * _Nullable results))block;
 
 - (void)searchYelpBusinessesWithPhoneNumber:(NSString * _Nonnull)phoneNumber
                               byCountryCode:(NSString * _Nullable)countryCode
                              withCategories:(NSArray * _Nullable)categories
-                            completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results))block;
+                            completionBlock:(void (^ _Nullable)(BOOL successful, NSError * _Nullable error, CDYelpSearchResults * _Nullable results))block;
 
 - (void)cancelAllPendingAPIRequests;
 

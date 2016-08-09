@@ -13,7 +13,7 @@
 #pragma mark - Overcoat Methods
 
 + (NSString *)resultKeyPathForJSONDictionary:(NSDictionary *)JSONDictionary {
-    return @"businesses";
+    return nil;
 }
 
 @end

@@ -73,7 +73,7 @@ static NSString *YelpAPIV2Endpoint = @"https://api.yelp.com/v2/";
                           withRadiusFilter:(NSInteger)radiusFilter
                            withDealsFilter:(BOOL)dealsFilter
                        withRequestLocation:(CDYelpRequestLocation *)requestLocation
-                           completionBlock:(void (^)(BOOL, NSError * _Nullable, NSMutableArray * _Nullable))block {
+                           completionBlock:(void (^)(BOOL, NSError * _Nullable, CDYelpSearchResults * _Nullable))block {
     
     NSAssert(radiusFilter <= 3 && radiusFilter >= 0, @"The provided sort type is not a CDYelpSortType. Please provide a valid CDYelpSortType.");
     NSAssert(radiusFilter <= 40000, @"The provided radius is larger than allowed by the Yelp Search query. Please provide a radius between 0 and 40000.");
@@ -91,7 +91,7 @@ static NSString *YelpAPIV2Endpoint = @"https://api.yelp.com/v2/";
 - (void)searchYelpBusinessesWithPhoneNumber:(NSString *)phoneNumber
                               byCountryCode:(NSString *)countryCode
                              withCategories:(NSArray *)categories
-                            completionBlock:(void (^)(BOOL, NSError * _Nullable, NSMutableArray * _Nullable))block {
+                            completionBlock:(void (^)(BOOL, NSError * _Nullable, CDYelpSearchResults * _Nullable))block {
     
     NSAssert(phoneNumber != nil && ![phoneNumber isEqualToString:@""], @"A phone number is required to query the Yelp Phone Search endpoint.");
     

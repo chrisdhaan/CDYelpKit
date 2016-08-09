@@ -16,7 +16,11 @@
 #import "CDYelpGiftCertificateOption.h"
 #import "CDYelpLocation.h"
 #import "CDYelpQueryParams.h"
+#import "CDYelpRegion.h"
+#import "CDYelpRegionCenter.h"
+#import "CDYelpRegionSpan.h"
 #import "CDYelpRequestLocation.h"
 #import "CDYelpReview.h"
+#import "CDYelpSearchResults.h"
 #import "CDYelpUser.h"
 

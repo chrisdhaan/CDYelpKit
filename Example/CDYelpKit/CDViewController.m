@@ -67,7 +67,7 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
     [self resetMapView];
     
     // Example of Phone Search endpoint query
-//    [yelpKitManager searchYelpBusinessesWithPhoneNumber:@"5555555555" byCountryCode:nil withCategories:nil completionBlock:^(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results) {
+//    [yelpKitManager searchYelpBusinessesWithPhoneNumber:@"5555555555" byCountryCode:nil withCategories:nil completionBlock:^(BOOL successful, NSError * _Nullable error, CDYelpSearchResults * _Nullable results) {
 //        NSLog(@"%@", results);
 //    }];
 }
@@ -206,11 +206,11 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
                                       withRadiusFilter:radius
                                 withDealsFilter:hasDeals
                                    withRequestLocation:requestLocation
-                                       completionBlock:^(BOOL successful, NSError * _Nullable error, NSMutableArray * _Nullable results) {
+                                       completionBlock:^(BOOL successful, NSError * _Nullable error, CDYelpSearchResults * _Nullable results) {
                                 
-                                if (successful && results && results.count > 0) {
+                                if (successful && results.businesses && results.businesses.count > 0) {
                                     
-                                    [self populateMapWithYelpResults:results];
+                                    [self populateMapWithYelpResults:results.businesses];
                                 }
                             }];
 }

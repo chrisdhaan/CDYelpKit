@@ -14,6 +14,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 iosSDK: 8.0
+
 [Yelp API Access](https://www.yelp.com/developers/manage_api_keys)
 
 ## Installation
@@ -41,13 +42,13 @@ OAuth is needed to interact with the Yelp API. To integrate OAuth into your appl
 pod "CDYelpKit/CDYelpKitV2/OAuth"
 ```
 
-Network requests are needed to retrieve data from the Yelp API. To integrate methods that query the various Yelp endpoints into your application, add the following line to your Podfile:
+Network requests are needed to retrieve data from the Yelp API. To integrate methods that query the various Yelp API endpoints into your application, add the following line to your Podfile:
 
 ```ruby
 pod "CDYelpKit/CDYelpKitV2/Core"
 ```
 
-Deep linking allows applications to make queries to the Yelp app. Each query opens the Yelp app to a corresponding screen. To integrate methods that query the various Yelp app endpoints into your application, add the following line to you Podfile:
+Deep linking allows applications to make queries to the Yelp app. Each query opens either the Yelp app (if it's installed on the device) or the Yelp website to a corresponding screen. To integrate methods that query the various Yelp app endpoints into your application, add the following line to you Podfile:
 
 ```ruby
 pod "CDYelpKit/CDYelpKitV2/DeepLink"
@@ -77,7 +78,7 @@ Christopher de Haan, chrisdhaan@gmail.com
 
 ## Resources
 
-Visit the [Yelp Developers](https://www.yelp.com/developers) website for additional resources regarding the Yelp API.
+Visit the [Yelp Developers](https://www.yelp.com/developers) portal for additional resources regarding the Yelp API.
 
 ## License
 

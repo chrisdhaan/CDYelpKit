@@ -11,11 +11,14 @@ This pod is currently in development. As of release 0.9.0 the code is stable and
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+---
+
 ## Requirements
 
-iosSDK: 8.0
+- iosSDK: 8.0
+- [Yelp API Access](https://www.yelp.com/developers/manage_api_keys)
 
-[Yelp API Access](https://www.yelp.com/developers/manage_api_keys)
+---
 
 ## Installation
 
@@ -54,6 +57,8 @@ Deep linking allows applications to make queries to the Yelp app. Each query ope
 pod "CDYelpKit/CDYelpKitV2/DeepLink"
 ```
 
+---
+
 ## Usage
 
 ### [OAuth](https://www.yelp.com/developers/documentation/v2/authentication) Usage
@@ -71,6 +76,8 @@ pod "CDYelpKit/CDYelpKitV2/DeepLink"
 #### [Phone Search API](https://www.yelp.com/developers/documentation/v2/phone_search)
 
 ### [DeepLink](https://www.yelp.com/developers/documentation/v2/iphone) Usage
+
+---
 
 ## Author
 

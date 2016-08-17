@@ -52,7 +52,6 @@ pod "CDYelpKit/CDYelpKitV2/Core"
 ```
 
 Deep linking allows applications to make queries to the Yelp app. Each query opens either the Yelp app (if it's installed on the device) or the Yelp website to a corresponding screen. To integrate methods that query the various Yelp app endpoints into your application, add the following line to you Podfile:
-
 ```ruby
 pod "CDYelpKit/CDYelpKitV2/DeepLink"
 ```
@@ -65,15 +64,65 @@ pod "CDYelpKit/CDYelpKitV2/DeepLink"
 
 #### Initialization
 
+```objective-c
+NSURL *yelpAPIV2Endpoint = [NSURL URLWithString:@"https://api.yelp.com/v2/"];
+CDYelpOAuthManager *yelpOAuthMananger = [[CDYelpOAuthManager alloc] initWithBaseURL:yelpAPIV2Endpoint
+                                                                        consumerKey:@"consumerKey"
+                                                                     consumerSecret:@"consumerSecret"
+                                                                              token:@"token"
+                                                                        tokenSecret:@"tokenSecret"];
+```
+
 ### Core Usage
 
 #### Initialization
 
+```objective-c
+CDYelpKitManager *yelpKitManager = [[CDYelpKitManager alloc] initWithConsumerKey:@"consumerKey"
+                                                                  consumerSecret:@"consumerSecret"
+                                                                           token:@"token"
+                                                                     tokenSecret:@"tokenSecret"];
+```
+
 #### [Search API](https://www.yelp.com/developers/documentation/v2/search_api)
+
+```objective-c
+- (void)searchYelpBusinessesWithSearchTerm:(NSString * _Nullable)searchTerm                     // Optional
+                                 withLimit:(NSInteger)limit                                     // Required
+                                withOffset:(NSInteger)offset                                    // Required
+                              withSortType:(CDYelpSortType)sortType                             // Required
+                            withCategories:(NSArray * _Nullable)categories                      // Optional
+                          withRadiusFilter:(NSInteger)radiusFilter                              // Required
+                           withDealsFilter:(BOOL)dealsFilter                                    // Required
+                       withRequestLocation:(CDYelpRequestLocation * _Nullable)requestLocation   // Optional
+                           completionBlock:(void (^ _Nullable)(BOOL successful, 
+                                                               NSError * _Nullable error, 
+                                                               CDYelpSearchResults * _Nullable results))block;
+```
 
 #### [Business API](https://www.yelp.com/developers/documentation/v2/business)
 
+```objective-c
+- (void)getBusinessDetailsForBusinessId:(NSString * _Nonnull)businessId                         // Required
+                           byCoutryCode:(NSString * _Nullable)countryCode                       // Optional
+                         byLanguageCode:(NSString * _Nullable)languageCode                      // Optional
+                     withLangaugeFilter:(BOOL)languageFilter                                    // Required
+                     includeActionLinks:(BOOL)actionLinks                                       // Required
+                        completionBlock:(void (^ _Nullable)(BOOL successful, 
+                                                            NSError * _Nullable error, 
+                                                            CDYelpDetailedBusiness * _Nullable business))block;
+```
+
 #### [Phone Search API](https://www.yelp.com/developers/documentation/v2/phone_search)
+
+```objective-c
+- (void)searchYelpBusinessesWithPhoneNumber:(NSString * _Nonnull)phoneNumber                    // Required
+                              byCountryCode:(NSString * _Nullable)countryCode                   // Optional
+                             withCategories:(NSArray * _Nullable)categories                     // Optional
+                            completionBlock:(void (^ _Nullable)(BOOL successful, 
+                                                                NSError * _Nullable error, 
+                                                                CDYelpSearchResults * _Nullable results))block;
+```
 
 ### [DeepLink](https://www.yelp.com/developers/documentation/v2/iphone) Usage
 

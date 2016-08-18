@@ -34,7 +34,7 @@ pod "CDYelpKit"
 CDYelpKit currently queries Yelp API V2. In preparation for Yelp API V3 all V2 functionality has been paritioned into its own module. To integrate CDYelpKitV2 into your application, add the following line to your Podfile:
 
 ```ruby
-pod "CDYelpKit/CDYelpKitV2"
+pod "CDYelpKit/V2"
 ```
 
 CDYelpKitV2 is partioned into three separate modules, each of which can be installed on its own. This can be beneficial when trying to decrease the size of an application and not all pod functionality is needed.
@@ -42,18 +42,18 @@ CDYelpKitV2 is partioned into three separate modules, each of which can be insta
 OAuth is needed to interact with the Yelp API. To integrate OAuth into your application, add the following line to your Podfile:
 
 ```ruby
-pod "CDYelpKit/CDYelpKitV2/OAuth"
+pod "CDYelpKit/V2/OAuth"
 ```
 
 Network requests are needed to retrieve data from the Yelp API. To integrate methods that query the various Yelp API endpoints into your application, add the following line to your Podfile:
 
 ```ruby
-pod "CDYelpKit/CDYelpKitV2/Core"
+pod "CDYelpKit/V2/Core"
 ```
 
 Deep linking allows applications to make queries to the Yelp app. Each query opens either the Yelp app (if it's installed on the device) or the Yelp website to a corresponding screen. To integrate methods that query the various Yelp app endpoints into your application, add the following line to you Podfile:
 ```ruby
-pod "CDYelpKit/CDYelpKitV2/DeepLink"
+pod "CDYelpKit/V2/DeepLink"
 ```
 
 ---
@@ -73,6 +73,13 @@ CDYelpOAuthManager *yelpOAuthMananger = [[CDYelpOAuthManager alloc] initWithBase
                                                                         tokenSecret:@"tokenSecret"];
 ```
 
+Once you've created a CDYelpOAuthManager object you can then use the following lines of code to attach your OAuth credentials to any AFNetworking requests that make use of the AFHTTPSessionManager class. This way you can write your own AFNetworking methods that query the Yelp API.
+
+```objective-c
+AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+manager.requestSerializer = yelpOAuthManager.requestSerializer;
+```
+
 ### Core Usage
 
 #### Initialization
@@ -83,6 +90,11 @@ CDYelpKitManager *yelpKitManager = [[CDYelpKitManager alloc] initWithConsumerKey
                                                                            token:@"token"
                                                                      tokenSecret:@"tokenSecret"];
 ```
+
+Once you've created a CDYelpKitManager object you can use it to query the Yelp API using any of the following methods.
+
+- Parameters with "// Optional" can take nil as a value.
+- Parameters with "// Required" are primitive types and need some sort of boolean (if unsure default to false) or integer (if unsure default to 0) or enum (enum values are described below) value. Passing nil as a value will throw an exception.
 
 #### [Search API](https://www.yelp.com/developers/documentation/v2/search_api)
 
@@ -98,6 +110,58 @@ CDYelpKitManager *yelpKitManager = [[CDYelpKitManager alloc] initWithConsumerKey
                            completionBlock:(void (^ _Nullable)(BOOL successful, 
                                                                NSError * _Nullable error, 
                                                                CDYelpSearchResults * _Nullable results))block;
+```
+
+The Search API has a **sort** parameter which allows for query results to be filtered based off three types of criteria. The following lines of code show which sort types can be passed into the **sortType** parameter.
+
+```objective-c
+kCDYelpSortTypeNone,
+kCDYelpSortTypeBestMatched,
+kCDYelpSortTypeDistance,
+kCDYelpSortTypeHighestRated
+```
+
+The Search API has a **location** parameter which allows for queries based on a specific set of coordinates or a bounding box of coordinates. Results will be returned based off of those coordinate values. The following lines of code show how to return results using both location parameter types.
+
+The following lines of code show how to generate a query request location for a specific set of coordinates.
+
+```objective-c
+CDYelpRequestLocation *requestLocation = [CDYelpRequestLocation requestLocationFromCurrentCurrentLocation:
+                                          self.mapView.userLocation.location];
+```
+
+The following lines of code show how to generate a query request location for a mapview bounding box.
+
+```objective-c
+CDYelpBoundingBox *boundingBox = [CDYelpBoundingBox boundingBoxFromMapView:self.mapView];
+CDYelpRequestLocation *requestLocation = [CDYelpRequestLocation requestLocationFromBoundingBox:boundingBox];
+```
+
+The following lines of code show an example query to the Yelp Search API.
+
+```objective-c
+// Cancel any API requests previously made
+[yelpKitManager cancelAllPendingAPIRequests];
+// Query Yelp API for business results
+[yelpKitManager searchYelpBusinessesWithSearchTerm:@"food"
+                                         withLimit:3
+                                        withOffset:0
+                                      withSortType:kCDYelpSortTypeDistance
+                                    withCategories:nil
+                                  withRadiusFilter:200
+                                   withDealsFilter:false
+                               withRequestLocation:requestLocation   // Example showing options found above
+                                   completionBlock:^(BOOL successful, 
+                                                     NSError * _Nullable error, 
+                                                     CDYelpSearchResults * _Nullable results) 
+                                                     {
+                                if (successful && 
+                                    results.businesses && 
+                                    results.businesses.count > 0) {
+                                    
+                                    NSLog(@"%@", results.businesses);
+                                }
+                            }];
 ```
 
 #### [Business API](https://www.yelp.com/developers/documentation/v2/business)

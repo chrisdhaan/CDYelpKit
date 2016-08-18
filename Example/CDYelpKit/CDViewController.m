@@ -6,7 +6,7 @@
 //  Copyright (c) 2016 Christopher de Haan. All rights reserved.
 //
 
-#import <CDYelpKit/CDYelpKit-umbrella.h>
+#import <CDYelpKit/CDYelpKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 

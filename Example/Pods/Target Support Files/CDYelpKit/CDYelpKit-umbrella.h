@@ -2,6 +2,7 @@
 
 #import "CDYelpAPIClient.h"
 #import "CDYelpKitManager.h"
+#import "CDYelpKit.h"
 #import "CDYelpModels.h"
 #import "CDYelpResponses.h"
 #import "CDYelpQueryParams.h"
@@ -24,6 +25,7 @@
 #import "CDYelpRegionCenter.h"
 #import "CDYelpRegionSpan.h"
 #import "CDYelpReview.h"
+#import "CDYelpSearchResults.h"
 #import "CDYelpUser.h"
 #import "CDYelpDeepLinkManager.h"
 #import "CDYelpOAuthManager.h"

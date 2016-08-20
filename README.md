@@ -159,7 +159,7 @@ The following lines of code show an example query to the Yelp Search API.
                                     results.businesses && 
                                     results.businesses.count > 0) {
                                     
-                                    NSLog(@"%@", results.businesses);
+                                    NSLog(@"%@", results);
                                 }
                             }];
 ```
@@ -177,6 +177,22 @@ The following lines of code show an example query to the Yelp Search API.
                                                             CDYelpDetailedBusiness * _Nullable business))block;
 ```
 
+The following lines of code show an example query to the Yelp Business API.
+
+```objective-c
+[yelpKitManager getBusinessDetailsForBusinessId:@"businessID"
+                                   byCoutryCode:nil
+                                 byLanguageCode:nil
+                             withLangaugeFilter:false
+                             includeActionLinks:false
+                                completionBlock:^(BOOL successful, 
+                                                  NSError * _Nullable error, 
+                                                  CDYelpDetailedBusiness * _Nullable business) 
+                                                  {
+                                        NSLog(@"%@", business);
+                                    }];
+```
+
 #### [Phone Search API](https://www.yelp.com/developers/documentation/v2/phone_search)
 
 ```objective-c
@@ -188,7 +204,137 @@ The following lines of code show an example query to the Yelp Search API.
                                                                 CDYelpSearchResults * _Nullable results))block;
 ```
 
+The following lines of code show an example query to the Yelp Phone Search API.
+
+```objective-c
+[yelpKitManager searchYelpBusinessesWithPhoneNumber:@"5555555555"
+                                      byCountryCode:nil
+                                     withCategories:nil
+                                    completionBlock:^(BOOL successful, 
+                                                      NSError * _Nullable error, 
+                                                      CDYelpSearchResults * _Nullable results) 
+                                                      {
+                                            
+                                            if (successful && 
+                                                results.businesses && 
+                                                results.businesses.count > 0) {
+                                                
+                                                NSLog(@"%@", results);
+                                            }
+                                        }];
+```
+
 ### [DeepLink](https://www.yelp.com/developers/documentation/v2/iphone) Usage
+
+#### Initialization
+
+```objective-c
+CDYelpDeepLinkManager *deepLinkManager = [[CDYelpDeepLinkManager alloc] init];
+```
+
+#### Check For Yelp App
+
+```objective-c
+- (BOOL)isYelpInstalled;
+```
+
+The following lines of code show an example of how to check if the Yelp app is installed on a device.
+
+```objective-c
+if ([deepLinkManager isYelpInstalled] == true) {
+    NSLog(@"Yelp is installed.");
+} else {
+    NSLog(@"Yelp is not installed.");
+}
+```
+
+#### Open Yelp App
+
+```objective-c
+- (void)openYelp;
+```
+
+The following lines of code show an example of how open the Yelp app.
+
+```objective-c
+if ([deepLinkManager isYelpInstalled] == true) {
+    [deepLinkManager openYelp];
+}
+```
+
+#### Open Yelp App To Search
+
+```objective-c
+- (void)openYelpToSearchWithTerms:(NSArray * _Nullable)terms                                    // Optional
+                     withCategory:(NSString * _Nullable)category                                // Optional
+                     withLocation:(NSString * _Nullable)location;                               // Optional
+```
+
+The following lines of code show an example of how open the Yelp app to specific search results.
+
+```objective-c
+if ([deepLinkManager isYelpInstalled] == true) {
+    [deepLinkManager openYelpToSearchWithTerms:@"food"
+                                  withCategory:nil
+                                  withLocation:nil];
+}
+```
+
+#### Open Yelp App To Business
+
+```objective-c
+- (void)openYelpToBusiness:(NSString * _Nonnull)businessId;                                     // Required
+```
+
+The following lines of code show an example of how open the Yelp app to a specific business page.
+
+```objective-c
+if ([deepLinkManager isYelpInstalled] == true) {
+    [deepLinkManager openYelpToBusiness:@"businessID"];
+}
+```
+
+#### Open Yelp App To Check-Ins
+
+```objective-c
+- (void)openYelpToCheckins;
+```
+
+The following lines of code show an example of how open the Yelp app to a users check-ins.
+
+```objective-c
+if ([deepLinkManager isYelpInstalled] == true) {
+    [deepLinkManager openYelpToCheckins];
+}
+```
+
+##### Sorted By Distance
+
+```objective-c
+- (void)openYelpToNearbyCheckins;
+```
+
+The following lines of code show an example of how open the Yelp app to a users check-ins sorted by distance.
+
+```objective-c
+if ([deepLinkManager isYelpInstalled] == true) {
+    [deepLinkManager openYelpToNearbyCheckins];
+}
+```
+
+##### Sorted By Rank
+
+```objective-c
+- (void)openYelpToRankedCheckins;
+```
+
+The following lines of code show an example of how open the Yelp app to a users check-ins sorted by rank.
+
+```objective-c
+if ([deepLinkManager isYelpInstalled] == true) {
+    [deepLinkManager openYelpToRankedCheckins];
+}
+```
 
 ---
 
@@ -203,3 +349,5 @@ Visit the [Yelp Developers](https://www.yelp.com/developers) portal for addition
 ## License
 
 CDYelpKit is available under the MIT license. See the LICENSE file for more info.
+
+---

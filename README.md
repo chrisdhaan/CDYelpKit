@@ -340,7 +340,7 @@ if ([deepLinkManager isYelpInstalled] == true) {
 
 ## Author
 
-Christopher de Haan, chrisdhaan@gmail.com
+Christopher de Haan, contact@christopherdehaan.me
 
 ## Resources
 

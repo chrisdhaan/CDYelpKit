@@ -58,18 +58,25 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
     [locationManager startUpdatingLocation];
     
     // Configure CDYelpKit
-    yelpKitManager = [[CDYelpKitManager alloc] initWithConsumerKey:@"tPaCOcHvMIo_aIDL4jFqPw"
-                                      consumerSecret:@"W_q1ACetRjYbxnawi7F2R3VPXyc"
-                                               token:@"9L_Mjmot-lNHcF4UNfxn7M60OwKEAjVH"
-                                         tokenSecret:@"J-lVxUaPiAq2qOiRWJ-o4Yck0oY"];
+    yelpKitManager = [[CDYelpKitManager alloc] initWithConsumerKey:@"<YOUR CONSUMER KEY>"
+                                      consumerSecret:@"<YOUR CONSUMER SECRET>"
+                                               token:@"<YOUR TOKEN>"
+                                         tokenSecret:@"<YOUR TOKEN SECRET>"];
     
     mapAnnotations = [[NSMutableArray alloc] init];
     [self resetMapView];
     
-    // Example of Phone Search endpoint query
-//    [yelpKitManager searchYelpBusinessesWithPhoneNumber:@"5555555555" byCountryCode:nil withCategories:nil completionBlock:^(BOOL successful, NSError * _Nullable error, CDYelpSearchResults * _Nullable results) {
-//        NSLog(@"%@", results);
-//    }];
+//    // Example of Phone Search endpoint query
+//    [yelpKitManager searchYelpBusinessesWithPhoneNumber:@"5555555555"
+//                                          byCountryCode:nil
+//                                         withCategories:nil
+//                                        completionBlock:^(BOOL successful, NSError * _Nullable error, CDYelpSearchResults * _Nullable results) {
+//                                            
+//                                            if (successful && results.businesses && results.businesses.count > 0) {
+//                                                
+//                                                NSLog(@"%@", results);
+//                                            }
+//                                        }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -211,6 +218,17 @@ static NSString *defaultAnnotationID = @"CDMapKitAnnotation";
                                 if (successful && results.businesses && results.businesses.count > 0) {
                                     
                                     [self populateMapWithYelpResults:results.businesses];
+                                    
+//                                    // Example of Business endpoint query
+//                                    CDYelpBusiness *business = results.businesses[0];
+//                                    [yelpKitManager getBusinessDetailsForBusinessId:business.id
+//                                                                       byCoutryCode:nil
+//                                                                     byLanguageCode:nil
+//                                                                 withLangaugeFilter:false
+//                                                                 includeActionLinks:false
+//                                                                    completionBlock:^(BOOL successful, NSError * _Nullable error, CDYelpDetailedBusiness * _Nullable business) {
+//                                                                        NSLog(@"%@", business);
+//                                                                    }];
                                 }
                             }];
 }

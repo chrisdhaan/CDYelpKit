@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CDYelpKit'
-  s.version          = '0.9.1'
+  s.version          = '0.9.2'
   s.summary          = 'An extensive Objective C wrapper for the Yelp Developers V2 API.'
   s.description      = <<-DESC
 This Objective C wrapper covers all possible network endpoints and responses for the Yelp Developers V2 API.
                        DESC
   s.homepage         = 'https://github.com/chrisdhaan/CDYelpKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Christopher de Haan' => 'chrisdhaan@gmail.com' }
+  s.author           = { 'Christopher de Haan' => 'contact@christopherdehaan.me' }
   s.source           = { :git => 'https://github.com/chrisdhaan/CDYelpKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/dehaan_solo'
 
@@ -26,6 +26,7 @@ This Objective C wrapper covers all possible network endpoints and responses for
 
     v2.subspec 'Core' do |core|
       core.source_files = 'CDYelpKit/Classes/V2/Core/{Headers,Request,Response,**}/{Model,**}/**/*.{h,m}'
+      core.public_header_files = 'CDYelpKit/Classes/V2/Core/Header/CDYelpKit.h'
       core.frameworks = 'CoreLocation', 'MapKit'
       core.dependency 'Overcoat', '~> 4.0.0-beta.2'
       core.dependency 'CDYelpKit/V2/OAuth'

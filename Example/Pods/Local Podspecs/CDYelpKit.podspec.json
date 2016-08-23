@@ -1,6 +1,6 @@
 {
   "name": "CDYelpKit",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "summary": "An extensive Objective C wrapper for the Yelp Developers V2 API.",
   "description": "This Objective C wrapper covers all possible network endpoints and responses for the Yelp Developers V2 API.",
   "homepage": "https://github.com/chrisdhaan/CDYelpKit",
@@ -9,11 +9,11 @@
     "file": "LICENSE"
   },
   "authors": {
-    "Christopher de Haan": "chrisdhaan@gmail.com"
+    "Christopher de Haan": "contact@christopherdehaan.me"
   },
   "source": {
     "git": "https://github.com/chrisdhaan/CDYelpKit.git",
-    "tag": "0.9.1"
+    "tag": "0.9.2"
   },
   "social_media_url": "https://twitter.com/dehaan_solo",
   "platforms": {
@@ -27,6 +27,7 @@
         {
           "name": "Core",
           "source_files": "CDYelpKit/Classes/V2/Core/{Headers,Request,Response,**}/{Model,**}/**/*.{h,m}",
+          "public_header_files": "CDYelpKit/Classes/V2/Core/Header/CDYelpKit.h",
           "frameworks": [
             "CoreLocation",
             "MapKit"

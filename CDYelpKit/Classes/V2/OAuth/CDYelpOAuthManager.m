@@ -45,12 +45,12 @@
         self.token = token;
         self.tokenSecret = tokenSecret;
         
-        self.requestSerializer  = [BDBOAuth1RequestSerializer serializerForService:baseURL.host
-                                                                   withConsumerKey:consumerKey
-                                                                    consumerSecret:consumerSecret];
-        BDBOAuth1Credential *accessToken = [[BDBOAuth1Credential alloc] initWithToken:token
-                                                                               secret:tokenSecret
-                                                                           expiration:nil];
+        self.requestSerializer = [CDOAuth1RequestSerializer serializerForService:baseURL.host
+                                                                 withConsumerKey:consumerKey
+                                                                  consumerSecret:consumerSecret];
+        CDOAuth1Credential *accessToken = [[CDOAuth1Credential alloc] initWithToken:token
+                                                                             secret:tokenSecret
+                                                                         expiration:nil];
         [self.requestSerializer saveAccessToken:accessToken];
     }
     

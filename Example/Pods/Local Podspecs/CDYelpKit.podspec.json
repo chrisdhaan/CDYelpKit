@@ -1,6 +1,6 @@
 {
   "name": "CDYelpKit",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "summary": "An extensive Objective C wrapper for the Yelp Developers V2 API.",
   "description": "This Objective C wrapper covers all possible network endpoints and responses for the Yelp Developers V2 API.",
   "homepage": "https://github.com/chrisdhaan/CDYelpKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/chrisdhaan/CDYelpKit.git",
-    "tag": "0.9.4"
+    "tag": "0.9.5"
   },
   "social_media_url": "https://twitter.com/dehaan_solo",
   "platforms": {
@@ -44,8 +44,8 @@
           "name": "OAuth",
           "source_files": "CDYelpKit/Classes/V2/OAuth/**/*.{h,m}",
           "dependencies": {
-            "BDBOAuth1Manager": [
-              "~> 2.0.0"
+            "CDOAuth1Kit": [
+
             ]
           }
         },

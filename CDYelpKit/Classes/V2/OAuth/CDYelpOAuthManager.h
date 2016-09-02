@@ -25,12 +25,12 @@
 //  THE SOFTWARE.
 //
 
-#import <BDBOAuth1Manager/BDBOAuth1RequestSerializer.h>
+#import <CDOAuth1Kit/CDOAuth1Kit.h>
 #import <Foundation/Foundation.h>
 
 @interface CDYelpOAuthManager : NSObject
 
-@property (nonatomic) BDBOAuth1RequestSerializer *requestSerializer;
+@property (nonatomic) CDOAuth1RequestSerializer *requestSerializer;
 
 @property (nonatomic, assign, readonly, getter = isAuthorized) BOOL authorized;
 

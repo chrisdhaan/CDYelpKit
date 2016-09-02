@@ -1,25 +1,33 @@
 PODS:
-  - AFNetworking/NSURLSession (3.0.4):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.0.4)
-  - AFNetworking/Security (3.0.4)
-  - AFNetworking/Serialization (3.0.4)
-  - BDBOAuth1Manager (2.0.0):
-    - AFNetworking/NSURLSession (~> 3.0.0)
-  - CDYelpKit (0.9.4):
-    - CDYelpKit/V2 (= 0.9.4)
-  - CDYelpKit/V2 (0.9.4):
-    - CDYelpKit/V2/Core (= 0.9.4)
-    - CDYelpKit/V2/DeepLink (= 0.9.4)
-    - CDYelpKit/V2/OAuth (= 0.9.4)
-  - CDYelpKit/V2/Core (0.9.4):
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CDOAuth1Kit (0.9.4):
+    - AFNetworking (~> 3.0)
+  - CDYelpKit (0.9.5):
+    - CDYelpKit/V2 (= 0.9.5)
+  - CDYelpKit/V2 (0.9.5):
+    - CDYelpKit/V2/Core (= 0.9.5)
+    - CDYelpKit/V2/DeepLink (= 0.9.5)
+    - CDYelpKit/V2/OAuth (= 0.9.5)
+  - CDYelpKit/V2/Core (0.9.5):
     - CDYelpKit/V2/OAuth
     - Overcoat (~> 4.0.0-beta.2)
-  - CDYelpKit/V2/DeepLink (0.9.4)
-  - CDYelpKit/V2/OAuth (0.9.4):
-    - BDBOAuth1Manager (~> 2.0.0)
+  - CDYelpKit/V2/DeepLink (0.9.5)
+  - CDYelpKit/V2/OAuth (0.9.5):
+    - CDOAuth1Kit
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
@@ -36,9 +44,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
-  CDYelpKit: d456e992df716e2cc65e162ef902aa5a2bcfdb79
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CDOAuth1Kit: 65918c20bfc7ae588965cc4ace6939fdc290a75a
+  CDYelpKit: d9331ad11408c3b0565ad338b6306c721ef3dfba
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
 

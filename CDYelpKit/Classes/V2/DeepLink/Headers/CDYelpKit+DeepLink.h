@@ -1,8 +1,8 @@
 //
-//  CDYelpKit.h
+//  CDYelpKit+DeepLink.h
 //  Pods
 //
-//  Created by Christopher de Haan on 8/17/16.
+//  Created by Christopher de Haan on 10/15/16.
 //
 //  Copyright (c) 2016 Christopher de Haan <contact@christopherdehaan.me>
 //
@@ -25,8 +25,4 @@
 //  THE SOFTWARE.
 //
 
-#import "CDYelpAPIClient.h"
-#import "CDYelpKitManager.h"
-#import "CDYelpModels.h"
-#import "CDYelpResponses.h"
-#import "CDYelpKit+OAuth.h"
+#import "CDYelpDeepLinkManager.h"

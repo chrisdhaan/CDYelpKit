@@ -30,7 +30,9 @@
 #import "CDYelpSearchResults.h"
 #import "CDYelpUser.h"
 #import "CDYelpDeepLinkManager.h"
+#import "CDYelpKit+DeepLink.h"
 #import "CDYelpOAuthManager.h"
+#import "CDYelpKit+OAuth.h"
 
 FOUNDATION_EXPORT double CDYelpKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char CDYelpKitVersionString[];

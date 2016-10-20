@@ -14,19 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CDOAuth1Kit (0.9.24):
+  - CDOAuth1Kit (0.9.25):
     - AFNetworking (~> 3.0)
-  - CDYelpKit (0.9.10):
-    - CDYelpKit/V2 (= 0.9.10)
-  - CDYelpKit/V2 (0.9.10):
-    - CDYelpKit/V2/Core (= 0.9.10)
-    - CDYelpKit/V2/DeepLink (= 0.9.10)
-    - CDYelpKit/V2/OAuth (= 0.9.10)
-  - CDYelpKit/V2/Core (0.9.10):
+  - CDYelpKit (0.9.11):
+    - CDYelpKit/V2 (= 0.9.11)
+  - CDYelpKit/V2 (0.9.11):
+    - CDYelpKit/V2/Core (= 0.9.11)
+    - CDYelpKit/V2/DeepLink (= 0.9.11)
+    - CDYelpKit/V2/OAuth (= 0.9.11)
+  - CDYelpKit/V2/Core (0.9.11):
     - CDYelpKit/V2/OAuth
     - Overcoat (~> 4.0.0-beta.2)
-  - CDYelpKit/V2/DeepLink (0.9.10)
-  - CDYelpKit/V2/OAuth (0.9.10):
+  - CDYelpKit/V2/DeepLink (0.9.11)
+  - CDYelpKit/V2/OAuth (0.9.11):
     - CDOAuth1Kit
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
@@ -45,11 +45,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CDOAuth1Kit: fb1a4fd7f530a8d06df4501f991618af9036c134
-  CDYelpKit: 98a8ad2a2f46681e15216dad9423c030ae1f9fa4
+  CDOAuth1Kit: 7e746831d6d5b4cee5ea06f28ee9870950a9ac90
+  CDYelpKit: b12ec6e932686f1c3b86b4e5ac860c0fa94c3905
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
 
 PODFILE CHECKSUM: 6d9b387d6d8854f8f1f11cabd69b8c217a4dbb6f
 
-COCOAPODS: 1.1.0.rc.3
+COCOAPODS: 1.1.0

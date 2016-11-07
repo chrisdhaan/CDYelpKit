@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CDYelpKit'
-  s.version          = '0.9.12'
+  s.version          = '0.9.13'
   s.summary          = 'An extensive Objective C wrapper for the Yelp Developers V2 API.'
   s.description      = <<-DESC
 This Objective C wrapper covers all possible network endpoints and responses for the Yelp Developers V2 API.
@@ -22,23 +22,19 @@ This Objective C wrapper covers all possible network endpoints and responses for
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
-  s.subspec 'V2' do |v2|
+  s.subspec 'Core' do |core|
+    core.source_files = 'CDYelpKit/Classes/Core/**/*'
+    core.frameworks = 'CoreLocation', 'MapKit'
+    core.dependency 'Overcoat', '~> 4.0.0-beta.2'
+    core.dependency 'CDYelpKit/OAuth'
+  end
 
-    v2.subspec 'Core' do |core|
-      core.source_files = 'CDYelpKit/Classes/V2/Core/{Headers,Request,Response,**}/{Model,**}/**/*.{h,m}'
-      core.frameworks = 'CoreLocation', 'MapKit'
-      core.dependency 'Overcoat', '~> 4.0.0-beta.2'
-      core.dependency 'CDYelpKit/V2/OAuth'
-    end
+  s.subspec 'OAuth' do |oauth|
+    oauth.source_files = 'CDYelpKit/Classes/OAuth/**/*'
+    oauth.dependency 'CDOAuth1Kit'
+  end
 
-    v2.subspec 'OAuth' do |oauth|
-      oauth.source_files = 'CDYelpKit/Classes/V2/OAuth/**/*.{h,m}'
-      oauth.dependency 'CDOAuth1Kit'
-    end
-
-    v2.subspec 'DeepLink' do |deeplink|
-      deeplink.source_files = 'CDYelpKit/Classes/V2/DeepLink/**/*.{h,m}'
-    end
-
+  s.subspec 'DeepLink' do |deeplink|
+    deeplink.source_files = 'CDYelpKit/Classes/DeepLink/**/*'
   end
 end

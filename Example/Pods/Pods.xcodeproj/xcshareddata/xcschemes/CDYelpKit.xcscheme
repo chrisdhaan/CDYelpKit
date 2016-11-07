@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05D28A8668685537BA11A4BC0ECEC370"
+               BlueprintIdentifier = "3B41EC244BFAC2DE9BB20453E7DAFA62"
                BuildableName = "CDYelpKit.framework"
                BlueprintName = "CDYelpKit"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "05D28A8668685537BA11A4BC0ECEC370"
+            BlueprintIdentifier = "3B41EC244BFAC2DE9BB20453E7DAFA62"
             BuildableName = "CDYelpKit.framework"
             BlueprintName = "CDYelpKit"
             ReferencedContainer = "container:Pods.xcodeproj">

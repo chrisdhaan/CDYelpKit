@@ -94,7 +94,7 @@ static NSString *YelpAPIV2Endpoint = @"https://api.yelp.com/v2/";
                        withRequestLocation:(CDYelpRequestLocation *)requestLocation
                            completionBlock:(void (^)(BOOL, NSError * _Nullable, CDYelpSearchResults * _Nullable))block {
     
-    NSAssert(radiusFilter <= 3 && radiusFilter >= 0, @"The provided sort type is not a CDYelpSortType. Please provide a valid CDYelpSortType.");
+    NSAssert(sortType <= 3 && sortType >= 0, @"The provided sort type is not a CDYelpSortType. Please provide a valid CDYelpSortType.");
     NSAssert(radiusFilter <= 40000, @"The provided radius is larger than allowed by the Yelp Search query. Please provide a radius between 0 and 40000.");
     
     CDYelpQueryParams *yelpQueryParams = [CDYelpQueryParams searchEndpointQueryParamsWithSearchTerm:searchTerm withLimit:limit withOffset:offset withSortType:sortType withCategories:categories withRadiusFilter:radiusFilter withDealsFilter:dealsFilter withRequestLocation:requestLocation];
